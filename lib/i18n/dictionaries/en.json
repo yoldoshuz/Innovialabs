@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "title": "Osmi — Web & AI solutions for business",
+    "titleTemplate": "%s — Osmi",
+    "description": "We design and build enterprise-grade web platforms and AI products. Engineering excellence, reliability, and measurable results.",
+    "keywords": [
+      "web development",
+      "AI solutions",
+      "artificial intelligence",
+      "enterprise platforms",
+      "digital transformation",
+      "Next.js",
+      "machine learning"
+    ],
+    "ogAlt": "Osmi — Web & AI solutions for business"
+  },
+  "nav": {
+    "links": [
+      { "href": "/services", "label": "Services" },
+      { "href": "/cases", "label": "Cases" },
+      { "href": "/company", "label": "Company" },
+      { "href": "/contacts", "label": "Contacts" }
+    ],
+    "cta": "Start a project",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "badge": "Web · AI · 2026",
+    "title": "Technology trusted by",
+    "titleAccent": "serious business",
+    "subtitle": "We combine deep engineering expertise in web and artificial intelligence to build products that accelerate growth and hold up under load.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "View case studies",
+    "stats": [
+      { "value": "120+", "label": "products shipped" },
+      { "value": "8 yrs", "label": "in the market" },
+      { "value": "99.9%", "label": "platform uptime" },
+      { "value": "40+", "label": "engineers on the team" }
+    ]
+  },
+  "trust": {
+    "label": "Trusted by teams in fintech, retail and industry",
+    "logos": ["Northwind", "Acme Corp", "Vertex", "Quantum", "Lumen", "Helios"]
+  },
+  "expertise": {
+    "badge": "Expertise",
+    "title": "End to end — from idea to production",
+    "subtitle": "We assemble product teams around your goal: strategy, design, engineering and support in one loop.",
+    "items": [
+      {
+        "icon": "globe",
+        "title": "Web platforms",
+        "description": "High-load applications, portals and SaaS on Next.js focused on speed and Core Web Vitals."
+      },
+      {
+        "icon": "brain",
+        "title": "AI & ML solutions",
+        "description": "LLM assistants, semantic search, recommendation systems and data-driven automation."
+      },
+      {
+        "icon": "layout",
+        "title": "Product design",
+        "description": "Research, prototypes and design systems that turn complexity into clarity and conversion."
+      },
+      {
+        "icon": "server",
+        "title": "Infrastructure",
+        "description": "Cloud architecture, CI/CD, observability and enterprise-grade security."
+      },
+      {
+        "icon": "workflow",
+        "title": "Integrations",
+        "description": "We connect CRM, ERP and third-party services into one reliable data flow."
+      },
+      {
+        "icon": "shield",
+        "title": "Support & SLA",
+        "description": "We run products 24/7 with transparent metrics and a guaranteed response time."
+      }
+    ]
+  },
+  "platform": {
+    "badge": "Platform",
+    "title": "Osmi Core — the foundation of your digital products",
+    "subtitle": "Ready-made modules and practices we use to ship solutions faster than the market without cutting quality.",
+    "features": [
+      {
+        "title": "AI engine out of the box",
+        "description": "Model orchestration, vector search and secure handling of enterprise data."
+      },
+      {
+        "title": "Composable architecture",
+        "description": "Modular services that scale independently and survive traffic growth."
+      },
+      {
+        "title": "Real-time analytics",
+        "description": "Dashboards and events that show how your product performs right now."
+      },
+      {
+        "title": "Security by default",
+        "description": "Encryption, access control and compliance ready for audits."
+      }
+    ],
+    "cta": "Request a demo"
+  },
+  "results": {
+    "badge": "Results",
+    "title": "Numbers, not promises",
+    "subtitle": "We measure business impact at every stage and own the outcome.",
+    "metrics": [
+      { "value": "×3.5", "label": "conversion growth", "detail": "after redesign and optimization" },
+      { "value": "−45%", "label": "operating costs", "detail": "through AI automation" },
+      { "value": "2×", "label": "release velocity", "detail": "powered by Osmi Core" }
+    ],
+    "cases": [
+      {
+        "tag": "Fintech",
+        "title": "Next-generation payment platform",
+        "description": "We re-architected the core and moved settlements to real time — throughput grew several times over.",
+        "metric": "10M+ transactions/day"
+      },
+      {
+        "tag": "Retail",
+        "title": "AI assistant for customer support",
+        "description": "We deployed an LLM-based assistant that resolves most requests without an operator.",
+        "metric": "72% auto-resolved"
+      },
+      {
+        "tag": "Industry",
+        "title": "Digital twin of the factory floor",
+        "description": "We built a single monitoring panel for equipment with predictive analytics.",
+        "metric": "−30% downtime"
+      }
+    ]
+  },
+  "process": {
+    "badge": "Process",
+    "title": "How we work",
+    "subtitle": "A transparent process with clear stages and a result at every step.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "We dive into your business, shape hypotheses and define success metrics."
+      },
+      {
+        "title": "Design & prototype",
+        "description": "We design the experience and interfaces and validate decisions before build."
+      },
+      {
+        "title": "Engineering",
+        "description": "We build in iterations with a demo every two weeks and live feedback."
+      },
+      {
+        "title": "Launch & growth",
+        "description": "We ship to production, watch the metrics and keep evolving the product."
+      }
+    ]
+  },
+  "social": {
+    "badge": "Testimonials",
+    "title": "What clients say",
+    "subtitle": "Long-term partnerships are the best proof of quality.",
+    "testimonials": [
+      {
+        "quote": "The Osmi team built a platform we couldn't ship on our own in two years. They did it in a quarter.",
+        "author": "Full Name",
+        "role": "CTO",
+        "company": "Northwind"
+      },
+      {
+        "quote": "Their AI assistant genuinely took the load off our support. Metrics improved in the first month.",
+        "author": "Full Name",
+        "role": "Head of Product",
+        "company": "Acme Corp"
+      },
+      {
+        "quote": "Transparent process, strong engineering and attention to detail. A truly reliable partner.",
+        "author": "Full Name",
+        "role": "CEO",
+        "company": "Vertex"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Didn't find an answer? Write to us — we reply within a business day.",
+    "items": [
+      {
+        "question": "How long does it take to launch a project?",
+        "answer": "A first working prototype is usually ready in 4–6 weeks. A full product depends on scope, but we always move in iterations with regular demos."
+      },
+      {
+        "question": "Do you work with an existing product?",
+        "answer": "Yes. We run a technical audit, plug into your current codebase and gradually improve the architecture without stopping the business."
+      },
+      {
+        "question": "How do you ensure data security?",
+        "answer": "Encryption at every layer, access control, auditing and compliance. For AI solutions, data never leaves your perimeter without approval."
+      },
+      {
+        "question": "What happens after launch?",
+        "answer": "We support the product under an SLA, watch metrics, resolve incidents and grow functionality along the roadmap."
+      },
+      {
+        "question": "How is the cost calculated?",
+        "answer": "It depends on scope, team composition and timeline. After discovery you get a transparent estimate and plan with no hidden fees."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Contact",
+    "title": "Tell us about your challenge",
+    "subtitle": "Leave a request — we'll discuss goals, timeline and the best way to work together.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "How should we call you",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "message": "Message",
+      "messagePlaceholder": "Briefly about your task",
+      "submit": "Send request",
+      "privacy": "By submitting the form you agree to the privacy policy.",
+      "success": "Thank you! We'll get back to you shortly."
+    },
+    "contactsLabel": "Or reach out directly"
+  },
+  "footer": {
+    "tagline": "Enterprise-grade web and AI solutions.",
+    "rights": "All rights reserved.",
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Web development", "href": "/services/web" },
+          { "label": "AI & ML", "href": "/services/ai" },
+          { "label": "Product design", "href": "/services/design" },
+          { "label": "Infrastructure", "href": "/services/infrastructure" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/company" },
+          { "label": "Cases", "href": "/cases" },
+          { "label": "Contacts", "href": "/contacts" }
+        ]
+      }
+    ],
+    "social": "Follow us"
+  },
+  "common": {
+    "home": "Home",
+    "learnMore": "Learn more",
+    "viewAll": "View all"
+  },
+  "ctaBand": {
+    "title": "Ready to discuss your project?",
+    "subtitle": "Tell us about your challenge — we'll come back with a plan and a rough estimate within a business day.",
+    "primary": "Send a request",
+    "secondary": "View cases"
+  },
+  "company": {
+    "meta": {
+      "title": "Company",
+      "description": "Who we are, what we believe in, and how we build enterprise-grade Web and AI products."
+    },
+    "hero": {
+      "badge": "Company",
+      "title": "An engineering culture built around outcomes",
+      "subtitle": "We're a team of engineers, designers and product managers turning complex business problems into reliable digital products."
+    },
+    "intro": {
+      "title": "We build technology that works for the business",
+      "paragraphs": [
+        "Osmi combines expertise in web development and artificial intelligence. We don't chase hype — we pick mature solutions and take them all the way to production.",
+        "Every project is run by a cross-functional team with a transparent process and ownership of metrics. We work as a product partner, not an outsourced vendor."
+      ]
+    },
+    "stats": [
+      { "value": "8 yrs", "label": "in the market" },
+      { "value": "120+", "label": "products shipped" },
+      { "value": "40+", "label": "engineers on the team" },
+      { "value": "12", "label": "industries in our portfolio" }
+    ],
+    "values": {
+      "title": "Our principles",
+      "subtitle": "What shapes the way we make decisions every day.",
+      "items": [
+        { "icon": "brain", "title": "Engineering rigor", "description": "Clean architecture, tests and code review — quality is non-negotiable." },
+        { "icon": "workflow", "title": "Transparency", "description": "A clear process, regular demos and honest timelines with no surprises." },
+        { "icon": "shield", "title": "Ownership", "description": "We're accountable for metrics and outcomes, not just closed tickets." },
+        { "icon": "layout", "title": "Attention to detail", "description": "A product should be not only functional but pleasant to use." }
+      ]
+    },
+    "timeline": {
+      "title": "Our journey",
+      "subtitle": "Key milestones — placeholders, we'll refine them with the team.",
+      "items": [
+        { "year": "2018", "title": "Founded", "description": "Started as a small team with our first web projects." },
+        { "year": "2020", "title": "Product mindset", "description": "Moved from custom development to product teams." },
+        { "year": "2023", "title": "AI practice", "description": "Launched our AI practice and shipped the first LLM solutions." },
+        { "year": "2026", "title": "Osmi Core platform", "description": "Built an internal platform to ship products faster." }
+      ]
+    },
+    "team": {
+      "title": "Team",
+      "subtitle": "The people who build the products. Photos and names are placeholders.",
+      "members": [
+        { "name": "Full Name", "role": "CEO / Founder" },
+        { "name": "Full Name", "role": "CTO" },
+        { "name": "Full Name", "role": "Head of AI" },
+        { "name": "Full Name", "role": "Head of Design" }
+      ]
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services",
+      "description": "Web development, AI & ML, product design and infrastructure — the full cycle of building digital products."
+    },
+    "hero": {
+      "badge": "Services",
+      "title": "The full cycle of building digital products",
+      "subtitle": "We assemble a team around your goal and cover the whole path — from strategy and design to engineering, launch and support."
+    },
+    "labels": {
+      "features": "What's included",
+      "deliverables": "What you get",
+      "other": "Other services",
+      "cta": "Discuss this service",
+      "overview": "Overview"
+    },
+    "items": [
+      {
+        "slug": "web",
+        "icon": "globe",
+        "title": "Web development",
+        "tagline": "High-load applications and platforms",
+        "summary": "We design and build web apps, portals and SaaS on a modern stack, focused on speed and reliability.",
+        "overview": [
+          "We build products on Next.js and React with server rendering, excellent Core Web Vitals and a scalable architecture.",
+          "From MVP to complex enterprise systems — code that's easy to maintain and evolve."
+        ],
+        "features": [
+          "Architecture and system design",
+          "Frontend on Next.js / React",
+          "Backend and APIs",
+          "Performance and SEO optimization",
+          "Testing and CI/CD"
+        ],
+        "deliverables": [
+          "A working product in production",
+          "Documentation and knowledge transfer",
+          "A configured release process",
+          "Metrics and monitoring"
+        ]
+      },
+      {
+        "slug": "ai",
+        "icon": "brain",
+        "title": "AI & ML solutions",
+        "tagline": "LLM assistants and data-driven automation",
+        "summary": "We embed AI into products: assistants, semantic search, recommendations and process automation.",
+        "overview": [
+          "We build solutions on large language models and classic ML with secure handling of enterprise data.",
+          "We help you move from experiment to a production solution with a clear ROI."
+        ],
+        "features": [
+          "LLM assistants and chatbots",
+          "Vector search and RAG",
+          "Recommendation systems",
+          "Process automation",
+          "MLOps and model monitoring"
+        ],
+        "deliverables": [
+          "An integrated AI solution",
+          "Quality evaluation and metrics",
+          "A secure data pipeline",
+          "A model roadmap"
+        ]
+      },
+      {
+        "slug": "design",
+        "icon": "layout",
+        "title": "Product design",
+        "tagline": "Research, prototypes and design systems",
+        "summary": "We design experiences that turn complexity into clarity and lift conversion.",
+        "overview": [
+          "We run research, build prototypes and assemble scalable design systems.",
+          "Design that's aligned with engineering and works toward business metrics."
+        ],
+        "features": [
+          "UX research and analytics",
+          "Prototyping and testing",
+          "UI design and design system",
+          "Branding and identity",
+          "Design handoff to engineering"
+        ],
+        "deliverables": [
+          "Design mockups and prototypes",
+          "A design system in Figma",
+          "A UI kit for development",
+          "Guidelines and rules"
+        ]
+      },
+      {
+        "slug": "infrastructure",
+        "icon": "server",
+        "title": "Infrastructure & DevOps",
+        "tagline": "Cloud, CI/CD and observability",
+        "summary": "We build reliable cloud infrastructure with automation, security and observability.",
+        "overview": [
+          "We design cloud architecture, set up CI/CD and provide enterprise-grade security.",
+          "Infrastructure that scales with the product and holds up under load."
+        ],
+        "features": [
+          "Cloud architecture (AWS / GCP)",
+          "CI/CD and automation",
+          "Containerization and orchestration",
+          "Monitoring and logging",
+          "Security and auditing"
+        ],
+        "deliverables": [
+          "Infrastructure as code",
+          "Deployment pipelines",
+          "Observability dashboards",
+          "Runbooks and SLAs"
+        ]
+      }
+    ]
+  },
+  "cases": {
+    "meta": {
+      "title": "Cases",
+      "description": "Selected Osmi projects in fintech, retail and industry with measurable results."
+    },
+    "hero": {
+      "badge": "Cases",
+      "title": "Projects we own by results",
+      "subtitle": "A few examples of how we solve business problems with technology. Placeholder content."
+    },
+    "labels": {
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "results": "Results",
+      "stack": "Stack",
+      "other": "Other cases",
+      "cta": "Discuss a similar project",
+      "readCase": "Open case"
+    },
+    "items": [
+      {
+        "slug": "fintech-payments",
+        "tag": "Fintech",
+        "title": "Next-generation payment platform",
+        "summary": "We re-architected the payment core and moved settlements to real time.",
+        "challenge": "A legacy monolithic core couldn't handle growth, and releases took weeks. They needed an architecture ready to scale to millions of transactions.",
+        "solution": "We split the monolith into services, introduced real-time event processing and built observability. We set up CI/CD for fast, safe releases.",
+        "results": [
+          { "value": "10M+", "label": "transactions per day" },
+          { "value": "×2", "label": "release velocity" },
+          { "value": "99.9%", "label": "uptime" }
+        ],
+        "stack": ["Next.js", "Node.js", "PostgreSQL", "Kafka", "Kubernetes"]
+      },
+      {
+        "slug": "retail-assistant",
+        "tag": "Retail",
+        "title": "AI assistant for customer support",
+        "summary": "We deployed an LLM-based assistant that resolves most requests without an operator.",
+        "challenge": "The support team couldn't keep up with growing volume, response times were rising, and operator costs kept increasing.",
+        "solution": "We built an LLM assistant with knowledge-base search (RAG), integrated it with the CRM and set up handoff of complex requests to an operator.",
+        "results": [
+          { "value": "72%", "label": "auto-resolved" },
+          { "value": "−45%", "label": "support load" },
+          { "value": "4.7", "label": "customer rating" }
+        ],
+        "stack": ["Next.js", "Python", "LLM", "Vector DB", "CRM API"]
+      },
+      {
+        "slug": "industry-twin",
+        "tag": "Industry",
+        "title": "Digital twin of the factory floor",
+        "summary": "We built a single monitoring panel for equipment with predictive analytics.",
+        "challenge": "Equipment data was scattered, and downtime was discovered after the fact. There was no single picture or forecasting.",
+        "solution": "We unified real-time telemetry, built dashboards and a predictive maintenance model to catch failures early.",
+        "results": [
+          { "value": "−30%", "label": "downtime" },
+          { "value": "×1.5", "label": "component lifetime" },
+          { "value": "24/7", "label": "monitoring" }
+        ],
+        "stack": ["Next.js", "Python", "IoT", "TimescaleDB", "ML"]
+      }
+    ]
+  },
+  "contacts": {
+    "meta": {
+      "title": "Contacts",
+      "description": "Get in touch with the Osmi team — let's discuss your challenge, timeline and way of working."
+    },
+    "hero": {
+      "badge": "Contacts",
+      "title": "Let's discuss your project",
+      "subtitle": "Leave a request or reach out directly — we reply within a business day."
+    },
+    "channelsTitle": "Channels",
+    "channels": [
+      { "type": "email", "label": "Email", "value": "hello@osmi.example.com", "href": "mailto:hello@osmi.example.com" },
+      { "type": "phone", "label": "Phone", "value": "+998 (00) 000-00-00", "href": "tel:+998000000000" },
+      { "type": "telegram", "label": "Telegram", "value": "@osmi", "href": "https://t.me/" }
+    ],
+    "officeTitle": "Office",
+    "office": "Tashkent, Example St. 1 (placeholder address)",
+    "hoursTitle": "Working hours",
+    "hours": "Mon–Fri, 09:00–18:00"
+  }
+}

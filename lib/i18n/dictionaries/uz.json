@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "title": "Osmi — Biznes uchun Web va AI yechimlari",
+    "titleTemplate": "%s — Osmi",
+    "description": "Korporativ darajadagi veb-platformalar va AI mahsulotlarni loyihalaymiz va ishlab chiqamiz. Muhandislik sifati, ishonchlilik va o‘lchanadigan natija.",
+    "keywords": [
+      "veb-ishlab chiqish",
+      "AI yechimlari",
+      "sun'iy intellekt",
+      "korporativ platformalar",
+      "raqamli transformatsiya",
+      "Next.js",
+      "mashinali o‘qitish"
+    ],
+    "ogAlt": "Osmi — Biznes uchun Web va AI yechimlari"
+  },
+  "nav": {
+    "links": [
+      { "href": "/services", "label": "Xizmatlar" },
+      { "href": "/cases", "label": "Keyslar" },
+      { "href": "/company", "label": "Kompaniya" },
+      { "href": "/contacts", "label": "Kontaktlar" }
+    ],
+    "cta": "Loyihani boshlash",
+    "menu": "Menyu",
+    "close": "Yopish"
+  },
+  "hero": {
+    "badge": "Web · AI · 2026",
+    "title": "Jiddiy biznes ishonadigan",
+    "titleAccent": "texnologiyalar",
+    "subtitle": "Biz veb va sun'iy intellekt sohasidagi muhandislik tajribasini birlashtirib, o‘sishni tezlashtiradigan va yuklamaga bardosh beradigan mahsulotlarni yaratamiz.",
+    "ctaPrimary": "Loyihani boshlash",
+    "ctaSecondary": "Keyslarni ko‘rish",
+    "stats": [
+      { "value": "120+", "label": "ishga tushirilgan mahsulot" },
+      { "value": "8 yil", "label": "bozorda" },
+      { "value": "99.9%", "label": "platforma uptime" },
+      { "value": "40+", "label": "jamoadagi muhandis" }
+    ]
+  },
+  "trust": {
+    "label": "Fintex, riteyl va sanoat jamoalari bizga ishonadi",
+    "logos": ["Northwind", "Acme Corp", "Vertex", "Quantum", "Lumen", "Helios"]
+  },
+  "expertise": {
+    "badge": "Ekspertiza",
+    "title": "To‘liq tsikl — g‘oyadan produksiyagacha",
+    "subtitle": "Vazifa ostida mahsulot jamoalarini yig‘amiz: strategiya, dizayn, ishlab chiqish va qo‘llab-quvvatlash bir konturda.",
+    "items": [
+      {
+        "icon": "globe",
+        "title": "Veb-platformalar",
+        "description": "Next.js’dagi yuqori yuklamali ilovalar, portallar va SaaS — tezlik va Core Web Vitals’ga yo‘naltirilgan."
+      },
+      {
+        "icon": "brain",
+        "title": "AI va ML yechimlar",
+        "description": "LLM yordamchilari, ma'noli qidiruv, tavsiya tizimlari va ma'lumotlarga asoslangan avtomatlashtirish."
+      },
+      {
+        "icon": "layout",
+        "title": "Mahsulot dizayni",
+        "description": "Tadqiqot, prototiplar va dizayn-tizimlar — murakkablikni tushunarli va konversion ko‘rinishga aylantiradi."
+      },
+      {
+        "icon": "server",
+        "title": "Infratuzilma",
+        "description": "Bulutli arxitektura, CI/CD, kuzatuvchanlik va korporativ darajadagi xavfsizlik."
+      },
+      {
+        "icon": "workflow",
+        "title": "Integratsiyalar",
+        "description": "CRM, ERP va tashqi xizmatlarni yagona ishonchli ma'lumot oqimiga bog‘laymiz."
+      },
+      {
+        "icon": "shield",
+        "title": "Qo‘llab-quvvatlash va SLA",
+        "description": "Mahsulotlarni 24/7 shaffof metrikalar va javob kafolati bilan yuritamiz."
+      }
+    ]
+  },
+  "platform": {
+    "badge": "Platforma",
+    "title": "Osmi Core — raqamli mahsulotlaringiz poydevori",
+    "subtitle": "Tayyor modullar va amaliyotlar — ular yordamida yechimlarni sifatni yo‘qotmasdan bozordan tezroq yig‘amiz.",
+    "features": [
+      {
+        "title": "Tayyor AI-dvigatel",
+        "description": "Modellarni orkestrlash, vektorli qidiruv va korporativ ma'lumotlar bilan xavfsiz ishlash."
+      },
+      {
+        "title": "Kompozit arxitektura",
+        "description": "Mustaqil masshtablanadigan va yuklama o‘sishiga bardosh beradigan modul xizmatlar."
+      },
+      {
+        "title": "Real vaqt tahlili",
+        "description": "Mahsulot hozir qanday ishlayotganini ko‘rsatadigan dashbordlar va hodisalar."
+      },
+      {
+        "title": "Standart xavfsizlik",
+        "description": "Shifrlash, kirishni cheklash va audit talablariga muvofiqlik."
+      }
+    ],
+    "cta": "Demo so‘rash"
+  },
+  "results": {
+    "badge": "Natijalar",
+    "title": "Va'da emas, raqamlar",
+    "subtitle": "Har bosqichda biznesga qo‘shgan hissamizni o‘lchaymiz va natija uchun javob beramiz.",
+    "metrics": [
+      { "value": "×3.5", "label": "konversiya o‘sishi", "detail": "redizayn va optimallashtirishdan so‘ng" },
+      { "value": "−45%", "label": "operatsion xarajatlar", "detail": "AI-avtomatlashtirish hisobiga" },
+      { "value": "2×", "label": "reliz tezligi", "detail": "Osmi Core platformasi bilan" }
+    ],
+    "cases": [
+      {
+        "tag": "Fintex",
+        "title": "Yangi avlod to‘lov platformasi",
+        "description": "Yadroni qayta loyihaladik va hisob-kitoblarni real vaqtga o‘tkazdik — o‘tkazuvchanlik bir necha barobar oshdi.",
+        "metric": "kuniga 10M+ tranzaksiya"
+      },
+      {
+        "tag": "Riteyl",
+        "title": "Mijozlarni qo‘llab-quvvatlash uchun AI-yordamchi",
+        "description": "Ko‘p murojaatlarni operatорsiz hal qiladigan LLM-yordamchini joriy etdik.",
+        "metric": "72% avto-javob"
+      },
+      {
+        "tag": "Sanoat",
+        "title": "Ishlab chiqarishning raqamli egizagi",
+        "description": "Uskunalar monitoringi uchun prediktiv tahlilga ega yagona panel yig‘dik.",
+        "metric": "−30% to‘xtash"
+      }
+    ]
+  },
+  "process": {
+    "badge": "Jarayon",
+    "title": "Qanday ishlaymiz",
+    "subtitle": "Har bosqichda aniq natijaga ega shaffof jarayon.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "Biznesga chuqur kiramiz, gipotezalarni shakllantiramiz va muvaffaqiyat metrikalarini belgilaymiz."
+      },
+      {
+        "title": "Dizayn va prototip",
+        "description": "Tajriba va interfeyslarni loyihalaymiz, ishlab chiqishdan oldin yechimlarni tekshiramiz."
+      },
+      {
+        "title": "Ishlab chiqish",
+        "description": "Mahsulotni iteratsiyalar bilan yig‘amiz — har ikki haftada demo va jonli fikr-mulohaza."
+      },
+      {
+        "title": "Ishga tushirish va o‘sish",
+        "description": "Produksiyaga chiqaramiz, metrikalarni kuzatamiz va mahsulotni rivojlantiramiz."
+      }
+    ]
+  },
+  "social": {
+    "badge": "Sharhlar",
+    "title": "Mijozlar nima deydi",
+    "subtitle": "Uzoq muddatli hamkorlik — sifatning eng yaxshi isboti.",
+    "testimonials": [
+      {
+        "quote": "Osmi jamoasi biz ikki yilda o‘zimiz uddalay olmagan platformani bir chorakda yig‘ib berdi.",
+        "author": "Ism Familiya",
+        "role": "CTO",
+        "company": "Northwind"
+      },
+      {
+        "quote": "Ularning AI-yordamchisi qo‘llab-quvvatlash yukini haqiqatan yengillashtirdi. Metrikalar birinchi oyda o‘sdi.",
+        "author": "Ism Familiya",
+        "role": "Head of Product",
+        "company": "Acme Corp"
+      },
+      {
+        "quote": "Shaffof jarayon, kuchli muhandislik va tafsilotlarga e'tibor. Ishonchli hamkor sifatida tavsiya qilamiz.",
+        "author": "Ism Familiya",
+        "role": "CEO",
+        "company": "Vertex"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Ko‘p beriladigan savollar",
+    "subtitle": "Javob topmadingizmi? Bizga yozing — ish kuni davomida javob beramiz.",
+    "items": [
+      {
+        "question": "Loyihani ishga tushirish qancha vaqt oladi?",
+        "answer": "Birinchi ishlaydigan prototip odatda 4–6 haftada tayyor bo‘ladi. To‘liq mahsulot hajmga bog‘liq, lekin biz doim muntazam demolar bilan iteratsiyalarda harakat qilamiz."
+      },
+      {
+        "question": "Mavjud mahsulot bilan ishlaysizmi?",
+        "answer": "Ha. Texnik audit o‘tkazamiz, joriy kod bazasiga ulanamiz va biznesni to‘xtatmasdan arxitekturani bosqichma-bosqich yaxshilaymiz."
+      },
+      {
+        "question": "Ma'lumotlar xavfsizligini qanday ta'minlaysiz?",
+        "answer": "Har qatlamda shifrlash, kirishni cheklash, audit va muvofiqlik. AI-yechimlarda ma'lumotlar kelishuvsiz sizning konturingizdan chiqmaydi."
+      },
+      {
+        "question": "Ishga tushirilgandan keyin nima bo‘ladi?",
+        "answer": "Mahsulotni SLA bo‘yicha qo‘llab-quvvatlaymiz, metrikalarni kuzatamiz, hodisalarni bartaraf etamiz va funksionallikni rivojlantiramiz."
+      },
+      {
+        "question": "Narx nimalardan tashkil topadi?",
+        "answer": "Ish hajmi, jamoa tarkibi va muddatga bog‘liq. Discovery’dan so‘ng siz yashirin to‘lovsiz shaffof smeta va reja olasiz."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Kontaktlar",
+    "title": "Vazifangiz haqida gapirib bering",
+    "subtitle": "So‘rov qoldiring — maqsad, muddat va hamkorlikning optimal formatini muhokama qilamiz.",
+    "form": {
+      "name": "Ism",
+      "namePlaceholder": "Sizga qanday murojaat qilaylik",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "company": "Kompaniya",
+      "companyPlaceholder": "Kompaniya nomi",
+      "message": "Xabar",
+      "messagePlaceholder": "Vazifa haqida qisqacha",
+      "submit": "So‘rov yuborish",
+      "privacy": "Formani yuborish orqali siz maxfiylik siyosatiga rozilik bildirasiz.",
+      "success": "Rahmat! Tez orada siz bilan bog‘lanamiz."
+    },
+    "contactsLabel": "Yoki to‘g‘ridan-to‘g‘ri yozing"
+  },
+  "footer": {
+    "tagline": "Korporativ darajadagi web va AI yechimlari.",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "columns": [
+      {
+        "title": "Xizmatlar",
+        "links": [
+          { "label": "Veb-ishlab chiqish", "href": "/services/web" },
+          { "label": "AI va ML", "href": "/services/ai" },
+          { "label": "Mahsulot dizayni", "href": "/services/design" },
+          { "label": "Infratuzilma", "href": "/services/infrastructure" }
+        ]
+      },
+      {
+        "title": "Kompaniya",
+        "links": [
+          { "label": "Kompaniya haqida", "href": "/company" },
+          { "label": "Keyslar", "href": "/cases" },
+          { "label": "Kontaktlar", "href": "/contacts" }
+        ]
+      }
+    ],
+    "social": "Ijtimoiy tarmoqlarda"
+  },
+  "common": {
+    "home": "Bosh sahifa",
+    "learnMore": "Batafsil",
+    "viewAll": "Barchasini ko‘rish"
+  },
+  "ctaBand": {
+    "title": "Loyihangizni muhokama qilishga tayyormisiz?",
+    "subtitle": "Vazifangiz haqida gapirib bering — ish kuni davomida reja va taxminiy baho bilan qaytamiz.",
+    "primary": "So‘rov qoldirish",
+    "secondary": "Keyslarni ko‘rish"
+  },
+  "company": {
+    "meta": {
+      "title": "Kompaniya",
+      "description": "Biz kimmiz, nimaga ishonamiz va korporativ darajadagi Web va AI mahsulotlari ustida qanday ishlaymiz."
+    },
+    "hero": {
+      "badge": "Kompaniya",
+      "title": "Natijaga yo‘naltirilgan muhandislik madaniyati",
+      "subtitle": "Biz murakkab biznes vazifalarni ishonchli raqamli mahsulotlarga aylantiradigan muhandislar, dizaynerlar va prodakt-menejerlar jamoasimiz."
+    },
+    "intro": {
+      "title": "Biznes uchun ishlaydigan texnologiyalarni quramiz",
+      "paragraphs": [
+        "Osmi veb-ishlab chiqish va sun'iy intellekt sohasidagi tajribani birlashtiradi. Biz hype ortidan quvmaymiz — yetuk yechimlarni tanlab, ularni produksiyagacha yetkazamiz.",
+        "Har bir loyihani shaffof jarayon va metrikalar uchun javobgarlikka ega kross-funksional jamoa olib boradi. Biz autsorsing pudratchisi emas, mahsulot hamkori sifatida ishlaymiz."
+      ]
+    },
+    "stats": [
+      { "value": "8 yil", "label": "bozorda" },
+      { "value": "120+", "label": "ishga tushirilgan mahsulot" },
+      { "value": "40+", "label": "jamoadagi muhandis" },
+      { "value": "12", "label": "portfeldagi soha" }
+    ],
+    "values": {
+      "title": "Bizning tamoyillarimiz",
+      "subtitle": "Har kuni qaror qabul qilishimizni belgilaydigan narsa.",
+      "items": [
+        { "icon": "brain", "title": "Muhandislik qat'iyligi", "description": "Toza arxitektura, testlar va kod-revyu — sifat muhokama qilinmaydi." },
+        { "icon": "workflow", "title": "Shaffoflik", "description": "Aniq jarayon, muntazam demolar va kutilmagan holsiz halol muddatlar." },
+        { "icon": "shield", "title": "Javobgarlik", "description": "Faqat yopilgan vazifalar uchun emas, metrikalar va natija uchun javob beramiz." },
+        { "icon": "layout", "title": "Tafsilotlarga e'tibor", "description": "Mahsulot nafaqat ishlaydigan, balki foydalanishga qulay bo‘lishi kerak." }
+      ]
+    },
+    "timeline": {
+      "title": "Kompaniya yo‘li",
+      "subtitle": "Asosiy bosqichlar — zaglushkada, jamoa bilan yangilaymiz.",
+      "items": [
+        { "year": "2018", "title": "Tashkil etilishi", "description": "Kichik jamoa va birinchi veb-loyihalar bilan boshladik." },
+        { "year": "2020", "title": "Mahsulot yondashuvi", "description": "Buyurtma ishlab chiqishdan mahsulot jamoalariga o‘tdik." },
+        { "year": "2023", "title": "AI yo‘nalishi", "description": "AI amaliyotini ishga tushirdik va birinchi LLM yechimlarni joriy etdik." },
+        { "year": "2026", "title": "Osmi Core platformasi", "description": "Mahsulotlarni tezroq ishga tushirish uchun ichki platforma yig‘dik." }
+      ]
+    },
+    "team": {
+      "title": "Jamoa",
+      "subtitle": "Mahsulotlarni yaratadigan odamlar. Rasmlar va ismlar — zaglushka.",
+      "members": [
+        { "name": "Ism Familiya", "role": "CEO / Founder" },
+        { "name": "Ism Familiya", "role": "CTO" },
+        { "name": "Ism Familiya", "role": "Head of AI" },
+        { "name": "Ism Familiya", "role": "Head of Design" }
+      ]
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Xizmatlar",
+      "description": "Veb-ishlab chiqish, AI va ML, mahsulot dizayni va infratuzilma — raqamli mahsulotlarni yaratishning to‘liq tsikli."
+    },
+    "hero": {
+      "badge": "Xizmatlar",
+      "title": "Raqamli mahsulotlarni yaratishning to‘liq tsikli",
+      "subtitle": "Vazifa ostida jamoa yig‘amiz va butun yo‘lni yopamiz — strategiya va dizayndan tortib ishlab chiqish, ishga tushirish va qo‘llab-quvvatlashgacha."
+    },
+    "labels": {
+      "features": "Nimalar kiradi",
+      "deliverables": "Siz nima olasiz",
+      "other": "Boshqa xizmatlar",
+      "cta": "Xizmatni muhokama qilish",
+      "overview": "Umumiy ma'lumot"
+    },
+    "items": [
+      {
+        "slug": "web",
+        "icon": "globe",
+        "title": "Veb-ishlab chiqish",
+        "tagline": "Yuqori yuklamali ilovalar va platformalar",
+        "summary": "Zamonaviy stekda veb-ilovalar, portallar va SaaS’ni tezlik va ishonchlilikka yo‘naltirib loyihalaymiz va ishlab chiqamiz.",
+        "overview": [
+          "Next.js va React’da server renderlash, ajoyib Core Web Vitals va masshtablanadigan arxitektura bilan mahsulotlar yaratamiz.",
+          "MVP’dan murakkab enterprise tizimlargacha — qo‘llab-quvvatlash va rivojlantirish oson bo‘lgan kod."
+        ],
+        "features": [
+          "Arxitektura va tizim dizayni",
+          "Frontend Next.js / React’da",
+          "Backend va API",
+          "Unumdorlik va SEO optimizatsiyasi",
+          "Testlash va CI/CD"
+        ],
+        "deliverables": [
+          "Produksiyadagi ishlaydigan mahsulot",
+          "Hujjatlar va bilim uzatish",
+          "Sozlangan reliz jarayoni",
+          "Metrikalar va monitoring"
+        ]
+      },
+      {
+        "slug": "ai",
+        "icon": "brain",
+        "title": "AI va ML yechimlar",
+        "tagline": "LLM yordamchilari va ma'lumotlarga asoslangan avtomatlashtirish",
+        "summary": "AI’ni mahsulotlarga joriy etamiz: yordamchilar, ma'noli qidiruv, tavsiyalar va jarayonlarni avtomatlashtirish.",
+        "overview": [
+          "Katta til modellari va klassik ML asosida korporativ ma'lumotlar bilan xavfsiz ishlaydigan yechimlar ishlab chiqamiz.",
+          "Eksperimentdan aniq ROI’ga ega produksiya yechimiga o‘tishga yordam beramiz."
+        ],
+        "features": [
+          "LLM yordamchilari va chat-botlar",
+          "Vektorli qidiruv va RAG",
+          "Tavsiya tizimlari",
+          "Jarayonlarni avtomatlashtirish",
+          "MLOps va modellar monitoringi"
+        ],
+        "deliverables": [
+          "Integratsiyalangan AI yechim",
+          "Sifat bahosi va metrikalar",
+          "Xavfsiz ma'lumot payplayni",
+          "Modelni rivojlantirish rejasi"
+        ]
+      },
+      {
+        "slug": "design",
+        "icon": "layout",
+        "title": "Mahsulot dizayni",
+        "tagline": "Tadqiqot, prototiplar va dizayn-tizimlar",
+        "summary": "Murakkablikni tushunarli qiladigan va konversiyani oshiradigan tajribani loyihalaymiz.",
+        "overview": [
+          "Tadqiqot o‘tkazamiz, prototiplar quramiz va masshtablanadigan dizayn-tizimlar yig‘amiz.",
+          "Muhandislik bilan muvofiqlashtirilgan va biznes metrikalari uchun ishlaydigan dizayn."
+        ],
+        "features": [
+          "UX tadqiqot va tahlil",
+          "Prototiplash va testlar",
+          "UI dizayn va dizayn-tizim",
+          "Brending va aynikslik",
+          "Dizaynni ishlab chiqishga uzatish"
+        ],
+        "deliverables": [
+          "Dizayn maketlar va prototiplar",
+          "Figma’dagi dizayn-tizim",
+          "Ishlab chiqish uchun UI-kit",
+          "Gaydlaynlar va qoidalar"
+        ]
+      },
+      {
+        "slug": "infrastructure",
+        "icon": "server",
+        "title": "Infratuzilma va DevOps",
+        "tagline": "Bulut, CI/CD va kuzatuvchanlik",
+        "summary": "Avtomatlashtirish, xavfsizlik va kuzatuvchanlik bilan ishonchli bulutli infratuzilma quramiz.",
+        "overview": [
+          "Bulutli arxitekturani loyihalaymiz, CI/CD’ni sozlaymiz va korporativ darajadagi xavfsizlikni ta'minlaymiz.",
+          "Mahsulot bilan birga masshtablanadigan va yuklamada qoqilmaydigan infratuzilma."
+        ],
+        "features": [
+          "Bulutli arxitektura (AWS / GCP)",
+          "CI/CD va avtomatlashtirish",
+          "Konteynerlash va orkestratsiya",
+          "Monitoring va logging",
+          "Xavfsizlik va audit"
+        ],
+        "deliverables": [
+          "Kod sifatidagi infratuzilma",
+          "Deploy payplaynlari",
+          "Kuzatuvchanlik dashbordlari",
+          "Reglamentlar va SLA"
+        ]
+      }
+    ]
+  },
+  "cases": {
+    "meta": {
+      "title": "Keyslar",
+      "description": "Fintex, riteyl va sanoatdagi Osmi’ning tanlangan loyihalari o‘lchanadigan natijalar bilan."
+    },
+    "hero": {
+      "badge": "Keyslar",
+      "title": "Natija bilan javob beradigan loyihalar",
+      "subtitle": "Biznes vazifalarini texnologiyalar bilan qanday hal qilishimizga bir nechta misol. Kontent zaglushkada."
+    },
+    "labels": {
+      "challenge": "Vazifa",
+      "solution": "Yechim",
+      "results": "Natijalar",
+      "stack": "Stek",
+      "other": "Boshqa keyslar",
+      "cta": "O‘xshash loyihani muhokama qilish",
+      "readCase": "Keysni ochish"
+    },
+    "items": [
+      {
+        "slug": "fintech-payments",
+        "tag": "Fintex",
+        "title": "Yangi avlod to‘lov platformasi",
+        "summary": "To‘lov tizimi yadrosini qayta loyihaladik va hisob-kitoblarni real vaqtga o‘tkazdik.",
+        "challenge": "Eski monolit yadro yuklama o‘sishiga bardosh bermasdi, relizlar esa haftalab davom etardi. Millionlab tranzaksiyalarga masshtablanishga tayyor arxitektura kerak edi.",
+        "solution": "Monolitni xizmatlarga ajratdik, real vaqtdagi hodisalarni qayta ishlashni joriy etdik va kuzatuvchanlik qurdik. Tez va xavfsiz relizlar uchun CI/CD sozladik.",
+        "results": [
+          { "value": "10M+", "label": "kunlik tranzaksiya" },
+          { "value": "×2", "label": "reliz tezligi" },
+          { "value": "99.9%", "label": "uptime" }
+        ],
+        "stack": ["Next.js", "Node.js", "PostgreSQL", "Kafka", "Kubernetes"]
+      },
+      {
+        "slug": "retail-assistant",
+        "tag": "Riteyl",
+        "title": "Mijozlarni qo‘llab-quvvatlash uchun AI-yordamchi",
+        "summary": "Ko‘p murojaatlarni operatorsiz hal qiladigan LLM-yordamchini joriy etdik.",
+        "challenge": "Qo‘llab-quvvatlash xizmati murojaatlar o‘sishiga ulgurmasdi, javob vaqti oshib borardi va operatorlarga xarajatlar ko‘tarilardi.",
+        "solution": "Bilim bazasi bo‘yicha qidiruvli (RAG) LLM-yordamchi qurdik, uni CRM bilan integratsiya qildik va murakkab murojaatlarni operatorga uzatishni sozladik.",
+        "results": [
+          { "value": "72%", "label": "avto-javob" },
+          { "value": "−45%", "label": "qo‘llab-quvvatlash yuki" },
+          { "value": "4.7", "label": "mijoz bahosi" }
+        ],
+        "stack": ["Next.js", "Python", "LLM", "Vector DB", "CRM API"]
+      },
+      {
+        "slug": "industry-twin",
+        "tag": "Sanoat",
+        "title": "Ishlab chiqarishning raqamli egizagi",
+        "summary": "Uskunalar monitoringi uchun prediktiv tahlilga ega yagona panel yig‘dik.",
+        "challenge": "Uskunalar ma'lumotlari tarqoq edi, to‘xtashlar esa post-faktum aniqlanardi. Yagona manzara va prognozlar yetishmasdi.",
+        "solution": "Real vaqtdagi telemetriyani birlashtirdik, dashbordlar va nosozliklarni erta aniqlash uchun prediktiv xizmat modeli qurdik.",
+        "results": [
+          { "value": "−30%", "label": "to‘xtash" },
+          { "value": "×1.5", "label": "tugunlar xizmat muddati" },
+          { "value": "24/7", "label": "monitoring" }
+        ],
+        "stack": ["Next.js", "Python", "IoT", "TimescaleDB", "ML"]
+      }
+    ]
+  },
+  "contacts": {
+    "meta": {
+      "title": "Kontaktlar",
+      "description": "Osmi jamoasi bilan bog‘laning — vazifangiz, muddat va hamkorlik formatini muhokama qilamiz."
+    },
+    "hero": {
+      "badge": "Kontaktlar",
+      "title": "Keling, loyihangizni muhokama qilamiz",
+      "subtitle": "So‘rov qoldiring yoki to‘g‘ridan-to‘g‘ri yozing — ish kuni davomida javob beramiz."
+    },
+    "channelsTitle": "Aloqa kanallari",
+    "channels": [
+      { "type": "email", "label": "Email", "value": "hello@osmi.example.com", "href": "mailto:hello@osmi.example.com" },
+      { "type": "phone", "label": "Telefon", "value": "+998 (00) 000-00-00", "href": "tel:+998000000000" },
+      { "type": "telegram", "label": "Telegram", "value": "@osmi", "href": "https://t.me/" }
+    ],
+    "officeTitle": "Ofis",
+    "office": "Toshkent sh., Namuna ko‘chasi, 1 (zaglushka manzil)",
+    "hoursTitle": "Ish vaqti",
+    "hours": "Du–Ju, 09:00–18:00"
+  }
+}
