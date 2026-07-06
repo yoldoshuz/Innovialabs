@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------ *
- * Design tokens — Editorial Tech 2026 (dark, gigantism, magenta)
+ * Design tokens — Editorial Tech 2026 (light, gigantism, deep purple)
  * ------------------------------------------------------------------ */
 @theme {
-  /* Surfaces — near-black, slightly neutral (less "neon crypto") */
-  --color-background: #06070c;
-  --color-surface: #0b0d14;
-  --color-surface-2: #10131c;
-  --color-elevated: #161a25;
-  --color-border: #1c2130;
-  --color-border-strong: #2b3244;
+  /* Surfaces — clean off-white, minimal */
+  --color-background: #ffffff;
+  --color-surface: #f6f5f8;
+  --color-surface-2: #efedf3;
+  --color-elevated: #ffffff;
+  --color-border: #e6e3ec;
+  --color-border-strong: #d3cede;
 
-  /* Text */
-  --color-foreground: #f5f6f8;
-  --color-muted: #9aa3b3;
-  --color-subtle: #626b7d;
+  /* Text — black-forward, high contrast */
+  --color-foreground: #000000;
+  --color-muted: #4b4658;
+  --color-subtle: #7a7488;
 
-  /* Accents — magenta-forward, editorial */
-  --color-primary: #ff2f86;
-  --color-primary-strong: #e21571;
-  --color-secondary: #8b5cf6;
-  --color-secondary-strong: #7c3aed;
-  --color-violet: #a855f7;
+  /* Accents — deep purple, editorial */
+  --color-primary: #5e0ed7;
+  --color-primary-strong: #4a0bad;
+  --color-secondary: #7c3aed;
+  --color-secondary-strong: #6d28d9;
+  --color-violet: #8b5cf6;
 
-  /* Fonts */
+  /* Fonts — Inter throughout (display repointed to Inter for minimalism) */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-display), var(--font-inter), sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono-code), ui-monospace, "SF Mono", monospace;
 
   /* Radii */
@@ -112,7 +112,7 @@
 @layer components {
   .font-display {
     font-family: var(--font-display);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 0.92;
   }
@@ -120,7 +120,7 @@
   /* Fluid giant heading */
   .text-giant {
     font-family: var(--font-display);
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.03em;
     line-height: 0.88;
     text-transform: uppercase;

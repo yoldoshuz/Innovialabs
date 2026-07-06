@@ -26,17 +26,14 @@
     "close": "Close"
   },
   "hero": {
-    "badge": "Web · AI · 2026",
-    "title": "Technology trusted by",
-    "titleAccent": "serious business",
-    "subtitle": "We combine deep engineering expertise in web and artificial intelligence to build products that accelerate growth and hold up under load.",
-    "ctaPrimary": "Start a project",
-    "ctaSecondary": "View case studies",
+    "heading": ["WEB", "AI", "DELIVERED"],
+    "taglineA": ["Shaping web & AI", "products that perform", "for serious business"],
+    "descriptionB": "Engineering studio turning complex goals into reliable, scalable digital products",
+    "cta": "Work with us",
     "stats": [
-      { "value": "120+", "label": "products shipped" },
-      { "value": "8 yrs", "label": "in the market" },
-      { "value": "99.9%", "label": "platform uptime" },
-      { "value": "40+", "label": "engineers on the team" }
+      { "value": "120", "label": "PRODUCTS\nSHIPPED" },
+      { "value": "40", "label": "ENGINEERS\nON THE TEAM" },
+      { "value": "8", "label": "YEARS\nIN MARKET" }
     ]
   },
   "trust": {

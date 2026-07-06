@@ -2,16 +2,27 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { X, ArrowUpRight } from "lucide-react";
+import { AnimatePresence, motion, type Variants } from "motion/react";
 import type { Locale } from "@/lib/i18n/config";
 import type { NavDict } from "@/types";
-import { Container } from "@/components/shared/container";
 import { Logo } from "@/components/layout/logo";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
-import { buttonVariants } from "@/components/ui/button";
 import { useScrolled } from "@/hooks/use-scrolled";
 import { cn } from "@/lib/utils";
+
+const ACCENT = "#5E0ED7";
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+/** Nav entrance: fade + drop, staggered by custom index. */
+const fadeDown: Variants = {
+  hidden: { opacity: 0, y: -20 },
+  show: (i: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1, duration: 0.5, ease: EASE },
+  }),
+};
 
 export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
   const scrolled = useScrolled(16);
@@ -28,50 +39,63 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-40 transition-colors duration-300",
         scrolled
           ? "border-b border-border bg-background/70 backdrop-blur-xl"
           : "border-b border-transparent",
       )}
     >
-      <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
-        <Link href={`/${lang}`} aria-label={`${lang} — home`}>
-          <Logo />
-        </Link>
+      <div className="flex items-center justify-between gap-4 px-5 py-5 sm:px-8 md:px-12 md:py-6">
+        {/* Left — brand mark */}
+        <motion.div custom={0} variants={fadeDown} initial="hidden" animate="show">
+          <Link href={`/${lang}`} aria-label={`${lang} — home`}>
+            <Logo markOnly />
+          </Link>
+        </motion.div>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 lg:flex">
-          {dict.links.map((link) => (
-            <Link
+        {/* Center — primary nav (md+) */}
+        <nav className="hidden items-center gap-8 md:flex lg:gap-10">
+          {dict.links.map((link, i) => (
+            <motion.div
               key={link.href}
-              href={`/${lang}${link.href}`}
-              className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
+              custom={i + 1}
+              variants={fadeDown}
+              initial="hidden"
+              animate="show"
             >
-              {link.label}
-            </Link>
+              <Link
+                href={`/${lang}${link.href}`}
+                className="text-sm font-semibold uppercase tracking-widest text-black transition-opacity hover:opacity-60"
+              >
+                {link.label}
+              </Link>
+            </motion.div>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        {/* Right — locale switcher + menu trigger */}
+        <motion.div
+          custom={5}
+          variants={fadeDown}
+          initial="hidden"
+          animate="show"
+          className="flex items-center gap-3"
+        >
           <LocaleSwitcher current={lang} />
-          <Link
-            href={`/${lang}/contacts`}
-            className={cn(buttonVariants({ size: "sm" }), "hidden sm:inline-flex")}
-          >
-            {dict.cta}
-          </Link>
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
             aria-label={dict.menu}
-            className="grid size-10 place-items-center rounded-full border border-border-strong text-foreground lg:hidden"
+            className="flex size-9 flex-col items-center justify-center gap-1 rounded-full bg-black"
           >
-            <Menu className="size-5" />
+            <span className="h-0.5 w-4 bg-white" />
+            <span className="h-0.5 w-4 bg-white" />
+            <span className="h-0.5 w-4 bg-white" />
           </button>
-        </div>
-      </Container>
+        </motion.div>
+      </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu overlay */}
       <AnimatePresence>
         {menuOpen ? (
           <motion.div
@@ -79,44 +103,53 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-50 flex flex-col bg-white"
           >
-            <Container className="flex h-16 items-center justify-between">
-              <Logo />
+            {/* Top row — logo + close */}
+            <div className="flex items-center justify-between px-5 py-5 sm:px-8">
+              <Logo markOnly />
               <button
                 type="button"
                 onClick={() => setMenuOpen(false)}
                 aria-label={dict.close}
-                className="grid size-10 place-items-center rounded-full border border-border-strong"
+                className="grid size-9 place-items-center rounded-full bg-black text-white"
               >
-                <X className="size-5" />
+                <X className="size-4" />
               </button>
-            </Container>
-            <nav className="flex flex-col gap-1 px-6 pt-8">
+            </div>
+
+            {/* Nav links */}
+            <nav className="mt-16 flex flex-col gap-8 px-5 sm:px-8">
               {dict.links.map((link, i) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.05 * i + 0.1 }}
+                  transition={{ delay: 0.05 * i + 0.1, ease: EASE }}
                 >
                   <Link
                     href={`/${lang}${link.href}`}
                     onClick={() => setMenuOpen(false)}
-                    className="block border-b border-border py-4 text-2xl font-medium text-foreground"
+                    className="text-3xl font-semibold uppercase tracking-widest text-black"
                   >
                     {link.label}
                   </Link>
                 </motion.div>
               ))}
+            </nav>
+
+            {/* Bottom — CTA */}
+            <div className="mt-auto px-5 pb-10 sm:px-8">
               <Link
                 href={`/${lang}/contacts`}
                 onClick={() => setMenuOpen(false)}
-                className={cn(buttonVariants({ size: "lg" }), "mt-8")}
+                className="inline-flex items-center gap-2 text-xl font-semibold uppercase tracking-wide"
+                style={{ color: ACCENT }}
               >
                 {dict.cta}
+                <ArrowUpRight strokeWidth={2.25} className="size-5" />
               </Link>
-            </nav>
+            </div>
           </motion.div>
         ) : null}
       </AnimatePresence>

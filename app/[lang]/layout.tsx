@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { i18n, isLocale, localeMeta, type Locale } from "@/lib/i18n/config";
@@ -18,14 +18,6 @@ const sans = Inter({
   display: "swap",
 });
 
-// Heavy geometric grotesque for gigantism display headings.
-const display = Montserrat({
-  subsets: ["latin", "cyrillic"],
-  weight: ["600", "700", "800", "900"],
-  variable: "--font-display",
-  display: "swap",
-});
-
 const mono = JetBrains_Mono({
   subsets: ["latin", "cyrillic"],
   variable: "--font-mono-code",
@@ -33,8 +25,8 @@ const mono = JetBrains_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#05070f",
-  colorScheme: "dark",
+  themeColor: "#ffffff",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
 };
@@ -109,7 +101,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={lang as Locale}
-      className={`${sans.variable} ${display.variable} ${mono.variable}`}
+      className={`${sans.variable} ${mono.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-dvh antialiased">

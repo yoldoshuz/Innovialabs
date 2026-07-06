@@ -54,7 +54,7 @@ export default async function HomePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main>
-        <Hero dict={dict.hero} />
+        <Hero dict={dict.hero} lang={lang} />
         <TrustBar dict={dict.trust} />
         <Expertise dict={dict.expertise} />
         <Platform dict={dict.platform} />

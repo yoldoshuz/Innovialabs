@@ -26,17 +26,14 @@
     "close": "Yopish"
   },
   "hero": {
-    "badge": "Web · AI · 2026",
-    "title": "Jiddiy biznes ishonadigan",
-    "titleAccent": "texnologiyalar",
-    "subtitle": "Biz veb va sun'iy intellekt sohasidagi muhandislik tajribasini birlashtirib, o‘sishni tezlashtiradigan va yuklamaga bardosh beradigan mahsulotlarni yaratamiz.",
-    "ctaPrimary": "Loyihani boshlash",
-    "ctaSecondary": "Keyslarni ko‘rish",
+    "heading": ["WEB", "AI", "NATIJA"],
+    "taglineA": ["Web va AI", "mahsulotlarini biznes", "uchun quramiz"],
+    "descriptionB": "Murakkab vazifalarni ishonchli va masshtablanadigan raqamli mahsulotga aylantiruvchi muhandislik studiyasi",
+    "cta": "Biz bilan ishlash",
     "stats": [
-      { "value": "120+", "label": "ishga tushirilgan mahsulot" },
-      { "value": "8 yil", "label": "bozorda" },
-      { "value": "99.9%", "label": "platforma uptime" },
-      { "value": "40+", "label": "jamoadagi muhandis" }
+      { "value": "120", "label": "MAHSULOT\nISHGA TUSHDI" },
+      { "value": "40", "label": "MUHANDIS\nJAMOADA" },
+      { "value": "8", "label": "YIL\nBOZORDA" }
     ]
   },
   "trust": {
