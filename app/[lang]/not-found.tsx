@@ -1,20 +1,12 @@
-import Link from "next/link";
-import { i18n } from "@/lib/i18n/config";
-import { buttonVariants } from "@/components/ui/button";
-import { Container } from "@/components/shared/container";
+import ru from "@/lib/i18n/dictionaries/ru.json";
+import en from "@/lib/i18n/dictionaries/en.json";
+import uz from "@/lib/i18n/dictionaries/uz.json";
+import { NotFoundView } from "@/components/layout/not-found-view";
 
+/**
+ * not-found has no access to route params, so the (tiny) copy for every
+ * locale is passed down and the client view picks one from the URL.
+ */
 export default function NotFound() {
-  return (
-    <Container className="flex min-h-dvh flex-col items-center justify-center gap-6 text-center">
-      <span className="font-mono text-7xl font-semibold text-gradient sm:text-9xl">
-        404
-      </span>
-      <p className="max-w-md text-pretty text-muted">
-        Страница не найдена / Page not found / Sahifa topilmadi
-      </p>
-      <Link href={`/${i18n.defaultLocale}`} className={buttonVariants()}>
-        На главную
-      </Link>
-    </Container>
-  );
+  return <NotFoundView copy={{ ru: ru.notFound, en: en.notFound, uz: uz.notFound }} />;
 }

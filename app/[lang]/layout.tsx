@@ -1,26 +1,35 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Manrope, Space_Grotesk } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { i18n, isLocale, localeMeta, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
-import { AmbientBackground } from "@/components/shared/ambient-background";
+import { alternates, organizationJsonLd, JsonLd } from "@/lib/seo";
 import { SmoothScroll } from "@/components/providers/smooth-scroll";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
-// All three ship a Cyrillic subset (required for the RU base locale).
-// Bound to the token names consumed in globals.css `@theme`.
-const sans = Inter({
+// Guideline p.09: Manrope — headings, Inter — text/UI, Space Grotesk — latin
+// accents only (no Cyrillic in that face, so it never carries body copy).
+const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
+  weight: ["600", "700", "800"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600"],
   variable: "--font-inter",
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-mono-code",
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -31,7 +40,10 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-type LayoutParams = { params: Promise<{ lang: string }> };
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+};
 
 /** Pre-render every locale at build time. */
 export function generateStaticParams() {
@@ -40,17 +52,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: LayoutParams): Promise<Metadata> {
+}: Omit<LayoutProps, "children">): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
-
-  const dict = await getDictionary(lang);
-  const { meta } = dict;
-
-  // hreflang alternates for every locale + x-default.
-  const languages = Object.fromEntries(
-    i18n.locales.map((l) => [localeMeta[l].hreflang, `/${l}`]),
-  );
+  const { meta } = await getDictionary(lang);
 
   return {
     metadataBase: new URL(siteConfig.url),
@@ -58,14 +63,16 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     applicationName: siteConfig.name,
-    alternates: {
-      canonical: `/${lang}`,
-      languages: { ...languages, "x-default": `/${i18n.defaultLocale}` },
-    },
+    authors: [{ name: siteConfig.name, url: siteConfig.url }],
+    creator: siteConfig.name,
+    publisher: siteConfig.name,
+    category: "technology",
+    formatDetection: { telephone: false, email: false, address: false },
+    alternates: alternates(lang, ""),
     openGraph: {
       type: "website",
       siteName: siteConfig.name,
-      title: meta.title,
+      title: meta.ogTitle,
       description: meta.description,
       url: `/${lang}`,
       locale: localeMeta[lang].ogLocale,
@@ -75,41 +82,46 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: meta.title,
+      title: meta.ogTitle,
       description: meta.description,
     },
     robots: {
       index: true,
       follow: true,
-      googleBot: { index: true, follow: true, "max-image-preview": "large" },
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+      yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
     },
   };
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}) {
+export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
-
   const dict = await getDictionary(lang);
 
   return (
     <html
       lang={lang as Locale}
-      className={`${sans.variable} ${mono.variable}`}
+      className={`${manrope.variable} ${inter.variable} ${spaceGrotesk.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-dvh antialiased">
-        <AmbientBackground />
+      <body className="min-h-dvh">
+        <JsonLd data={organizationJsonLd(lang, dict.meta.description)} />
         <SmoothScroll>
           <Header lang={lang} dict={dict.nav} />
-          {children}
-          <Footer lang={lang} dict={dict.footer} />
+          <div id="main" tabIndex={-1} className="outline-none">
+            {children}
+          </div>
+          <Footer lang={lang} dict={dict.footer} nav={dict.nav} />
         </SmoothScroll>
       </body>
     </html>

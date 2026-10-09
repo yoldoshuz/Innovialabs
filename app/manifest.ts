@@ -4,18 +4,26 @@ import { siteConfig } from "@/lib/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} — Web & AI`,
+    name: `${siteConfig.name} — ${siteConfig.slogan}`,
     short_name: siteConfig.name,
-    description: "Enterprise-grade web platforms and AI products.",
+    description:
+      "IT development studio: websites, mobile apps, CRM, integrations and AI automation.",
     start_url: `/${i18n.defaultLocale}`,
     display: "standalone",
-    background_color: "#05070f",
-    theme_color: "#05070f",
+    background_color: "#120B24",
+    theme_color: "#7C3AED",
     icons: [
+      { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
       {
-        src: "/favicon.ico",
-        sizes: "any",
-        type: "image/x-icon",
+        src: "/Innovialabs-logo/png/innovialabs-app-icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+      {
+        src: "/Innovialabs-logo/png/innovialabs-app-icon-1024.png",
+        sizes: "1024x1024",
+        type: "image/png",
+        purpose: "maskable",
       },
     ],
   };

@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Innovialabs
 
-## Getting Started
+Site of Innovialabs — IT development studio. *Where ideas become products.*
 
-First, run the development server:
+Next.js 16 (App Router) · Tailwind CSS v4 · motion · GSAP · three.js · Radix (shadcn/ui) · zod.
+
+## Run
 
 ```bash
+npm install
+cp .env.example .env.local   # then fill the values
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical URL for metadata, sitemap, OG images |
+| `TELEGRAM_BOT_TOKEN` | Token of `@innovialabs_bot` |
+| `TELEGRAM_CHAT_ID` | Chat or group that receives leads. Message the bot (or add it to a group), then read `chat.id` from `https://api.telegram.org/bot<TOKEN>/getUpdates` |
+| `NEXT_PUBLIC_CONTACT_PHONE` | Optional phone shown in the footer |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_YANDEX_VERIFICATION` | Optional search console verification |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structure
 
-## Learn More
+- `app/[lang]` — localized routes (`ru` default, `en`, `uz`): `/`, `/services`, `/services/[slug]`, `/cases`, `/cases/[slug]`, `/company`, `/contacts`.
+- `app/api/contact` — contact form → Telegram (validation, honeypot, fill-time check, rate limit).
+- `lib/i18n/dictionaries` — all copy. `ru.json` is the approved source; `en`/`uz` must keep the same shape.
+- `lib/content.ts` — language-agnostic data (case URLs, screenshots, stack).
+- `app/globals.css` — the whole design system (brand tokens, typography, liquid glass).
+- `public/Innovialabs-logo`, `public/Innovialabs-Brand-Guidelines.pdf` — brand assets.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design rules for contributors are in [AGENTS.md](AGENTS.md).

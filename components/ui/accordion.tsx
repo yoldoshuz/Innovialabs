@@ -1,59 +1,73 @@
 "use client";
 
 import * as React from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { Plus } from "lucide-react";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { cn } from "@/lib/utils";
 
-interface AccordionItem {
-  question: string;
-  answer: string;
-}
+/**
+ * shadcn/ui Accordion (Radix) with brand styling: big rows, a "+" that turns
+ * into "×", and height animated via Radix CSS variables.
+ */
+export const Accordion = AccordionPrimitive.Root;
 
-/** Accessible single-open accordion with animated height. */
-export function Accordion({ items }: { items: AccordionItem[] }) {
-  const [open, setOpen] = React.useState<number | null>(0);
+export const AccordionItem = React.forwardRef<
+  React.ComponentRef<typeof AccordionPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
+>(({ className, ...props }, ref) => (
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn(
+      "rounded-3xl bg-paper transition-colors duration-300 data-[state=open]:bg-mist",
+      className,
+    )}
+    {...props}
+  />
+));
+AccordionItem.displayName = "AccordionItem";
 
-  return (
-    <div className="divide-y divide-border rounded-2xl border border-border bg-surface/40">
-      {items.map((item, index) => {
-        const isOpen = open === index;
-        return (
-          <div key={index} className="px-5 sm:px-7">
-            <h3>
-              <button
-                type="button"
-                aria-expanded={isOpen}
-                onClick={() => setOpen(isOpen ? null : index)}
-                className="flex w-full items-center justify-between gap-4 py-5 text-left text-base font-medium transition-colors hover:text-primary sm:text-lg"
-              >
-                <span className="text-pretty">{item.question}</span>
-                <Plus
-                  className={cn(
-                    "size-5 shrink-0 text-muted transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
-                    isOpen && "rotate-45 text-primary",
-                  )}
-                />
-              </button>
-            </h3>
-            <AnimatePresence initial={false}>
-              {isOpen ? (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                  className="overflow-hidden"
-                >
-                  <p className="pb-6 pr-8 text-pretty leading-relaxed text-muted">
-                    {item.answer}
-                  </p>
-                </motion.div>
-              ) : null}
-            </AnimatePresence>
-          </div>
-        );
-      })}
+export const AccordionTrigger = React.forwardRef<
+  React.ComponentRef<typeof AccordionPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Trigger
+      ref={ref}
+      className={cn(
+        "group flex flex-1 items-center justify-between gap-6 px-6 py-6 text-left font-display text-lg font-bold tracking-[-0.01em] sm:px-8 sm:text-xl",
+        className,
+      )}
+      {...props}
+    >
+      {children}
+      <span
+        aria-hidden
+        className="relative grid size-10 shrink-0 place-items-center rounded-full bg-white text-violet transition-[transform,background-color,color] duration-500 ease-[var(--ease-spring)] group-hover:scale-110 group-data-[state=open]:rotate-45 group-data-[state=open]:bg-violet group-data-[state=open]:text-white"
+      >
+        <span className="absolute h-0.5 w-4 rounded-full bg-current" />
+        <span className="absolute h-4 w-0.5 rounded-full bg-current" />
+      </span>
+    </AccordionPrimitive.Trigger>
+  </AccordionPrimitive.Header>
+));
+AccordionTrigger.displayName = "AccordionTrigger";
+
+export const AccordionContent = React.forwardRef<
+  React.ComponentRef<typeof AccordionPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Content
+    ref={ref}
+    className="accordion-content"
+    {...props}
+  >
+    <div
+      className={cn(
+        "max-w-3xl px-6 pb-7 text-muted sm:px-8 sm:text-lg",
+        className,
+      )}
+    >
+      {children}
     </div>
-  );
-}
+  </AccordionPrimitive.Content>
+));
+AccordionContent.displayName = "AccordionContent";

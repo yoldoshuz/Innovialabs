@@ -1,50 +1,54 @@
 import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 /**
- * Button styles as a `cva` recipe so they can be applied to a native
- * `<button>` (via `<Button>`) or to a `<Link>`/`<a>` (via `buttonVariants`).
+ * shadcn/ui Button tuned to the brand: pill shape, Violet primary with Deep
+ * hover (guideline p.08). `asChild` renders the styles onto a Link/anchor.
  */
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-4 [&_svg]:shrink-0",
+  // Long labels wrap on phones (min-h, not h); one line from sm up.
+  "group/btn relative inline-flex max-w-full shrink-0 items-center justify-center gap-2 rounded-full text-center font-display font-bold leading-tight tracking-[-0.01em] transition-[background-color,color,transform,box-shadow] duration-300 ease-[var(--ease-out-expo)] active:scale-[0.97] disabled:pointer-events-none disabled:opacity-60 sm:whitespace-nowrap [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         primary:
-          "bg-primary text-background font-semibold hover:bg-primary-strong hover:shadow-[0_0_40px_-8px_var(--color-primary)] hover:-translate-y-0.5",
-        secondary:
-          "bg-elevated text-foreground border border-border-strong hover:border-primary/50 hover:bg-surface-2 hover:-translate-y-0.5",
-        outline:
-          "border border-border-strong text-foreground hover:border-primary/60 hover:text-primary hover:-translate-y-0.5",
-        ghost: "text-muted hover:text-foreground hover:bg-surface-2",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-violet text-white hover:bg-deep hover:shadow-[0_18px_40px_-18px_var(--color-violet)]",
+        night: "bg-night text-white hover:bg-ink",
+        white: "bg-white text-ink hover:bg-mist",
+        soft: "bg-mist text-violet hover:bg-lilac hover:text-white",
+        ghost: "text-ink hover:bg-paper",
+        "ghost-dark": "text-white hover:bg-white/10",
       },
       size: {
-        sm: "h-9 px-4",
-        md: "h-11 px-6",
-        lg: "h-14 px-8 text-base",
-        icon: "h-11 w-11",
+        sm: "min-h-10 px-5 py-2 text-sm [&_svg]:size-4",
+        md: "min-h-12 px-6 py-2.5 text-[0.95rem] [&_svg]:size-4",
+        lg: "min-h-14 px-7 py-3 text-base sm:px-8 [&_svg]:size-5",
+        xl: "min-h-14 px-7 py-3 text-base sm:min-h-16 sm:px-10 sm:text-lg [&_svg]:size-5",
+        icon: "size-12 [&_svg]:size-5",
       },
     },
-    defaultVariants: {
-      variant: "primary",
-      size: "md",
-    },
+    defaultVariants: { variant: "primary", size: "md" },
   },
 );
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+}
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => (
-    <button
-      ref={ref}
-      className={cn(buttonVariants({ variant, size }), className)}
-      {...props}
-    />
-  ),
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    return (
+      <Comp
+        ref={ref}
+        className={cn(buttonVariants({ variant, size }), className)}
+        {...props}
+      />
+    );
+  },
 );
 Button.displayName = "Button";

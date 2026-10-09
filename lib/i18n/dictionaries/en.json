@@ -1,518 +1,791 @@
 {
   "meta": {
-    "title": "Osmi — Web & AI solutions for business",
-    "titleTemplate": "%s — Osmi",
-    "description": "We design and build enterprise-grade web platforms and AI products. Engineering excellence, reliability, and measurable results.",
+    "title": "Innovialabs — Website, App & Telegram Bot Development, AI Automation",
+    "titleTemplate": "%s — Innovialabs",
+    "description": "IT development studio. We build websites, mobile apps, CRM systems, Telegram bots and Mini Apps, and automate processes with AI. From idea to launch and support. Free consultation.",
+    "ogTitle": "Where ideas become products. — Innovialabs",
     "keywords": [
-      "web development",
-      "AI solutions",
-      "artificial intelligence",
-      "enterprise platforms",
-      "digital transformation",
-      "Next.js",
-      "machine learning"
-    ],
-    "ogAlt": "Osmi — Web & AI solutions for business"
+      "website development",
+      "mobile app development",
+      "Telegram bot development",
+      "Telegram Mini Apps",
+      "AI automation",
+      "CRM development",
+      "IT studio Tashkent",
+      "Innovialabs"
+    ]
   },
   "nav": {
     "links": [
-      { "href": "/services", "label": "Services" },
-      { "href": "/cases", "label": "Cases" },
-      { "href": "/company", "label": "Company" },
-      { "href": "/contacts", "label": "Contacts" }
+      {
+        "href": "/services",
+        "label": "Services"
+      },
+      {
+        "href": "/services/ai",
+        "label": "AI automation"
+      },
+      {
+        "href": "/services/telegram",
+        "label": "Telegram"
+      },
+      {
+        "href": "/company",
+        "label": "How we work"
+      },
+      {
+        "href": "/cases",
+        "label": "Cases"
+      },
+      {
+        "href": "/contacts",
+        "label": "Contacts"
+      }
     ],
-    "cta": "Start a project",
-    "menu": "Menu",
-    "close": "Close"
+    "cta": "Discuss a project",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "home": "Innovialabs — home",
+    "skip": "Skip to content",
+    "language": "Language"
   },
   "hero": {
-    "heading": ["WEB", "AI", "DELIVERED"],
-    "taglineA": ["Shaping web & AI", "products that perform", "for serious business"],
-    "descriptionB": "Engineering studio turning complex goals into reliable, scalable digital products",
-    "cta": "Work with us",
-    "stats": [
-      { "value": "120", "label": "PRODUCTS\nSHIPPED" },
-      { "value": "40", "label": "ENGINEERS\nON THE TEAM" },
-      { "value": "8", "label": "YEARS\nIN MARKET" }
-    ]
+    "titleTop": "Where ideas",
+    "titleBottom": "become products.",
+    "lead": "We build websites, mobile apps, Telegram bots and CRM systems, and automate processes with AI. We take on the whole project: from idea to launch and support.",
+    "primary": "Discuss a project",
+    "secondary": "See services",
+    "note": "Consultation and project estimate are free.",
+    "terminal": {
+      "command": "innovialabs start --project",
+      "steps": [
+        "idea",
+        "design",
+        "development",
+        "launch"
+      ],
+      "replay": "Run again"
+    }
   },
   "trust": {
-    "label": "Trusted by teams in fintech, retail and industry",
-    "logos": ["Northwind", "Acme Corp", "Vertex", "Quantum", "Lumen", "Helios"]
-  },
-  "expertise": {
-    "badge": "Expertise",
-    "title": "End to end — from idea to production",
-    "subtitle": "We assemble product teams around your goal: strategy, design, engineering and support in one loop.",
     "items": [
-      {
-        "icon": "globe",
-        "title": "Web platforms",
-        "description": "High-load applications, portals and SaaS on Next.js focused on speed and Core Web Vitals."
-      },
-      {
-        "icon": "brain",
-        "title": "AI & ML solutions",
-        "description": "LLM assistants, semantic search, recommendation systems and data-driven automation."
-      },
-      {
-        "icon": "layout",
-        "title": "Product design",
-        "description": "Research, prototypes and design systems that turn complexity into clarity and conversion."
-      },
-      {
-        "icon": "server",
-        "title": "Infrastructure",
-        "description": "Cloud architecture, CI/CD, observability and enterprise-grade security."
-      },
-      {
-        "icon": "workflow",
-        "title": "Integrations",
-        "description": "We connect CRM, ERP and third-party services into one reliable data flow."
-      },
-      {
-        "icon": "shield",
-        "title": "Support & SLA",
-        "description": "We run products 24/7 with transparent metrics and a guaranteed response time."
-      }
+      "10+ launched projects",
+      "1+ year in development",
+      "Full cycle: analysis, design, development, support",
+      "We reply within one business day"
     ]
-  },
-  "platform": {
-    "badge": "Platform",
-    "title": "Osmi Core — the foundation of your digital products",
-    "subtitle": "Ready-made modules and practices we use to ship solutions faster than the market without cutting quality.",
-    "features": [
-      {
-        "title": "AI engine out of the box",
-        "description": "Model orchestration, vector search and secure handling of enterprise data."
-      },
-      {
-        "title": "Composable architecture",
-        "description": "Modular services that scale independently and survive traffic growth."
-      },
-      {
-        "title": "Real-time analytics",
-        "description": "Dashboards and events that show how your product performs right now."
-      },
-      {
-        "title": "Security by default",
-        "description": "Encryption, access control and compliance ready for audits."
-      }
-    ],
-    "cta": "Request a demo"
-  },
-  "results": {
-    "badge": "Results",
-    "title": "Numbers, not promises",
-    "subtitle": "We measure business impact at every stage and own the outcome.",
-    "metrics": [
-      { "value": "×3.5", "label": "conversion growth", "detail": "after redesign and optimization" },
-      { "value": "−45%", "label": "operating costs", "detail": "through AI automation" },
-      { "value": "2×", "label": "release velocity", "detail": "powered by Osmi Core" }
-    ],
-    "cases": [
-      {
-        "tag": "Fintech",
-        "title": "Next-generation payment platform",
-        "description": "We re-architected the core and moved settlements to real time — throughput grew several times over.",
-        "metric": "10M+ transactions/day"
-      },
-      {
-        "tag": "Retail",
-        "title": "AI assistant for customer support",
-        "description": "We deployed an LLM-based assistant that resolves most requests without an operator.",
-        "metric": "72% auto-resolved"
-      },
-      {
-        "tag": "Industry",
-        "title": "Digital twin of the factory floor",
-        "description": "We built a single monitoring panel for equipment with predictive analytics.",
-        "metric": "−30% downtime"
-      }
-    ]
-  },
-  "process": {
-    "badge": "Process",
-    "title": "How we work",
-    "subtitle": "A transparent process with clear stages and a result at every step.",
-    "steps": [
-      {
-        "title": "Discovery",
-        "description": "We dive into your business, shape hypotheses and define success metrics."
-      },
-      {
-        "title": "Design & prototype",
-        "description": "We design the experience and interfaces and validate decisions before build."
-      },
-      {
-        "title": "Engineering",
-        "description": "We build in iterations with a demo every two weeks and live feedback."
-      },
-      {
-        "title": "Launch & growth",
-        "description": "We ship to production, watch the metrics and keep evolving the product."
-      }
-    ]
-  },
-  "social": {
-    "badge": "Testimonials",
-    "title": "What clients say",
-    "subtitle": "Long-term partnerships are the best proof of quality.",
-    "testimonials": [
-      {
-        "quote": "The Osmi team built a platform we couldn't ship on our own in two years. They did it in a quarter.",
-        "author": "Full Name",
-        "role": "CTO",
-        "company": "Northwind"
-      },
-      {
-        "quote": "Their AI assistant genuinely took the load off our support. Metrics improved in the first month.",
-        "author": "Full Name",
-        "role": "Head of Product",
-        "company": "Acme Corp"
-      },
-      {
-        "quote": "Transparent process, strong engineering and attention to detail. A truly reliable partner.",
-        "author": "Full Name",
-        "role": "CEO",
-        "company": "Vertex"
-      }
-    ]
-  },
-  "faq": {
-    "badge": "FAQ",
-    "title": "Frequently asked questions",
-    "subtitle": "Didn't find an answer? Write to us — we reply within a business day.",
-    "items": [
-      {
-        "question": "How long does it take to launch a project?",
-        "answer": "A first working prototype is usually ready in 4–6 weeks. A full product depends on scope, but we always move in iterations with regular demos."
-      },
-      {
-        "question": "Do you work with an existing product?",
-        "answer": "Yes. We run a technical audit, plug into your current codebase and gradually improve the architecture without stopping the business."
-      },
-      {
-        "question": "How do you ensure data security?",
-        "answer": "Encryption at every layer, access control, auditing and compliance. For AI solutions, data never leaves your perimeter without approval."
-      },
-      {
-        "question": "What happens after launch?",
-        "answer": "We support the product under an SLA, watch metrics, resolve incidents and grow functionality along the roadmap."
-      },
-      {
-        "question": "How is the cost calculated?",
-        "answer": "It depends on scope, team composition and timeline. After discovery you get a transparent estimate and plan with no hidden fees."
-      }
-    ]
-  },
-  "cta": {
-    "badge": "Contact",
-    "title": "Tell us about your challenge",
-    "subtitle": "Leave a request — we'll discuss goals, timeline and the best way to work together.",
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "How should we call you",
-      "email": "Email",
-      "emailPlaceholder": "you@company.com",
-      "company": "Company",
-      "companyPlaceholder": "Company name",
-      "message": "Message",
-      "messagePlaceholder": "Briefly about your task",
-      "submit": "Send request",
-      "privacy": "By submitting the form you agree to the privacy policy.",
-      "success": "Thank you! We'll get back to you shortly."
-    },
-    "contactsLabel": "Or reach out directly"
-  },
-  "footer": {
-    "tagline": "Enterprise-grade web and AI solutions.",
-    "rights": "All rights reserved.",
-    "columns": [
-      {
-        "title": "Services",
-        "links": [
-          { "label": "Web development", "href": "/services/web" },
-          { "label": "AI & ML", "href": "/services/ai" },
-          { "label": "Product design", "href": "/services/design" },
-          { "label": "Infrastructure", "href": "/services/infrastructure" }
-        ]
-      },
-      {
-        "title": "Company",
-        "links": [
-          { "label": "About", "href": "/company" },
-          { "label": "Cases", "href": "/cases" },
-          { "label": "Contacts", "href": "/contacts" }
-        ]
-      }
-    ],
-    "social": "Follow us"
-  },
-  "common": {
-    "home": "Home",
-    "learnMore": "Learn more",
-    "viewAll": "View all"
-  },
-  "ctaBand": {
-    "title": "Ready to discuss your project?",
-    "subtitle": "Tell us about your challenge — we'll come back with a plan and a rough estimate within a business day.",
-    "primary": "Send a request",
-    "secondary": "View cases"
-  },
-  "company": {
-    "meta": {
-      "title": "Company",
-      "description": "Who we are, what we believe in, and how we build enterprise-grade Web and AI products."
-    },
-    "hero": {
-      "badge": "Company",
-      "title": "An engineering culture built around outcomes",
-      "subtitle": "We're a team of engineers, designers and product managers turning complex business problems into reliable digital products."
-    },
-    "intro": {
-      "title": "We build technology that works for the business",
-      "paragraphs": [
-        "Osmi combines expertise in web development and artificial intelligence. We don't chase hype — we pick mature solutions and take them all the way to production.",
-        "Every project is run by a cross-functional team with a transparent process and ownership of metrics. We work as a product partner, not an outsourced vendor."
-      ]
-    },
-    "stats": [
-      { "value": "8 yrs", "label": "in the market" },
-      { "value": "120+", "label": "products shipped" },
-      { "value": "40+", "label": "engineers on the team" },
-      { "value": "12", "label": "industries in our portfolio" }
-    ],
-    "values": {
-      "title": "Our principles",
-      "subtitle": "What shapes the way we make decisions every day.",
-      "items": [
-        { "icon": "brain", "title": "Engineering rigor", "description": "Clean architecture, tests and code review — quality is non-negotiable." },
-        { "icon": "workflow", "title": "Transparency", "description": "A clear process, regular demos and honest timelines with no surprises." },
-        { "icon": "shield", "title": "Ownership", "description": "We're accountable for metrics and outcomes, not just closed tickets." },
-        { "icon": "layout", "title": "Attention to detail", "description": "A product should be not only functional but pleasant to use." }
-      ]
-    },
-    "timeline": {
-      "title": "Our journey",
-      "subtitle": "Key milestones — placeholders, we'll refine them with the team.",
-      "items": [
-        { "year": "2018", "title": "Founded", "description": "Started as a small team with our first web projects." },
-        { "year": "2020", "title": "Product mindset", "description": "Moved from custom development to product teams." },
-        { "year": "2023", "title": "AI practice", "description": "Launched our AI practice and shipped the first LLM solutions." },
-        { "year": "2026", "title": "Osmi Core platform", "description": "Built an internal platform to ship products faster." }
-      ]
-    },
-    "team": {
-      "title": "Team",
-      "subtitle": "The people who build the products. Photos and names are placeholders.",
-      "members": [
-        { "name": "Full Name", "role": "CEO / Founder" },
-        { "name": "Full Name", "role": "CTO" },
-        { "name": "Full Name", "role": "Head of AI" },
-        { "name": "Full Name", "role": "Head of Design" }
-      ]
-    }
   },
   "services": {
     "meta": {
       "title": "Services",
-      "description": "Web development, AI & ML, product design and infrastructure — the full cycle of building digital products."
+      "description": "Websites, mobile apps, Telegram bots and Mini Apps, CRM, integrations, AI automation, design, DevOps and marketing. One team does it all — from idea to launch and support."
     },
-    "hero": {
-      "badge": "Services",
-      "title": "The full cycle of building digital products",
-      "subtitle": "We assemble a team around your goal and cover the whole path — from strategy and design to engineering, launch and support."
-    },
-    "labels": {
-      "features": "What's included",
-      "deliverables": "What you get",
-      "other": "Other services",
-      "cta": "Discuss this service",
-      "overview": "Overview"
-    },
+    "title": "Any IT task your business has",
+    "lead": "No need to hire five contractors. One team does it all.",
+    "cta": "Discuss",
     "items": [
       {
-        "slug": "web",
-        "icon": "globe",
-        "title": "Web development",
-        "tagline": "High-load applications and platforms",
-        "summary": "We design and build web apps, portals and SaaS on a modern stack, focused on speed and reliability.",
-        "overview": [
-          "We build products on Next.js and React with server rendering, excellent Core Web Vitals and a scalable architecture.",
-          "From MVP to complex enterprise systems — code that's easy to maintain and evolve."
-        ],
-        "features": [
-          "Architecture and system design",
-          "Frontend on Next.js / React",
-          "Backend and APIs",
-          "Performance and SEO optimization",
-          "Testing and CI/CD"
-        ],
-        "deliverables": [
-          "A working product in production",
-          "Documentation and knowledge transfer",
-          "A configured release process",
-          "Metrics and monitoring"
+        "slug": "ai",
+        "title": "AI and process automation",
+        "subtitle": "We take routine out of your team's work",
+        "points": [
+          "AI assistants and chatbots for customers",
+          "Automated handling of requests, documents and reports",
+          "Recognition of invoices, contracts and delivery notes",
+          "Connecting ChatGPT, Claude and other models to your systems",
+          "Voice AI agents for phone calls"
         ]
       },
       {
-        "slug": "ai",
-        "icon": "brain",
-        "title": "AI & ML solutions",
-        "tagline": "LLM assistants and data-driven automation",
-        "summary": "We embed AI into products: assistants, semantic search, recommendations and process automation.",
-        "overview": [
-          "We build solutions on large language models and classic ML with secure handling of enterprise data.",
-          "We help you move from experiment to a production solution with a clear ROI."
-        ],
-        "features": [
-          "LLM assistants and chatbots",
-          "Vector search and RAG",
-          "Recommendation systems",
-          "Process automation",
-          "MLOps and model monitoring"
-        ],
-        "deliverables": [
-          "An integrated AI solution",
-          "Quality evaluation and metrics",
-          "A secure data pipeline",
-          "A model roadmap"
+        "slug": "telegram",
+        "title": "Telegram bots and Mini Apps",
+        "subtitle": "Sales and service where your customers already are",
+        "points": [
+          "Bots for orders, bookings and support",
+          "Telegram Mini Apps: a store, catalog or customer account inside Telegram",
+          "Payments right in Telegram: Payme, Click, Telegram Stars",
+          "Broadcasts, funnels, CRM integration"
+        ]
+      },
+      {
+        "slug": "web",
+        "title": "Websites and web services",
+        "subtitle": "Fast, mobile-friendly, ready for advertising",
+        "points": [
+          "Landing pages and corporate websites",
+          "Online stores with online payment",
+          "Customer accounts, portals, SaaS"
+        ]
+      },
+      {
+        "slug": "mobile",
+        "title": "Mobile apps",
+        "subtitle": "iOS and Android, turnkey",
+        "points": [
+          "Native and cross-platform apps",
+          "Design, development, backend",
+          "Publishing to the App Store and Google Play"
+        ]
+      },
+      {
+        "slug": "crm",
+        "title": "CRM, ERP and accounting",
+        "subtitle": "Order in your customers, deals and inventory",
+        "points": [
+          "CRM built around your processes",
+          "Inventory and financial accounting",
+          "Integrations with 1C, AmoCRM, Bitrix24"
+        ]
+      },
+      {
+        "slug": "integrations",
+        "title": "Integrations and API",
+        "subtitle": "Your services work together",
+        "points": [
+          "Connecting your website, CRM, inventory and accounting",
+          "Payment systems, banks, IP telephony",
+          "Custom API development"
         ]
       },
       {
         "slug": "design",
-        "icon": "layout",
-        "title": "Product design",
-        "tagline": "Research, prototypes and design systems",
-        "summary": "We design experiences that turn complexity into clarity and lift conversion.",
-        "overview": [
-          "We run research, build prototypes and assemble scalable design systems.",
-          "Design that's aligned with engineering and works toward business metrics."
-        ],
-        "features": [
-          "UX research and analytics",
-          "Prototyping and testing",
-          "UI design and design system",
-          "Branding and identity",
-          "Design handoff to engineering"
-        ],
-        "deliverables": [
-          "Design mockups and prototypes",
-          "A design system in Figma",
-          "A UI kit for development",
-          "Guidelines and rules"
+        "title": "UI/UX design and branding",
+        "subtitle": "Easy for customers, beautiful for the brand",
+        "points": [
+          "Website and app design",
+          "Clickable prototypes",
+          "Logo, brand identity, brand book"
         ]
       },
       {
-        "slug": "infrastructure",
-        "icon": "server",
-        "title": "Infrastructure & DevOps",
-        "tagline": "Cloud, CI/CD and observability",
-        "summary": "We build reliable cloud infrastructure with automation, security and observability.",
-        "overview": [
-          "We design cloud architecture, set up CI/CD and provide enterprise-grade security.",
-          "Infrastructure that scales with the product and holds up under load."
-        ],
-        "features": [
-          "Cloud architecture (AWS / GCP)",
-          "CI/CD and automation",
-          "Containerization and orchestration",
-          "Monitoring and logging",
-          "Security and auditing"
-        ],
-        "deliverables": [
-          "Infrastructure as code",
-          "Deployment pipelines",
-          "Observability dashboards",
-          "Runbooks and SLAs"
+        "slug": "devops",
+        "title": "Servers and DevOps",
+        "subtitle": "Stable and secure",
+        "points": [
+          "Server and cloud setup",
+          "Backups and data protection",
+          "24/7 monitoring"
         ]
+      },
+      {
+        "slug": "marketing",
+        "title": "Digital marketing",
+        "subtitle": "So people find your product",
+        "points": [
+          "SEO",
+          "Google and Meta ad setup",
+          "End-to-end analytics"
+        ]
+      },
+      {
+        "slug": "support",
+        "title": "Support and development",
+        "subtitle": "We don't disappear after launch",
+        "points": [
+          "Technical support and bug fixes",
+          "New features as you grow",
+          "Audits of existing websites and apps"
+        ]
+      },
+      {
+        "slug": "consulting",
+        "title": "IT consulting and MVP",
+        "subtitle": "Test an idea quickly and affordably",
+        "points": [
+          "Idea assessment and technical specification",
+          "MVP launch",
+          "A dedicated team for your project"
+        ]
+      }
+    ],
+    "more": "Learn more",
+    "otherTitle": "Other services",
+    "includesTitle": "What we do"
+  },
+  "ai": {
+    "title": "How many hours a week does your team spend on routine work?",
+    "text": "Answering the same questions, copying data from one spreadsheet to another, compiling reports by hand. AI takes this over, and people focus on what brings in money.",
+    "benefits": [
+      "A bot answers customers in seconds, day and night",
+      "Documents are processed automatically, with no data entry errors",
+      "Reports compile themselves and arrive in Telegram",
+      "Requests go straight into the CRM and to the right manager"
+    ],
+    "nowTitle": "What you can automate right now",
+    "now": [
+      {
+        "title": "Sales",
+        "text": "lead qualification, answering questions, customer reminders"
+      },
+      {
+        "title": "Support",
+        "text": "an AI assistant handles routine questions and passes complex ones to a person"
+      },
+      {
+        "title": "Documents",
+        "text": "invoices, contracts and delivery notes enter the system on their own"
+      },
+      {
+        "title": "Analytics",
+        "text": "daily reports and forecasts with no manual work"
+      }
+    ],
+    "cta": "Get a free process review",
+    "ctaNote": "In 30 minutes we'll show you what can be automated and how much it will save.",
+    "calc": {
+      "people": "Employees doing routine work",
+      "hours": "Routine hours per person per week",
+      "result": "hours a month your team can get back",
+      "assumption": "Estimate assumes half of routine tasks are automated."
+    }
+  },
+  "telegram": {
+    "title": "Your business inside Telegram",
+    "text": "Your customers are already in Telegram every day. Let them order, book or pay without leaving the messenger: no app to install, no sign-up.",
+    "bots": {
+      "title": "Telegram bots",
+      "points": [
+        "Taking orders and requests 24/7",
+        "Booking services with reminders",
+        "Customer support with AI answers",
+        "Broadcasts and automated funnels",
+        "Internal bots for your team: reports, tasks, notifications"
+      ]
+    },
+    "apps": {
+      "title": "Telegram Mini Apps",
+      "points": [
+        "A full store or catalog inside Telegram",
+        "Customer account, bonuses and loyalty program",
+        "Online payment: Payme, Click, Telegram Stars",
+        "One-click sign-in with a Telegram account"
+      ]
+    },
+    "why": "Why it pays off: it launches faster and costs less than a mobile app, customers don't need to download anything, and Telegram broadcasts get read more often than email.",
+    "cta": "Order a bot or Mini App",
+    "mock": {
+      "bot": "Your store",
+      "online": "bot",
+      "greeting": "Hello! Open the catalog — we'll place your order in a minute.",
+      "open": "Open catalog",
+      "catalog": "Catalog",
+      "item1": "Product 1",
+      "item2": "Product 2",
+      "pay": "Pay"
+    }
+  },
+  "why": {
+    "title": "What we promise our clients",
+    "items": [
+      {
+        "title": "On time",
+        "text": "We fix stages and dates in the contract. You see progress every week."
+      },
+      {
+        "title": "On budget",
+        "text": "We name the price before work starts, with no surprise extra charges."
+      },
+      {
+        "title": "Easy to use",
+        "text": "We make it simple for your customers to buy, book or leave a request."
+      },
+      {
+        "title": "Always in touch",
+        "text": "One manager runs the project and answers your questions. After launch, we stay close."
+      }
+    ],
+    "fullCycle": "Plus the full cycle in one team: analysis, design, development, testing and support."
+  },
+  "process": {
+    "title": "From the first call to a working product",
+    "steps": [
+      {
+        "title": "Introduction",
+        "text": "We discuss the task and your business goals. Free of charge."
+      },
+      {
+        "title": "Estimate",
+        "text": "We send a plan, timeline and exact price."
+      },
+      {
+        "title": "Design",
+        "text": "We show you what the product will look like before development starts."
+      },
+      {
+        "title": "Development",
+        "text": "We work in stages and show you the result of each one."
+      },
+      {
+        "title": "Launch",
+        "text": "We publish, test and train your team."
+      },
+      {
+        "title": "Support",
+        "text": "We monitor how it runs and keep developing the product."
       }
     ]
   },
   "cases": {
     "meta": {
       "title": "Cases",
-      "description": "Selected Osmi projects in fintech, retail and industry with measurable results."
+      "description": "Innovialabs projects: LoadMe freight app, Yo'ldosh intercity ridesharing, the NUMA Family ecosystem, NUMA Nutrition, NUMA Kids and Nabaviy Tabobat."
     },
-    "hero": {
-      "badge": "Cases",
-      "title": "Projects we own by results",
-      "subtitle": "A few examples of how we solve business problems with technology. Placeholder content."
-    },
+    "title": "Projects that work",
+    "cta": "I want the same",
     "labels": {
-      "challenge": "Challenge",
-      "solution": "Solution",
-      "results": "Results",
+      "task": "Task",
+      "did": "What we did",
+      "facts": "In numbers",
+      "client": "Client",
+      "industry": "Industry",
+      "year": "Year",
+      "platforms": "Platforms",
       "stack": "Stack",
-      "other": "Other cases",
-      "cta": "Discuss a similar project",
-      "readCase": "Open case"
+      "openCase": "View case",
+      "openSite": "Open website",
+      "allCases": "All cases",
+      "nextCase": "Next case",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
     },
     "items": [
       {
-        "slug": "fintech-payments",
-        "tag": "Fintech",
-        "title": "Next-generation payment platform",
-        "summary": "We re-architected the payment core and moved settlements to real time.",
-        "challenge": "A legacy monolithic core couldn't handle growth, and releases took weeks. They needed an architecture ready to scale to millions of transactions.",
-        "solution": "We split the monolith into services, introduced real-time event processing and built observability. We set up CI/CD for fast, safe releases.",
-        "results": [
-          { "value": "10M+", "label": "transactions per day" },
-          { "value": "×2", "label": "release velocity" },
-          { "value": "99.9%", "label": "uptime" }
+        "slug": "loadme",
+        "name": "LoadMe",
+        "client": "LoadMe",
+        "industry": "Freight transportation",
+        "platforms": "Web, iOS, Android",
+        "tagline": "A freight transportation app",
+        "task": "Bring drivers, cargo owners and brokers together in one app instead of hundreds of Telegram groups.",
+        "did": "Mobile app for iOS and Android, cargo and truck search with filters, “Magnet” with alerts about cargo along your route, push notifications in three languages.",
+        "features": [
+          "Cargo and truck search with filters",
+          "“Magnet”: alerts about cargo along your route",
+          "Push notifications in three languages",
+          "One-tap contact with the shipper: Telegram, WhatsApp, call",
+          "Chat, saved items and “My cargo”",
+          "Apps for iOS and Android"
         ],
-        "stack": ["Next.js", "Node.js", "PostgreSQL", "Kafka", "Kubernetes"]
+        "facts": [
+          {
+            "value": "6,500+",
+            "label": "cargo listings on the platform"
+          },
+          {
+            "value": "3",
+            "label": "notification languages"
+          }
+        ]
       },
       {
-        "slug": "retail-assistant",
-        "tag": "Retail",
-        "title": "AI assistant for customer support",
-        "summary": "We deployed an LLM-based assistant that resolves most requests without an operator.",
-        "challenge": "The support team couldn't keep up with growing volume, response times were rising, and operator costs kept increasing.",
-        "solution": "We built an LLM assistant with knowledge-base search (RAG), integrated it with the CRM and set up handoff of complex requests to an operator.",
-        "results": [
-          { "value": "72%", "label": "auto-resolved" },
-          { "value": "−45%", "label": "support load" },
-          { "value": "4.7", "label": "customer rating" }
+        "slug": "yoldosh",
+        "name": "Yo'ldosh",
+        "client": "Milliy Yo'ldosh",
+        "industry": "Intercity ridesharing",
+        "platforms": "Web, iOS, Android",
+        "tagline": "A ridesharing service across Uzbekistan",
+        "task": "Connect drivers traveling between cities with passengers — instead of ads in Telegram chats.",
+        "did": "A website and mobile apps for iOS and Android: searching rides by route and date, booking seats, driver verification, chat and trip reminders.",
+        "features": [
+          "Search by route, date and number of passengers",
+          "Drivers publish their rides",
+          "Driver passport and profile verification",
+          "Driver–passenger chat, reminders",
+          "Popular route pages for search",
+          "Apps in the App Store and Google Play"
         ],
-        "stack": ["Next.js", "Python", "LLM", "Vector DB", "CRM API"]
+        "facts": [
+          {
+            "value": "3",
+            "label": "platforms: web, iOS, Android"
+          },
+          {
+            "value": "2",
+            "label": "languages: Uzbek and Russian"
+          }
+        ]
       },
       {
-        "slug": "industry-twin",
-        "tag": "Industry",
-        "title": "Digital twin of the factory floor",
-        "summary": "We built a single monitoring panel for equipment with predictive analytics.",
-        "challenge": "Equipment data was scattered, and downtime was discovered after the fact. There was no single picture or forecasting.",
-        "solution": "We unified real-time telemetry, built dashboards and a predictive maintenance model to catch failures early.",
-        "results": [
-          { "value": "−30%", "label": "downtime" },
-          { "value": "×1.5", "label": "component lifetime" },
-          { "value": "24/7", "label": "monitoring" }
+        "slug": "numa-family",
+        "name": "NUMA Family",
+        "client": "NUMA Family",
+        "industry": "Natural health products",
+        "platforms": "Web",
+        "tagline": "Corporate website of the NUMA Family ecosystem",
+        "task": "Present all of the company's lines of business on one website and let customers quickly get to the one they need.",
+        "did": "An ecosystem map website: six lines of business with links to their websites, achievements, international certificates, videos, articles, reviews and FAQ.",
+        "features": [
+          "Cards for six lines of business",
+          "Achievements and scientific leadership section",
+          "EURO-LEAF, Halal, USDA Organic, ISO 22000, GMP certificates",
+          "Videos, articles and reviews",
+          "Answers to frequently asked questions"
         ],
-        "stack": ["Next.js", "Python", "IoT", "TimescaleDB", "ML"]
+        "facts": [
+          {
+            "value": "6",
+            "label": "lines of business on one website"
+          },
+          {
+            "value": "5",
+            "label": "international certificates"
+          }
+        ]
+      },
+      {
+        "slug": "numa-nutrition",
+        "name": "NUMA Nutrition",
+        "client": "NUMA Family",
+        "industry": "Natural supplements",
+        "platforms": "Web",
+        "tagline": "A natural supplements catalog with ordering",
+        "task": "Help buyers find a product for their need and place an order or request a consultation.",
+        "did": "A catalog with prices and a buy button, selection by health goal, expert videos, certificates, reviews and a consultation request form.",
+        "features": [
+          "Product cards with price and purchase",
+          "Selection: immunity, digestion, beauty, detox, energy, heart",
+          "Expert videos about the products",
+          "Certificates and expert articles",
+          "Consultation request"
+        ],
+        "facts": [
+          {
+            "value": "6",
+            "label": "health goals in navigation"
+          },
+          {
+            "value": "10+",
+            "label": "expert videos"
+          }
+        ]
+      },
+      {
+        "slug": "numa-kids",
+        "name": "NUMA Kids",
+        "client": "NUMA Family",
+        "industry": "Children's vitamins",
+        "platforms": "Web",
+        "tagline": "Gummy vitamins for kids, with characters",
+        "task": "Explain the difference between six products to parents and make the line easy for kids to understand.",
+        "did": "Each product became a character with its own purpose. For parents — ingredients, certificates, specialist articles and videos, ordering with delivery.",
+        "features": [
+          "Characters: Rikki, Bonny, Jekky, Genny, Funny",
+          "Cards with purpose, ingredients and price",
+          "Articles and videos for parents",
+          "Manufacturing certificates",
+          "Ordering with delivery and consultation"
+        ],
+        "facts": [
+          {
+            "value": "6",
+            "label": "products in the line"
+          },
+          {
+            "value": "5",
+            "label": "characters"
+          }
+        ]
+      },
+      {
+        "slug": "nabaviy-tabobat",
+        "name": "Nabaviy Tabobat",
+        "client": "NUMA Family",
+        "industry": "Natural medicine",
+        "platforms": "Web",
+        "tagline": "A Prophetic medicine center and its products",
+        "task": "Present the center and its three key products in the audience's language — Uzbek Cyrillic.",
+        "did": "A website with three products, a cart and ordering, a section about the center, certificates, videos, reviews and FAQ.",
+        "features": [
+          "Uzbek Cyrillic and Russian",
+          "Omega 3, Qora Sedana, Qust al-Hindi with price and cart",
+          "Section about the center and its specialists",
+          "Certificates, videos, reviews",
+          "Answers to frequently asked questions"
+        ],
+        "facts": [
+          {
+            "value": "3",
+            "label": "key products"
+          },
+          {
+            "value": "2",
+            "label": "interface languages"
+          }
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "title": "We work with a modern stack",
+    "lead": "We choose technology to fit the task, not the task to fit the technology.",
+    "groups": [
+      {
+        "title": "Web",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "Node.js",
+          "Python",
+          "Laravel"
+        ]
+      },
+      {
+        "title": "Mobile",
+        "items": [
+          "Flutter",
+          "React Native",
+          "Swift",
+          "Kotlin"
+        ]
+      },
+      {
+        "title": "AI",
+        "items": [
+          "OpenAI",
+          "Claude",
+          "LangChain",
+          "document and speech recognition"
+        ]
+      },
+      {
+        "title": "Telegram",
+        "items": [
+          "Bot API",
+          "Mini Apps",
+          "Telegram Payments"
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "items": [
+          "Docker",
+          "AWS",
+          "Google Cloud",
+          "Cloudflare"
+        ]
+      }
+    ]
+  },
+  "formats": {
+    "title": "Choose the format that suits you",
+    "headers": {
+      "format": "Format",
+      "fit": "Best for",
+      "how": "How we charge"
+    },
+    "items": [
+      {
+        "title": "Fixed price",
+        "fit": "A clear task: website, bot, landing page",
+        "how": "One sum for the project, stages in the contract"
+      },
+      {
+        "title": "Hourly rate",
+        "fit": "The project changes along the way and needs flexibility",
+        "how": "You pay for actual hours, with a report"
+      },
+      {
+        "title": "Dedicated team",
+        "fit": "A long-term product that needs its own team without hiring",
+        "how": "Monthly, based on team composition"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How much does development cost?",
+        "answer": "It depends on the task. A Telegram bot or landing page costs less than a mobile app or CRM. After a short call we'll send you an exact estimate, free of charge."
+      },
+      {
+        "question": "Can we start with a smaller version?",
+        "answer": "Yes. It often pays to launch an MVP with the core features first, test demand, and only then develop the product further."
+      },
+      {
+        "question": "What if I only have an idea and no specification?",
+        "answer": "That's fine. We'll help define the task and write the technical specification ourselves."
+      },
+      {
+        "question": "Do you support the project after launch?",
+        "answer": "Yes. We fix bugs, release updates and add features as your business grows."
+      },
+      {
+        "question": "Who owns the code?",
+        "answer": "You do. After payment we hand over the source code and all access credentials."
+      },
+      {
+        "question": "Is it safe to bring AI into a business?",
+        "answer": "Yes, if it's set up correctly. We limit which data the AI can access and leave the final decision to a person where the cost of a mistake is high."
+      },
+      {
+        "question": "Why is a Mini App better than a regular app?",
+        "answer": "Customers don't need to download anything or sign up: everything opens inside Telegram. It launches faster and costs less than an app for the App Store and Google Play."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Have an idea or a task? Tell us about it",
+    "lead": "We'll reply within one business day and propose a solution. The consultation is free.",
+    "telegram": "Message us on Telegram"
+  },
+  "contactForm": {
+    "name": "Your name",
+    "namePlaceholder": "Name",
+    "phone": "Phone or Telegram",
+    "phonePlaceholder": "+998 90 123 45 67 or @username",
+    "message": "What needs to be done?",
+    "optional": "optional",
+    "messagePlaceholder": "A couple of sentences about the task",
+    "service": "Service",
+    "serviceOptions": [
+      {
+        "value": "web",
+        "label": "Website"
+      },
+      {
+        "value": "mobile",
+        "label": "App"
+      },
+      {
+        "value": "telegram",
+        "label": "Telegram bot / Mini App"
+      },
+      {
+        "value": "ai",
+        "label": "AI automation"
+      },
+      {
+        "value": "crm",
+        "label": "CRM"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "consent": "By clicking the button, you agree to the privacy policy.",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "sent": "Sent",
+    "successTitle": "Thank you! We've received your request.",
+    "successText": "A manager will contact you within one business day.",
+    "errors": {
+      "nameShort": "At least 2 letters",
+      "nameLong": "Name is too long",
+      "nameInvalid": "Letters, spaces and hyphens only",
+      "contactRequired": "Enter a phone number or Telegram",
+      "contactInvalid": "Use the format +998 90 123 45 67 or @username",
+      "serviceRequired": "Choose a service",
+      "messageLong": "No more than 1000 characters",
+      "messageInvalid": "This looks like random characters",
+      "messageLinks": "Too many links",
+      "tooFast": "The form was filled in too quickly. Please try again",
+      "rateLimited": "Too many attempts. Please try again in a few minutes",
+      "server": "Couldn't send. Please try again or message us on Telegram"
+    }
+  },
+  "footer": {
+    "about": "IT development studio: websites, apps, Telegram bots, AI automation.",
+    "signature": "Innovation via Lab",
+    "servicesTitle": "Services",
+    "services": [
+      {
+        "href": "/services/ai",
+        "label": "AI automation"
+      },
+      {
+        "href": "/services/telegram",
+        "label": "Telegram bots and Mini Apps"
+      },
+      {
+        "href": "/services/web",
+        "label": "Websites"
+      },
+      {
+        "href": "/services/mobile",
+        "label": "Mobile apps"
+      },
+      {
+        "href": "/services/crm",
+        "label": "CRM"
+      }
+    ],
+    "companyTitle": "Company",
+    "company": [
+      {
+        "href": "/company#process",
+        "label": "How we work"
+      },
+      {
+        "href": "/company",
+        "label": "About us"
+      },
+      {
+        "href": "/cases",
+        "label": "Cases"
+      },
+      {
+        "href": "/contacts",
+        "label": "Contacts"
+      }
+    ],
+    "contactsTitle": "Contacts",
+    "city": "Tashkent",
+    "rights": "All rights reserved.",
+    "toTop": "Back to top"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "This page doesn't exist.",
+    "home": "Back to home"
+  },
+  "common": {
+    "home": "Home"
+  },
+  "company": {
+    "meta": {
+      "title": "About",
+      "description": "Innovialabs is an IT development studio: websites, mobile apps, CRM, integrations and AI process automation — from idea to launch and support."
+    },
+    "title": "About us",
+    "lead": "Innovialabs is an IT development studio. We take on any business task: websites, mobile apps, CRM, integrations and AI process automation — from idea to launch and support.",
+    "sloganLabel": "Slogan",
+    "logoTitle": "The logo and its idea",
+    "logoParts": [
+      {
+        "symbol": ">",
+        "title": "Prompt «>»",
+        "text": "The path, via: the signal moves on and the task starts running."
+      },
+      {
+        "symbol": "_",
+        "title": "Cursor «_»",
+        "text": "The lab: the line where code is written and experiments are run."
+      },
+      {
+        "symbol": "✦",
+        "title": "Star",
+        "text": "Innovation: the result that emerges from code."
+      },
+      {
+        "symbol": "▢",
+        "title": "Terminal window",
+        "text": "The development environment, the frame where everything happens."
       }
     ]
   },
   "contacts": {
     "meta": {
       "title": "Contacts",
-      "description": "Get in touch with the Osmi team — let's discuss your challenge, timeline and way of working."
+      "description": "Contact Innovialabs: leave a request, message us on Telegram or by email. We reply within one business day; the consultation is free."
     },
-    "hero": {
-      "badge": "Contacts",
-      "title": "Let's discuss your project",
-      "subtitle": "Leave a request or reach out directly — we reply within a business day."
-    },
-    "channelsTitle": "Channels",
-    "channels": [
-      { "type": "email", "label": "Email", "value": "hello@osmi.example.com", "href": "mailto:hello@osmi.example.com" },
-      { "type": "phone", "label": "Phone", "value": "+998 (00) 000-00-00", "href": "tel:+998000000000" },
-      { "type": "telegram", "label": "Telegram", "value": "@osmi", "href": "https://t.me/" }
-    ],
-    "officeTitle": "Office",
-    "office": "Tashkent, Example St. 1 (placeholder address)",
-    "hoursTitle": "Working hours",
-    "hours": "Mon–Fri, 09:00–18:00"
+    "title": "Contacts",
+    "emailLabel": "Email",
+    "telegramLabel": "Telegram",
+    "phoneLabel": "Phone",
+    "cityLabel": "City",
+    "city": "Tashkent, Uzbekistan"
   }
 }

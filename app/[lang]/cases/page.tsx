@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { i18n, isLocale } from "@/lib/i18n/config";
+import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { pageMetadata } from "@/lib/seo";
-import { PageHero } from "@/components/shared/page-hero";
-import { CtaBand } from "@/components/shared/cta-band";
-import { CasesView } from "@/components/pages/cases/cases-view";
+import { PageHeader } from "@/components/layout/page-header";
+import { CaseCard } from "@/components/cases/case-card";
+import { ContactSection } from "@/components/contact/contact-section";
 
-export function generateStaticParams() {
-  return i18n.locales.map((lang) => ({ lang }));
-}
+type Props = { params: Promise<{ lang: string }> };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const { cases } = await getDictionary(lang);
@@ -27,28 +21,30 @@ export async function generateMetadata({
   });
 }
 
-export default async function CasesPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
+export default async function CasesPage({ params }: Props) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const dict = await getDictionary(lang);
+  const { cases } = dict;
 
   return (
     <main>
-      <PageHero
-        badge={dict.cases.hero.badge}
-        title={dict.cases.hero.title}
-        subtitle={dict.cases.hero.subtitle}
+      <PageHeader
+        title={cases.title}
         crumbs={[
           { label: dict.common.home, href: `/${lang}` },
-          { label: dict.cases.meta.title },
+          { label: cases.meta.title, href: `/${lang}/cases` },
         ]}
+        titleClassName="max-w-6xl text-[clamp(2.75rem,8vw,8.5rem)]"
       />
-      <CasesView lang={lang} dict={dict.cases} />
-      <CtaBand lang={lang} dict={dict.ctaBand} />
+
+      <section className="shell grid gap-x-3 gap-y-14 md:grid-cols-2">
+        {cases.items.map((item, i) => (
+          <CaseCard key={item.slug} lang={lang} item={item} index={i} large={i === 0} priority={i === 0} />
+        ))}
+      </section>
+
+      <ContactSection lang={lang} dict={dict.contact} form={dict.contactForm} />
     </main>
   );
 }

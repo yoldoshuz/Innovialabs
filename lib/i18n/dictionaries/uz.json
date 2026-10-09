@@ -1,518 +1,791 @@
 {
   "meta": {
-    "title": "Osmi — Biznes uchun Web va AI yechimlari",
-    "titleTemplate": "%s — Osmi",
-    "description": "Korporativ darajadagi veb-platformalar va AI mahsulotlarni loyihalaymiz va ishlab chiqamiz. Muhandislik sifati, ishonchlilik va o‘lchanadigan natija.",
+    "title": "Innovialabs — sayt, ilova, Telegram-bot ishlab chiqish va AI-avtomatlashtirish",
+    "titleTemplate": "%s — Innovialabs",
+    "description": "IT-ishlab chiqish studiyasi. Saytlar, mobil ilovalar, CRM, Telegram-botlar va Mini Apps yaratamiz, jarayonlarni sun’iy intellekt yordamida avtomatlashtiramiz. G‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha. Bepul konsultatsiya.",
+    "ogTitle": "Where ideas become products. — Innovialabs",
     "keywords": [
-      "veb-ishlab chiqish",
-      "AI yechimlari",
-      "sun'iy intellekt",
-      "korporativ platformalar",
-      "raqamli transformatsiya",
-      "Next.js",
-      "mashinali o‘qitish"
-    ],
-    "ogAlt": "Osmi — Biznes uchun Web va AI yechimlari"
+      "sayt ishlab chiqish",
+      "mobil ilova ishlab chiqish",
+      "Telegram-bot ishlab chiqish",
+      "Telegram Mini Apps",
+      "AI-avtomatlashtirish",
+      "CRM ishlab chiqish",
+      "IT-studiya Toshkent",
+      "Innovialabs"
+    ]
   },
   "nav": {
     "links": [
-      { "href": "/services", "label": "Xizmatlar" },
-      { "href": "/cases", "label": "Keyslar" },
-      { "href": "/company", "label": "Kompaniya" },
-      { "href": "/contacts", "label": "Kontaktlar" }
+      {
+        "href": "/services",
+        "label": "Xizmatlar"
+      },
+      {
+        "href": "/services/ai",
+        "label": "AI-avtomatlashtirish"
+      },
+      {
+        "href": "/services/telegram",
+        "label": "Telegram"
+      },
+      {
+        "href": "/company",
+        "label": "Qanday ishlaymiz"
+      },
+      {
+        "href": "/cases",
+        "label": "Keyslar"
+      },
+      {
+        "href": "/contacts",
+        "label": "Kontaktlar"
+      }
     ],
-    "cta": "Loyihani boshlash",
-    "menu": "Menyu",
-    "close": "Yopish"
+    "cta": "Loyihani muhokama qilish",
+    "menu": "Menyuni ochish",
+    "close": "Menyuni yopish",
+    "home": "Innovialabs — bosh sahifaga",
+    "skip": "Asosiy kontentga o‘tish",
+    "language": "Til"
   },
   "hero": {
-    "heading": ["WEB", "AI", "NATIJA"],
-    "taglineA": ["Web va AI", "mahsulotlarini biznes", "uchun quramiz"],
-    "descriptionB": "Murakkab vazifalarni ishonchli va masshtablanadigan raqamli mahsulotga aylantiruvchi muhandislik studiyasi",
-    "cta": "Biz bilan ishlash",
-    "stats": [
-      { "value": "120", "label": "MAHSULOT\nISHGA TUSHDI" },
-      { "value": "40", "label": "MUHANDIS\nJAMOADA" },
-      { "value": "8", "label": "YIL\nBOZORDA" }
-    ]
+    "titleTop": "Where ideas",
+    "titleBottom": "become products.",
+    "lead": "Saytlar, mobil ilovalar, Telegram-botlar va CRM ishlab chiqamiz, jarayonlarni sun’iy intellekt yordamida avtomatlashtiramiz. Loyihani to‘liq o‘z zimmamizga olamiz: g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha.",
+    "primary": "Loyihani muhokama qilish",
+    "secondary": "Xizmatlarni ko‘rish",
+    "note": "Konsultatsiya va loyihani baholash bepul.",
+    "terminal": {
+      "command": "innovialabs start --project",
+      "steps": [
+        "g‘oya",
+        "dizayn",
+        "ishlab chiqish",
+        "ishga tushirish"
+      ],
+      "replay": "Yana bir bor ishga tushirish"
+    }
   },
   "trust": {
-    "label": "Fintex, riteyl va sanoat jamoalari bizga ishonadi",
-    "logos": ["Northwind", "Acme Corp", "Vertex", "Quantum", "Lumen", "Helios"]
-  },
-  "expertise": {
-    "badge": "Ekspertiza",
-    "title": "To‘liq tsikl — g‘oyadan produksiyagacha",
-    "subtitle": "Vazifa ostida mahsulot jamoalarini yig‘amiz: strategiya, dizayn, ishlab chiqish va qo‘llab-quvvatlash bir konturda.",
     "items": [
-      {
-        "icon": "globe",
-        "title": "Veb-platformalar",
-        "description": "Next.js’dagi yuqori yuklamali ilovalar, portallar va SaaS — tezlik va Core Web Vitals’ga yo‘naltirilgan."
-      },
-      {
-        "icon": "brain",
-        "title": "AI va ML yechimlar",
-        "description": "LLM yordamchilari, ma'noli qidiruv, tavsiya tizimlari va ma'lumotlarga asoslangan avtomatlashtirish."
-      },
-      {
-        "icon": "layout",
-        "title": "Mahsulot dizayni",
-        "description": "Tadqiqot, prototiplar va dizayn-tizimlar — murakkablikni tushunarli va konversion ko‘rinishga aylantiradi."
-      },
-      {
-        "icon": "server",
-        "title": "Infratuzilma",
-        "description": "Bulutli arxitektura, CI/CD, kuzatuvchanlik va korporativ darajadagi xavfsizlik."
-      },
-      {
-        "icon": "workflow",
-        "title": "Integratsiyalar",
-        "description": "CRM, ERP va tashqi xizmatlarni yagona ishonchli ma'lumot oqimiga bog‘laymiz."
-      },
-      {
-        "icon": "shield",
-        "title": "Qo‘llab-quvvatlash va SLA",
-        "description": "Mahsulotlarni 24/7 shaffof metrikalar va javob kafolati bilan yuritamiz."
-      }
+      "10+ ishga tushirilgan loyiha",
+      "1+ yil ishlab chiqishda",
+      "To‘liq sikl: tahlil, dizayn, ishlab chiqish, qo‘llab-quvvatlash",
+      "Ish kuni davomida javob beramiz"
     ]
-  },
-  "platform": {
-    "badge": "Platforma",
-    "title": "Osmi Core — raqamli mahsulotlaringiz poydevori",
-    "subtitle": "Tayyor modullar va amaliyotlar — ular yordamida yechimlarni sifatni yo‘qotmasdan bozordan tezroq yig‘amiz.",
-    "features": [
-      {
-        "title": "Tayyor AI-dvigatel",
-        "description": "Modellarni orkestrlash, vektorli qidiruv va korporativ ma'lumotlar bilan xavfsiz ishlash."
-      },
-      {
-        "title": "Kompozit arxitektura",
-        "description": "Mustaqil masshtablanadigan va yuklama o‘sishiga bardosh beradigan modul xizmatlar."
-      },
-      {
-        "title": "Real vaqt tahlili",
-        "description": "Mahsulot hozir qanday ishlayotganini ko‘rsatadigan dashbordlar va hodisalar."
-      },
-      {
-        "title": "Standart xavfsizlik",
-        "description": "Shifrlash, kirishni cheklash va audit talablariga muvofiqlik."
-      }
-    ],
-    "cta": "Demo so‘rash"
-  },
-  "results": {
-    "badge": "Natijalar",
-    "title": "Va'da emas, raqamlar",
-    "subtitle": "Har bosqichda biznesga qo‘shgan hissamizni o‘lchaymiz va natija uchun javob beramiz.",
-    "metrics": [
-      { "value": "×3.5", "label": "konversiya o‘sishi", "detail": "redizayn va optimallashtirishdan so‘ng" },
-      { "value": "−45%", "label": "operatsion xarajatlar", "detail": "AI-avtomatlashtirish hisobiga" },
-      { "value": "2×", "label": "reliz tezligi", "detail": "Osmi Core platformasi bilan" }
-    ],
-    "cases": [
-      {
-        "tag": "Fintex",
-        "title": "Yangi avlod to‘lov platformasi",
-        "description": "Yadroni qayta loyihaladik va hisob-kitoblarni real vaqtga o‘tkazdik — o‘tkazuvchanlik bir necha barobar oshdi.",
-        "metric": "kuniga 10M+ tranzaksiya"
-      },
-      {
-        "tag": "Riteyl",
-        "title": "Mijozlarni qo‘llab-quvvatlash uchun AI-yordamchi",
-        "description": "Ko‘p murojaatlarni operatорsiz hal qiladigan LLM-yordamchini joriy etdik.",
-        "metric": "72% avto-javob"
-      },
-      {
-        "tag": "Sanoat",
-        "title": "Ishlab chiqarishning raqamli egizagi",
-        "description": "Uskunalar monitoringi uchun prediktiv tahlilga ega yagona panel yig‘dik.",
-        "metric": "−30% to‘xtash"
-      }
-    ]
-  },
-  "process": {
-    "badge": "Jarayon",
-    "title": "Qanday ishlaymiz",
-    "subtitle": "Har bosqichda aniq natijaga ega shaffof jarayon.",
-    "steps": [
-      {
-        "title": "Discovery",
-        "description": "Biznesga chuqur kiramiz, gipotezalarni shakllantiramiz va muvaffaqiyat metrikalarini belgilaymiz."
-      },
-      {
-        "title": "Dizayn va prototip",
-        "description": "Tajriba va interfeyslarni loyihalaymiz, ishlab chiqishdan oldin yechimlarni tekshiramiz."
-      },
-      {
-        "title": "Ishlab chiqish",
-        "description": "Mahsulotni iteratsiyalar bilan yig‘amiz — har ikki haftada demo va jonli fikr-mulohaza."
-      },
-      {
-        "title": "Ishga tushirish va o‘sish",
-        "description": "Produksiyaga chiqaramiz, metrikalarni kuzatamiz va mahsulotni rivojlantiramiz."
-      }
-    ]
-  },
-  "social": {
-    "badge": "Sharhlar",
-    "title": "Mijozlar nima deydi",
-    "subtitle": "Uzoq muddatli hamkorlik — sifatning eng yaxshi isboti.",
-    "testimonials": [
-      {
-        "quote": "Osmi jamoasi biz ikki yilda o‘zimiz uddalay olmagan platformani bir chorakda yig‘ib berdi.",
-        "author": "Ism Familiya",
-        "role": "CTO",
-        "company": "Northwind"
-      },
-      {
-        "quote": "Ularning AI-yordamchisi qo‘llab-quvvatlash yukini haqiqatan yengillashtirdi. Metrikalar birinchi oyda o‘sdi.",
-        "author": "Ism Familiya",
-        "role": "Head of Product",
-        "company": "Acme Corp"
-      },
-      {
-        "quote": "Shaffof jarayon, kuchli muhandislik va tafsilotlarga e'tibor. Ishonchli hamkor sifatida tavsiya qilamiz.",
-        "author": "Ism Familiya",
-        "role": "CEO",
-        "company": "Vertex"
-      }
-    ]
-  },
-  "faq": {
-    "badge": "FAQ",
-    "title": "Ko‘p beriladigan savollar",
-    "subtitle": "Javob topmadingizmi? Bizga yozing — ish kuni davomida javob beramiz.",
-    "items": [
-      {
-        "question": "Loyihani ishga tushirish qancha vaqt oladi?",
-        "answer": "Birinchi ishlaydigan prototip odatda 4–6 haftada tayyor bo‘ladi. To‘liq mahsulot hajmga bog‘liq, lekin biz doim muntazam demolar bilan iteratsiyalarda harakat qilamiz."
-      },
-      {
-        "question": "Mavjud mahsulot bilan ishlaysizmi?",
-        "answer": "Ha. Texnik audit o‘tkazamiz, joriy kod bazasiga ulanamiz va biznesni to‘xtatmasdan arxitekturani bosqichma-bosqich yaxshilaymiz."
-      },
-      {
-        "question": "Ma'lumotlar xavfsizligini qanday ta'minlaysiz?",
-        "answer": "Har qatlamda shifrlash, kirishni cheklash, audit va muvofiqlik. AI-yechimlarda ma'lumotlar kelishuvsiz sizning konturingizdan chiqmaydi."
-      },
-      {
-        "question": "Ishga tushirilgandan keyin nima bo‘ladi?",
-        "answer": "Mahsulotni SLA bo‘yicha qo‘llab-quvvatlaymiz, metrikalarni kuzatamiz, hodisalarni bartaraf etamiz va funksionallikni rivojlantiramiz."
-      },
-      {
-        "question": "Narx nimalardan tashkil topadi?",
-        "answer": "Ish hajmi, jamoa tarkibi va muddatga bog‘liq. Discovery’dan so‘ng siz yashirin to‘lovsiz shaffof smeta va reja olasiz."
-      }
-    ]
-  },
-  "cta": {
-    "badge": "Kontaktlar",
-    "title": "Vazifangiz haqida gapirib bering",
-    "subtitle": "So‘rov qoldiring — maqsad, muddat va hamkorlikning optimal formatini muhokama qilamiz.",
-    "form": {
-      "name": "Ism",
-      "namePlaceholder": "Sizga qanday murojaat qilaylik",
-      "email": "Email",
-      "emailPlaceholder": "you@company.com",
-      "company": "Kompaniya",
-      "companyPlaceholder": "Kompaniya nomi",
-      "message": "Xabar",
-      "messagePlaceholder": "Vazifa haqida qisqacha",
-      "submit": "So‘rov yuborish",
-      "privacy": "Formani yuborish orqali siz maxfiylik siyosatiga rozilik bildirasiz.",
-      "success": "Rahmat! Tez orada siz bilan bog‘lanamiz."
-    },
-    "contactsLabel": "Yoki to‘g‘ridan-to‘g‘ri yozing"
-  },
-  "footer": {
-    "tagline": "Korporativ darajadagi web va AI yechimlari.",
-    "rights": "Barcha huquqlar himoyalangan.",
-    "columns": [
-      {
-        "title": "Xizmatlar",
-        "links": [
-          { "label": "Veb-ishlab chiqish", "href": "/services/web" },
-          { "label": "AI va ML", "href": "/services/ai" },
-          { "label": "Mahsulot dizayni", "href": "/services/design" },
-          { "label": "Infratuzilma", "href": "/services/infrastructure" }
-        ]
-      },
-      {
-        "title": "Kompaniya",
-        "links": [
-          { "label": "Kompaniya haqida", "href": "/company" },
-          { "label": "Keyslar", "href": "/cases" },
-          { "label": "Kontaktlar", "href": "/contacts" }
-        ]
-      }
-    ],
-    "social": "Ijtimoiy tarmoqlarda"
-  },
-  "common": {
-    "home": "Bosh sahifa",
-    "learnMore": "Batafsil",
-    "viewAll": "Barchasini ko‘rish"
-  },
-  "ctaBand": {
-    "title": "Loyihangizni muhokama qilishga tayyormisiz?",
-    "subtitle": "Vazifangiz haqida gapirib bering — ish kuni davomida reja va taxminiy baho bilan qaytamiz.",
-    "primary": "So‘rov qoldirish",
-    "secondary": "Keyslarni ko‘rish"
-  },
-  "company": {
-    "meta": {
-      "title": "Kompaniya",
-      "description": "Biz kimmiz, nimaga ishonamiz va korporativ darajadagi Web va AI mahsulotlari ustida qanday ishlaymiz."
-    },
-    "hero": {
-      "badge": "Kompaniya",
-      "title": "Natijaga yo‘naltirilgan muhandislik madaniyati",
-      "subtitle": "Biz murakkab biznes vazifalarni ishonchli raqamli mahsulotlarga aylantiradigan muhandislar, dizaynerlar va prodakt-menejerlar jamoasimiz."
-    },
-    "intro": {
-      "title": "Biznes uchun ishlaydigan texnologiyalarni quramiz",
-      "paragraphs": [
-        "Osmi veb-ishlab chiqish va sun'iy intellekt sohasidagi tajribani birlashtiradi. Biz hype ortidan quvmaymiz — yetuk yechimlarni tanlab, ularni produksiyagacha yetkazamiz.",
-        "Har bir loyihani shaffof jarayon va metrikalar uchun javobgarlikka ega kross-funksional jamoa olib boradi. Biz autsorsing pudratchisi emas, mahsulot hamkori sifatida ishlaymiz."
-      ]
-    },
-    "stats": [
-      { "value": "8 yil", "label": "bozorda" },
-      { "value": "120+", "label": "ishga tushirilgan mahsulot" },
-      { "value": "40+", "label": "jamoadagi muhandis" },
-      { "value": "12", "label": "portfeldagi soha" }
-    ],
-    "values": {
-      "title": "Bizning tamoyillarimiz",
-      "subtitle": "Har kuni qaror qabul qilishimizni belgilaydigan narsa.",
-      "items": [
-        { "icon": "brain", "title": "Muhandislik qat'iyligi", "description": "Toza arxitektura, testlar va kod-revyu — sifat muhokama qilinmaydi." },
-        { "icon": "workflow", "title": "Shaffoflik", "description": "Aniq jarayon, muntazam demolar va kutilmagan holsiz halol muddatlar." },
-        { "icon": "shield", "title": "Javobgarlik", "description": "Faqat yopilgan vazifalar uchun emas, metrikalar va natija uchun javob beramiz." },
-        { "icon": "layout", "title": "Tafsilotlarga e'tibor", "description": "Mahsulot nafaqat ishlaydigan, balki foydalanishga qulay bo‘lishi kerak." }
-      ]
-    },
-    "timeline": {
-      "title": "Kompaniya yo‘li",
-      "subtitle": "Asosiy bosqichlar — zaglushkada, jamoa bilan yangilaymiz.",
-      "items": [
-        { "year": "2018", "title": "Tashkil etilishi", "description": "Kichik jamoa va birinchi veb-loyihalar bilan boshladik." },
-        { "year": "2020", "title": "Mahsulot yondashuvi", "description": "Buyurtma ishlab chiqishdan mahsulot jamoalariga o‘tdik." },
-        { "year": "2023", "title": "AI yo‘nalishi", "description": "AI amaliyotini ishga tushirdik va birinchi LLM yechimlarni joriy etdik." },
-        { "year": "2026", "title": "Osmi Core platformasi", "description": "Mahsulotlarni tezroq ishga tushirish uchun ichki platforma yig‘dik." }
-      ]
-    },
-    "team": {
-      "title": "Jamoa",
-      "subtitle": "Mahsulotlarni yaratadigan odamlar. Rasmlar va ismlar — zaglushka.",
-      "members": [
-        { "name": "Ism Familiya", "role": "CEO / Founder" },
-        { "name": "Ism Familiya", "role": "CTO" },
-        { "name": "Ism Familiya", "role": "Head of AI" },
-        { "name": "Ism Familiya", "role": "Head of Design" }
-      ]
-    }
   },
   "services": {
     "meta": {
       "title": "Xizmatlar",
-      "description": "Veb-ishlab chiqish, AI va ML, mahsulot dizayni va infratuzilma — raqamli mahsulotlarni yaratishning to‘liq tsikli."
+      "description": "Saytlar, mobil ilovalar, Telegram-botlar va Mini Apps, CRM, integratsiyalar, AI-avtomatlashtirish, dizayn, DevOps va marketing. Hammasini bitta jamoa qiladi — g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha."
     },
-    "hero": {
-      "badge": "Xizmatlar",
-      "title": "Raqamli mahsulotlarni yaratishning to‘liq tsikli",
-      "subtitle": "Vazifa ostida jamoa yig‘amiz va butun yo‘lni yopamiz — strategiya va dizayndan tortib ishlab chiqish, ishga tushirish va qo‘llab-quvvatlashgacha."
-    },
-    "labels": {
-      "features": "Nimalar kiradi",
-      "deliverables": "Siz nima olasiz",
-      "other": "Boshqa xizmatlar",
-      "cta": "Xizmatni muhokama qilish",
-      "overview": "Umumiy ma'lumot"
-    },
+    "title": "Biznesingiz uchun har qanday IT-vazifa",
+    "lead": "Beshta pudratchi qidirishingiz shart emas. Hammasini bitta jamoa bajaradi.",
+    "cta": "Muhokama qilish",
     "items": [
       {
-        "slug": "web",
-        "icon": "globe",
-        "title": "Veb-ishlab chiqish",
-        "tagline": "Yuqori yuklamali ilovalar va platformalar",
-        "summary": "Zamonaviy stekda veb-ilovalar, portallar va SaaS’ni tezlik va ishonchlilikka yo‘naltirib loyihalaymiz va ishlab chiqamiz.",
-        "overview": [
-          "Next.js va React’da server renderlash, ajoyib Core Web Vitals va masshtablanadigan arxitektura bilan mahsulotlar yaratamiz.",
-          "MVP’dan murakkab enterprise tizimlargacha — qo‘llab-quvvatlash va rivojlantirish oson bo‘lgan kod."
-        ],
-        "features": [
-          "Arxitektura va tizim dizayni",
-          "Frontend Next.js / React’da",
-          "Backend va API",
-          "Unumdorlik va SEO optimizatsiyasi",
-          "Testlash va CI/CD"
-        ],
-        "deliverables": [
-          "Produksiyadagi ishlaydigan mahsulot",
-          "Hujjatlar va bilim uzatish",
-          "Sozlangan reliz jarayoni",
-          "Metrikalar va monitoring"
+        "slug": "ai",
+        "title": "AI va jarayonlarni avtomatlashtirish",
+        "subtitle": "Jamoangiz ishidan rutinani olib tashlaymiz",
+        "points": [
+          "Mijozlar uchun AI-assistentlar va chat-botlar",
+          "Arizalar, hujjatlar va hisobotlarni avtomatlashtirish",
+          "Hisob-fakturalar, shartnomalar, yuk xatlarini tanib olish",
+          "ChatGPT, Claude va boshqa modellarni tizimlaringizga ulash",
+          "Qo‘ng‘iroqlar uchun ovozli AI-agentlar"
         ]
       },
       {
-        "slug": "ai",
-        "icon": "brain",
-        "title": "AI va ML yechimlar",
-        "tagline": "LLM yordamchilari va ma'lumotlarga asoslangan avtomatlashtirish",
-        "summary": "AI’ni mahsulotlarga joriy etamiz: yordamchilar, ma'noli qidiruv, tavsiyalar va jarayonlarni avtomatlashtirish.",
-        "overview": [
-          "Katta til modellari va klassik ML asosida korporativ ma'lumotlar bilan xavfsiz ishlaydigan yechimlar ishlab chiqamiz.",
-          "Eksperimentdan aniq ROI’ga ega produksiya yechimiga o‘tishga yordam beramiz."
-        ],
-        "features": [
-          "LLM yordamchilari va chat-botlar",
-          "Vektorli qidiruv va RAG",
-          "Tavsiya tizimlari",
-          "Jarayonlarni avtomatlashtirish",
-          "MLOps va modellar monitoringi"
-        ],
-        "deliverables": [
-          "Integratsiyalangan AI yechim",
-          "Sifat bahosi va metrikalar",
-          "Xavfsiz ma'lumot payplayni",
-          "Modelni rivojlantirish rejasi"
+        "slug": "telegram",
+        "title": "Telegram-botlar va Mini Apps",
+        "subtitle": "Mijozlar allaqachon bor joyda savdo va servis",
+        "points": [
+          "Buyurtma, yozilish va qo‘llab-quvvatlash uchun botlar",
+          "Telegram Mini Apps: Telegram ichida do‘kon, katalog, shaxsiy kabinet",
+          "To‘g‘ridan-to‘g‘ri Telegramda to‘lov: Payme, Click, Telegram Stars",
+          "Ommaviy xabarnomalar, voronkalar, CRM bilan integratsiya"
+        ]
+      },
+      {
+        "slug": "web",
+        "title": "Saytlar va veb-servislar",
+        "subtitle": "Tez, telefondan qulay, reklamaga tayyor",
+        "points": [
+          "Lendinglar va korporativ saytlar",
+          "Onlayn to‘lovli internet-do‘konlar",
+          "Shaxsiy kabinetlar, portallar, SaaS"
+        ]
+      },
+      {
+        "slug": "mobile",
+        "title": "Mobil ilovalar",
+        "subtitle": "iOS va Android uchun boshidan oxirigacha",
+        "points": [
+          "Native va krossplatforma ilovalar",
+          "Dizayn, ishlab chiqish, backend",
+          "App Store va Google Play do‘konlariga joylash"
+        ]
+      },
+      {
+        "slug": "crm",
+        "title": "CRM, ERP va hisob",
+        "subtitle": "Mijozlar, bitimlar va omborda tartib",
+        "points": [
+          "Jarayonlaringizga moslashtirilgan CRM",
+          "Ombor va moliyaviy hisob",
+          "1C, AmoCRM, Bitrix24 bilan integratsiya"
+        ]
+      },
+      {
+        "slug": "integrations",
+        "title": "Integratsiyalar va API",
+        "subtitle": "Servislar birgalikda ishlaydi",
+        "points": [
+          "Sayt, CRM, ombor va buxgalteriyani bog‘lash",
+          "To‘lov tizimlari, banklar, IP-telefoniya",
+          "Maxsus API ishlab chiqish"
         ]
       },
       {
         "slug": "design",
-        "icon": "layout",
-        "title": "Mahsulot dizayni",
-        "tagline": "Tadqiqot, prototiplar va dizayn-tizimlar",
-        "summary": "Murakkablikni tushunarli qiladigan va konversiyani oshiradigan tajribani loyihalaymiz.",
-        "overview": [
-          "Tadqiqot o‘tkazamiz, prototiplar quramiz va masshtablanadigan dizayn-tizimlar yig‘amiz.",
-          "Muhandislik bilan muvofiqlashtirilgan va biznes metrikalari uchun ishlaydigan dizayn."
-        ],
-        "features": [
-          "UX tadqiqot va tahlil",
-          "Prototiplash va testlar",
-          "UI dizayn va dizayn-tizim",
-          "Brending va aynikslik",
-          "Dizaynni ishlab chiqishga uzatish"
-        ],
-        "deliverables": [
-          "Dizayn maketlar va prototiplar",
-          "Figma’dagi dizayn-tizim",
-          "Ishlab chiqish uchun UI-kit",
-          "Gaydlaynlar va qoidalar"
+        "title": "UI/UX dizayn va brending",
+        "subtitle": "Mijoz uchun qulay, brend uchun chiroyli",
+        "points": [
+          "Sayt va ilovalar dizayni",
+          "Interaktiv prototiplar",
+          "Logotip, firma uslubi, brendbuk"
         ]
       },
       {
-        "slug": "infrastructure",
-        "icon": "server",
-        "title": "Infratuzilma va DevOps",
-        "tagline": "Bulut, CI/CD va kuzatuvchanlik",
-        "summary": "Avtomatlashtirish, xavfsizlik va kuzatuvchanlik bilan ishonchli bulutli infratuzilma quramiz.",
-        "overview": [
-          "Bulutli arxitekturani loyihalaymiz, CI/CD’ni sozlaymiz va korporativ darajadagi xavfsizlikni ta'minlaymiz.",
-          "Mahsulot bilan birga masshtablanadigan va yuklamada qoqilmaydigan infratuzilma."
-        ],
-        "features": [
-          "Bulutli arxitektura (AWS / GCP)",
-          "CI/CD va avtomatlashtirish",
-          "Konteynerlash va orkestratsiya",
-          "Monitoring va logging",
-          "Xavfsizlik va audit"
-        ],
-        "deliverables": [
-          "Kod sifatidagi infratuzilma",
-          "Deploy payplaynlari",
-          "Kuzatuvchanlik dashbordlari",
-          "Reglamentlar va SLA"
+        "slug": "devops",
+        "title": "Serverlar va DevOps",
+        "subtitle": "Barqaror va xavfsiz ishlaydi",
+        "points": [
+          "Serverlar va bulutni sozlash",
+          "Zaxira nusxalar va ma’lumotlarni himoyalash",
+          "24/7 monitoring"
         ]
+      },
+      {
+        "slug": "marketing",
+        "title": "Raqamli marketing",
+        "subtitle": "Mahsulotingizni topishlari uchun",
+        "points": [
+          "SEO-optimallashtirish",
+          "Google va Meta reklamasini sozlash",
+          "Reklamadan sotuvgacha uzluksiz analitika"
+        ]
+      },
+      {
+        "slug": "support",
+        "title": "Qo‘llab-quvvatlash va rivojlantirish",
+        "subtitle": "Ishga tushirgandan keyin g‘oyib bo‘lmaymiz",
+        "points": [
+          "Texnik yordam va xatolarni tuzatish",
+          "O‘sishingiz bilan birga yangi funksiyalar",
+          "Mavjud sayt va ilovalar auditi"
+        ]
+      },
+      {
+        "slug": "consulting",
+        "title": "IT-konsalting va MVP",
+        "subtitle": "G‘oyani tez va arzon sinab ko‘rish",
+        "points": [
+          "G‘oyani baholash va texnik topshiriq",
+          "MVP ishga tushirish",
+          "Loyihangiz uchun ajratilgan jamoa"
+        ]
+      }
+    ],
+    "more": "Batafsil",
+    "otherTitle": "Boshqa xizmatlar",
+    "includesTitle": "Nima qilamiz"
+  },
+  "ai": {
+    "title": "Jamoangiz haftasiga necha soatni rutinaga sarflaydi?",
+    "text": "Bir xil savollarga javob berish, ma’lumotlarni bir jadvaldan boshqasiga ko‘chirish, qo‘lda hisobot tayyorlash. Sun’iy intellekt bularni o‘z zimmasiga oladi, odamlar esa daromad keltiradigan ishlar bilan shug‘ullanadi.",
+    "benefits": [
+      "Bot mijozlarga soniyalar ichida, kechayu kunduz javob beradi",
+      "Hujjatlar avtomatik, kiritish xatolarisiz qayta ishlanadi",
+      "Hisobotlar o‘zi yig‘iladi va Telegramga keladi",
+      "Arizalar darhol CRMga va kerakli menejerga tushadi"
+    ],
+    "nowTitle": "Hozirning o‘zida nimalarni avtomatlashtirish mumkin",
+    "now": [
+      {
+        "title": "Savdo",
+        "text": "arizalarni saralash, savollarga javob berish, mijozlarga eslatmalar"
+      },
+      {
+        "title": "Qo‘llab-quvvatlash",
+        "text": "AI-assistent odatiy savollarni hal qiladi, murakkablarini xodimga uzatadi"
+      },
+      {
+        "title": "Hujjatlar",
+        "text": "hisob-fakturalar, shartnomalar va yuk xatlari tizimga o‘zi kiritiladi"
+      },
+      {
+        "title": "Analitika",
+        "text": "qo‘l mehnatisiz kunlik hisobotlar va prognozlar"
+      }
+    ],
+    "cta": "Jarayonlarning bepul tahlilini olish",
+    "ctaNote": "30 daqiqada nimalarni avtomatlashtirish mumkinligini va bu qancha tejashini ko‘rsatib beramiz.",
+    "calc": {
+      "people": "Rutina bilan band xodimlar",
+      "hours": "Bir kishiga haftasiga rutina soatlari",
+      "result": "soatni har oy jamoaga qaytarish mumkin",
+      "assumption": "Rutina vazifalarining yarmi avtomatlashtirilgan holatdagi baho."
+    }
+  },
+  "telegram": {
+    "title": "Biznesingiz Telegram ichida",
+    "text": "Mijozlaringiz har kuni Telegramda. Ularga messenjerdan chiqmasdan buyurtma berish, yozilish yoki to‘lash imkonini bering: ilova o‘rnatmasdan va ro‘yxatdan o‘tmasdan.",
+    "bots": {
+      "title": "Telegram-botlar",
+      "points": [
+        "Buyurtma va arizalarni 24/7 qabul qilish",
+        "Eslatmalar bilan xizmatlarga yozilish",
+        "AI-javoblar bilan mijozlarni qo‘llab-quvvatlash",
+        "Ommaviy xabarnomalar va avtovoronkalar",
+        "Jamoa uchun ichki botlar: hisobotlar, vazifalar, bildirishnomalar"
+      ]
+    },
+    "apps": {
+      "title": "Telegram Mini Apps",
+      "points": [
+        "Telegram ichida to‘laqonli do‘kon yoki katalog",
+        "Shaxsiy kabinet, bonuslar va sodiqlik dasturi",
+        "Onlayn to‘lov: Payme, Click, Telegram Stars",
+        "Telegram akkaunti orqali bir bosishda kirish"
+      ]
+    },
+    "why": "Nima uchun bu foydali: mobil ilovaga qaraganda tezroq va arzonroq ishga tushadi, mijoz hech narsa yuklab olishi shart emas, Telegramdagi xabarnomalar esa emailga qaraganda ko‘proq o‘qiladi.",
+    "cta": "Bot yoki Mini App buyurtma qilish",
+    "mock": {
+      "bot": "Sizning do‘koningiz",
+      "online": "bot",
+      "greeting": "Assalomu alaykum! Katalogni oching — buyurtmani bir daqiqada rasmiylashtiramiz.",
+      "open": "Katalogni ochish",
+      "catalog": "Katalog",
+      "item1": "Mahsulot 1",
+      "item2": "Mahsulot 2",
+      "pay": "To‘lash"
+    }
+  },
+  "why": {
+    "title": "Mijozga nimani va’da qilamiz",
+    "items": [
+      {
+        "title": "O‘z vaqtida",
+        "text": "Bosqichlar va muddatlarni shartnomada belgilaymiz. Har hafta jarayonni ko‘rib turasiz."
+      },
+      {
+        "title": "Byudjet doirasida",
+        "text": "Narxni ish boshlanishidan oldin aytamiz, kutilmagan qo‘shimcha to‘lovlarsiz."
+      },
+      {
+        "title": "Qulay",
+        "text": "Mijozlaringiz uchun xarid qilish, yozilish yoki ariza qoldirish oson bo‘lishini ta’minlaymiz."
+      },
+      {
+        "title": "Doim aloqada",
+        "text": "Loyihani bitta menejer olib boradi va savollarga javob beradi. Ishga tushirgandan keyin ham yoningizdamiz."
+      }
+    ],
+    "fullCycle": "Bundan tashqari, to‘liq sikl bitta jamoada: tahlil, dizayn, ishlab chiqish, testlash va qo‘llab-quvvatlash."
+  },
+  "process": {
+    "title": "Birinchi qo‘ng‘iroqdan ishlaydigan mahsulotgacha",
+    "steps": [
+      {
+        "title": "Tanishuv",
+        "text": "Vazifa va biznes maqsadlarini muhokama qilamiz. Bepul."
+      },
+      {
+        "title": "Baholash",
+        "text": "Reja, muddatlar va aniq narxni yuboramiz."
+      },
+      {
+        "title": "Dizayn",
+        "text": "Ishlab chiqishdan oldin mahsulot qanday ko‘rinishini ko‘rsatamiz."
+      },
+      {
+        "title": "Ishlab chiqish",
+        "text": "Bosqichma-bosqich ishlaymiz va har birining natijasini ko‘rsatamiz."
+      },
+      {
+        "title": "Ishga tushirish",
+        "text": "Joylaymiz, tekshiramiz, jamoangizni o‘qitamiz."
+      },
+      {
+        "title": "Qo‘llab-quvvatlash",
+        "text": "Ishlashini kuzatamiz va mahsulotni yanada rivojlantiramiz."
       }
     ]
   },
   "cases": {
     "meta": {
       "title": "Keyslar",
-      "description": "Fintex, riteyl va sanoatdagi Osmi’ning tanlangan loyihalari o‘lchanadigan natijalar bilan."
+      "description": "Innovialabs loyihalari: LoadMe yuk tashish ilovasi, Yo'ldosh yo‘lakay safarlar servisi, NUMA Family ekotizimi, NUMA Nutrition, NUMA Kids va Nabaviy Tabobat."
     },
-    "hero": {
-      "badge": "Keyslar",
-      "title": "Natija bilan javob beradigan loyihalar",
-      "subtitle": "Biznes vazifalarini texnologiyalar bilan qanday hal qilishimizga bir nechta misol. Kontent zaglushkada."
-    },
+    "title": "Ishlayotgan loyihalar",
+    "cta": "Menga ham shunday kerak",
     "labels": {
-      "challenge": "Vazifa",
-      "solution": "Yechim",
-      "results": "Natijalar",
+      "task": "Vazifa",
+      "did": "Nima qildik",
+      "facts": "Raqamlarda",
+      "client": "Mijoz",
+      "industry": "Soha",
+      "year": "Yil",
+      "platforms": "Platformalar",
       "stack": "Stek",
-      "other": "Boshqa keyslar",
-      "cta": "O‘xshash loyihani muhokama qilish",
-      "readCase": "Keysni ochish"
+      "openCase": "Keysni ko‘rish",
+      "openSite": "Saytni ochish",
+      "allCases": "Barcha keyslar",
+      "nextCase": "Keyingi keys",
+      "desktop": "Desktop",
+      "mobile": "Mobil"
     },
     "items": [
       {
-        "slug": "fintech-payments",
-        "tag": "Fintex",
-        "title": "Yangi avlod to‘lov platformasi",
-        "summary": "To‘lov tizimi yadrosini qayta loyihaladik va hisob-kitoblarni real vaqtga o‘tkazdik.",
-        "challenge": "Eski monolit yadro yuklama o‘sishiga bardosh bermasdi, relizlar esa haftalab davom etardi. Millionlab tranzaksiyalarga masshtablanishga tayyor arxitektura kerak edi.",
-        "solution": "Monolitni xizmatlarga ajratdik, real vaqtdagi hodisalarni qayta ishlashni joriy etdik va kuzatuvchanlik qurdik. Tez va xavfsiz relizlar uchun CI/CD sozladik.",
-        "results": [
-          { "value": "10M+", "label": "kunlik tranzaksiya" },
-          { "value": "×2", "label": "reliz tezligi" },
-          { "value": "99.9%", "label": "uptime" }
+        "slug": "loadme",
+        "name": "LoadMe",
+        "client": "LoadMe",
+        "industry": "Yuk tashish",
+        "platforms": "Veb, iOS, Android",
+        "tagline": "Yuk tashish uchun ilova",
+        "task": "Yuzlab Telegram-guruhlar o‘rniga haydovchilar, yuk egalari va brokerlarni bitta ilovada birlashtirish.",
+        "did": "iOS va Android uchun mobil ilova, filtrlar bilan yuk va mashina qidirish, yo‘nalish bo‘yicha yuklar haqida xabar beruvchi «Magnit», uch tilda push-bildirishnomalar.",
+        "features": [
+          "Filtrlar bilan yuk va mashina qidirish",
+          "«Magnit»: yo‘nalish bo‘yicha yuklar haqida xabarlar",
+          "Uch tilda push-bildirishnomalar",
+          "Yuk egasi bilan bir bosishda aloqa: Telegram, WhatsApp, qo‘ng‘iroq",
+          "Chat, saqlanganlar va «Mening yuklarim»",
+          "iOS va Android uchun ilovalar"
         ],
-        "stack": ["Next.js", "Node.js", "PostgreSQL", "Kafka", "Kubernetes"]
+        "facts": [
+          {
+            "value": "6 500+",
+            "label": "platformadagi yuk e’lonlari"
+          },
+          {
+            "value": "3",
+            "label": "bildirishnoma tili"
+          }
+        ]
       },
       {
-        "slug": "retail-assistant",
-        "tag": "Riteyl",
-        "title": "Mijozlarni qo‘llab-quvvatlash uchun AI-yordamchi",
-        "summary": "Ko‘p murojaatlarni operatorsiz hal qiladigan LLM-yordamchini joriy etdik.",
-        "challenge": "Qo‘llab-quvvatlash xizmati murojaatlar o‘sishiga ulgurmasdi, javob vaqti oshib borardi va operatorlarga xarajatlar ko‘tarilardi.",
-        "solution": "Bilim bazasi bo‘yicha qidiruvli (RAG) LLM-yordamchi qurdik, uni CRM bilan integratsiya qildik va murakkab murojaatlarni operatorga uzatishni sozladik.",
-        "results": [
-          { "value": "72%", "label": "avto-javob" },
-          { "value": "−45%", "label": "qo‘llab-quvvatlash yuki" },
-          { "value": "4.7", "label": "mijoz bahosi" }
+        "slug": "yoldosh",
+        "name": "Yo'ldosh",
+        "client": "Milliy Yo'ldosh",
+        "industry": "Shaharlararo yo‘lakay safarlar",
+        "platforms": "Veb, iOS, Android",
+        "tagline": "O‘zbekiston bo‘ylab yo‘lakay safarlar servisi",
+        "task": "Shaharlar o‘rtasida qatnaydigan haydovchilarni yo‘lovchilar bilan bog‘lash — Telegram-chatlardagi e’lonlar o‘rniga.",
+        "did": "Sayt hamda iOS va Android uchun mobil ilovalar: yo‘nalish va sana bo‘yicha safar qidirish, joy band qilish, haydovchilarni tekshirish, chat va safar haqida eslatmalar.",
+        "features": [
+          "Yo‘nalish, sana va yo‘lovchilar soni bo‘yicha qidiruv",
+          "Haydovchi tomonidan safarni e’lon qilish",
+          "Haydovchi pasporti va profilini tekshirish",
+          "Haydovchi va yo‘lovchi chati, eslatmalar",
+          "Qidiruv tizimlari uchun mashhur yo‘nalishlar sahifalari",
+          "App Store va Google Play do‘konlarida ilovalar"
         ],
-        "stack": ["Next.js", "Python", "LLM", "Vector DB", "CRM API"]
+        "facts": [
+          {
+            "value": "3",
+            "label": "platforma: veb, iOS, Android"
+          },
+          {
+            "value": "2",
+            "label": "til: o‘zbek va rus"
+          }
+        ]
       },
       {
-        "slug": "industry-twin",
-        "tag": "Sanoat",
-        "title": "Ishlab chiqarishning raqamli egizagi",
-        "summary": "Uskunalar monitoringi uchun prediktiv tahlilga ega yagona panel yig‘dik.",
-        "challenge": "Uskunalar ma'lumotlari tarqoq edi, to‘xtashlar esa post-faktum aniqlanardi. Yagona manzara va prognozlar yetishmasdi.",
-        "solution": "Real vaqtdagi telemetriyani birlashtirdik, dashbordlar va nosozliklarni erta aniqlash uchun prediktiv xizmat modeli qurdik.",
-        "results": [
-          { "value": "−30%", "label": "to‘xtash" },
-          { "value": "×1.5", "label": "tugunlar xizmat muddati" },
-          { "value": "24/7", "label": "monitoring" }
+        "slug": "numa-family",
+        "name": "NUMA Family",
+        "client": "NUMA Family",
+        "industry": "Salomatlik uchun tabiiy mahsulotlar",
+        "platforms": "Veb",
+        "tagline": "NUMA Family ekotizimining korporativ sayti",
+        "task": "Kompaniyaning barcha yo‘nalishlarini bitta saytda ko‘rsatish va mijozga keraklisiga tez o‘tish imkonini berish.",
+        "did": "Ekotizim sayt-xaritasi: oltita yo‘nalish va ularning saytlariga havolalar, yutuqlar, xalqaro sertifikatlar, videolar, maqolalar, sharhlar va savol-javoblar.",
+        "features": [
+          "Oltita biznes yo‘nalishi kartochkalari",
+          "Yutuqlar va ilmiy rahbariyat bloki",
+          "EURO-LEAF, Halal, USDA Organic, ISO 22000, GMP sertifikatlari",
+          "Videolar, maqolalar va sharhlar",
+          "Ko‘p beriladigan savollarga javoblar"
         ],
-        "stack": ["Next.js", "Python", "IoT", "TimescaleDB", "ML"]
+        "facts": [
+          {
+            "value": "6",
+            "label": "yo‘nalish bitta saytda"
+          },
+          {
+            "value": "5",
+            "label": "xalqaro sertifikat"
+          }
+        ]
+      },
+      {
+        "slug": "numa-nutrition",
+        "name": "NUMA Nutrition",
+        "client": "NUMA Family",
+        "industry": "Tabiiy qo‘shimchalar",
+        "platforms": "Veb",
+        "tagline": "Buyurtma imkoniyati bilan tabiiy qo‘shimchalar katalogi",
+        "task": "Xaridorga o‘z maqsadiga mos vositani topish va buyurtma yoki konsultatsiyani rasmiylashtirishda yordam berish.",
+        "did": "Narxlar va xarid tugmasi bilan katalog, salomatlik maqsadlari bo‘yicha tanlash, ekspert videolari, sertifikatlar, sharhlar va konsultatsiya uchun ariza.",
+        "features": [
+          "Narx va xarid tugmasi bilan mahsulot kartochkalari",
+          "Tanlash: immunitet, hazm qilish, go‘zallik, detoks, energiya, yurak",
+          "Mahsulotlar haqida ekspert videolari",
+          "Sertifikatlar va ekspert maqolalari",
+          "Konsultatsiya uchun ariza"
+        ],
+        "facts": [
+          {
+            "value": "6",
+            "label": "salomatlik maqsadi navigatsiyada"
+          },
+          {
+            "value": "10+",
+            "label": "ekspert videosi"
+          }
+        ]
+      },
+      {
+        "slug": "numa-kids",
+        "name": "NUMA Kids",
+        "client": "NUMA Family",
+        "industry": "Bolalar vitaminlari",
+        "platforms": "Veb",
+        "tagline": "Qahramonli bolalar marmelad-vitaminlari",
+        "task": "Ota-onalarga oltita mahsulot o‘rtasidagi farqni tushuntirish va mahsulotlar qatorini bolalarga tushunarli qilish.",
+        "did": "Har bir mahsulot o‘z vazifasiga ega personajga aylandi. Ota-onalar uchun — tarkiblar, sertifikatlar, mutaxassislarning maqolalari va videolari, yetkazib berish bilan buyurtma.",
+        "features": [
+          "Personajlar: Rikki, Bonny, Jekky, Genny, Funny",
+          "Vazifasi, tarkibi va narxi ko‘rsatilgan kartochkalar",
+          "Ota-onalar uchun maqolalar va videolar",
+          "Ishlab chiqarish sertifikatlari",
+          "Yetkazib berish va konsultatsiya bilan buyurtma"
+        ],
+        "facts": [
+          {
+            "value": "6",
+            "label": "mahsulot qatorda"
+          },
+          {
+            "value": "5",
+            "label": "personaj"
+          }
+        ]
+      },
+      {
+        "slug": "nabaviy-tabobat",
+        "name": "Nabaviy Tabobat",
+        "client": "NUMA Family",
+        "industry": "Tabiiy tibbiyot",
+        "platforms": "Veb",
+        "tagline": "Nabaviy tibbiyot markazi va mahsulotlari",
+        "task": "Markaz va uchta asosiy mahsulot haqida auditoriya tilida — o‘zbek kirill yozuvida — hikoya qilish.",
+        "did": "Uchta mahsulot, savatcha va buyurtma, markaz haqida bo‘lim, sertifikatlar, videolar, sharhlar va savollarga javoblar jamlangan sayt.",
+        "features": [
+          "O‘zbek kirill yozuvi va rus tili",
+          "Omega 3, Qora Sedana, Qust al-Hindi — narx va savatcha bilan",
+          "Markaz va mutaxassislar haqida bo‘lim",
+          "Sertifikatlar, videolar, sharhlar",
+          "Ko‘p beriladigan savollarga javoblar"
+        ],
+        "facts": [
+          {
+            "value": "3",
+            "label": "asosiy mahsulot"
+          },
+          {
+            "value": "2",
+            "label": "interfeys tili"
+          }
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "title": "Zamonaviy stekda ishlaymiz",
+    "lead": "Texnologiyani vazifaga moslab tanlaymiz, vazifani texnologiyaga emas.",
+    "groups": [
+      {
+        "title": "Veb",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "Node.js",
+          "Python",
+          "Laravel"
+        ]
+      },
+      {
+        "title": "Mobil",
+        "items": [
+          "Flutter",
+          "React Native",
+          "Swift",
+          "Kotlin"
+        ]
+      },
+      {
+        "title": "AI",
+        "items": [
+          "OpenAI",
+          "Claude",
+          "LangChain",
+          "hujjat va nutqni tanib olish"
+        ]
+      },
+      {
+        "title": "Telegram",
+        "items": [
+          "Bot API",
+          "Mini Apps",
+          "Telegram Payments"
+        ]
+      },
+      {
+        "title": "Infratuzilma",
+        "items": [
+          "Docker",
+          "AWS",
+          "Google Cloud",
+          "Cloudflare"
+        ]
+      }
+    ]
+  },
+  "formats": {
+    "title": "Qulay formatni tanlang",
+    "headers": {
+      "format": "Format",
+      "fit": "Kimga mos",
+      "how": "Qanday hisoblaymiz"
+    },
+    "items": [
+      {
+        "title": "Qat’iy narx",
+        "fit": "Aniq vazifa: sayt, bot, lending",
+        "how": "Loyiha uchun bitta summa, bosqichlar shartnomada"
+      },
+      {
+        "title": "Soatbay to‘lov",
+        "fit": "Loyiha jarayonda o‘zgaradi, moslashuvchanlik kerak",
+        "how": "Hisobot asosida amalda ishlangan soatlar uchun to‘laysiz"
+      },
+      {
+        "title": "Ajratilgan jamoa",
+        "fit": "Uzoq muddatli mahsulot, xodim yollamasdan o‘z jamoangiz kerak",
+        "how": "Jamoa tarkibi uchun har oy"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Ko‘p beriladigan savollar",
+    "items": [
+      {
+        "question": "Ishlab chiqish qancha turadi?",
+        "answer": "Vazifaga bog‘liq. Telegram-bot yoki lending mobil ilova yoki CRMdan arzonroq. Qisqa qo‘ng‘iroqdan so‘ng aniq baho yuboramiz, bu bepul."
+      },
+      {
+        "question": "Kichik versiyadan boshlasa bo‘ladimi?",
+        "answer": "Ha. Ko‘pincha avval asosiy funksiyalar bilan MVP ishga tushirib, talabni tekshirib ko‘rish va shundan keyingina mahsulotni rivojlantirish foydaliroq."
+      },
+      {
+        "question": "Menda faqat g‘oya bo‘lsa-yu, texnik topshiriq bo‘lmasa-chi?",
+        "answer": "Bu normal holat. Vazifani aniqlashtirishga yordam beramiz va texnik topshiriqni o‘zimiz tuzamiz."
+      },
+      {
+        "question": "Ishga tushirgandan keyin loyihani qo‘llab-quvvatlaysizmi?",
+        "answer": "Ha. Biznesingiz o‘sishi bilan xatolarni tuzatamiz, yangilaymiz va funksiyalar qo‘shamiz."
+      },
+      {
+        "question": "Kod kimga tegishli?",
+        "answer": "Sizga. To‘lovdan so‘ng manba kodi va barcha kirish huquqlarini topshiramiz."
+      },
+      {
+        "question": "Biznesga sun’iy intellektni joriy qilish xavfsizmi?",
+        "answer": "Ha, agar to‘g‘ri sozlansa. AI qaysi ma’lumotlarga kira olishini cheklaymiz va xato qimmatga tushadigan joylarda yakuniy qarorni odamga qoldiramiz."
+      },
+      {
+        "question": "Mini App oddiy ilovadan nimasi bilan yaxshi?",
+        "answer": "Mijoz hech narsa yuklab olishi va ro‘yxatdan o‘tishi shart emas: hammasi Telegram ichida ochiladi. App Store va Google Play uchun ilovaga qaraganda tezroq va arzonroq ishga tushadi."
+      }
+    ]
+  },
+  "contact": {
+    "title": "G‘oya yoki vazifangiz bormi? Bizga aytib bering",
+    "lead": "Ish kuni davomida javob beramiz va yechim taklif qilamiz. Konsultatsiya bepul.",
+    "telegram": "Telegramda yozish"
+  },
+  "contactForm": {
+    "name": "Ismingiz",
+    "namePlaceholder": "Ism",
+    "phone": "Telefon yoki Telegram",
+    "phonePlaceholder": "+998 90 123 45 67 yoki @username",
+    "message": "Nima qilish kerak?",
+    "optional": "ixtiyoriy",
+    "messagePlaceholder": "Vazifa haqida bir-ikki gap",
+    "service": "Xizmat",
+    "serviceOptions": [
+      {
+        "value": "web",
+        "label": "Sayt"
+      },
+      {
+        "value": "mobile",
+        "label": "Ilova"
+      },
+      {
+        "value": "telegram",
+        "label": "Telegram-bot / Mini App"
+      },
+      {
+        "value": "ai",
+        "label": "AI-avtomatlashtirish"
+      },
+      {
+        "value": "crm",
+        "label": "CRM"
+      },
+      {
+        "value": "other",
+        "label": "Boshqa"
+      }
+    ],
+    "consent": "Tugmani bosish orqali maxfiylik siyosatiga rozilik bildirasiz.",
+    "submit": "Ariza yuborish",
+    "sending": "Yuborilmoqda…",
+    "sent": "Yuborildi",
+    "successTitle": "Rahmat! Arizangiz qabul qilindi.",
+    "successText": "Menejer ish kuni davomida siz bilan bog‘lanadi.",
+    "errors": {
+      "nameShort": "Kamida 2 ta harf",
+      "nameLong": "Ism juda uzun",
+      "nameInvalid": "Faqat harflar, bo‘sh joy va defis",
+      "contactRequired": "Telefon yoki Telegramni kiriting",
+      "contactInvalid": "Raqam +998 90 123 45 67 formatida yoki @username",
+      "serviceRequired": "Xizmatni tanlang",
+      "messageLong": "1000 ta belgidan oshmasin",
+      "messageInvalid": "Tasodifiy belgilar to‘plamiga o‘xshaydi",
+      "messageLinks": "Havolalar juda ko‘p",
+      "tooFast": "Forma juda tez to‘ldirildi. Qaytadan urinib ko‘ring",
+      "rateLimited": "Urinishlar juda ko‘p. Bir necha daqiqadan so‘ng qayta urinib ko‘ring",
+      "server": "Yuborib bo‘lmadi. Qaytadan urinib ko‘ring yoki bizga Telegramda yozing"
+    }
+  },
+  "footer": {
+    "about": "IT-ishlab chiqish studiyasi: saytlar, ilovalar, Telegram-botlar, AI-avtomatlashtirish.",
+    "signature": "Innovation via Lab",
+    "servicesTitle": "Xizmatlar",
+    "services": [
+      {
+        "href": "/services/ai",
+        "label": "AI-avtomatlashtirish"
+      },
+      {
+        "href": "/services/telegram",
+        "label": "Telegram-botlar va Mini Apps"
+      },
+      {
+        "href": "/services/web",
+        "label": "Saytlar"
+      },
+      {
+        "href": "/services/mobile",
+        "label": "Mobil ilovalar"
+      },
+      {
+        "href": "/services/crm",
+        "label": "CRM"
+      }
+    ],
+    "companyTitle": "Kompaniya",
+    "company": [
+      {
+        "href": "/company#process",
+        "label": "Qanday ishlaymiz"
+      },
+      {
+        "href": "/company",
+        "label": "Biz haqimizda"
+      },
+      {
+        "href": "/cases",
+        "label": "Keyslar"
+      },
+      {
+        "href": "/contacts",
+        "label": "Kontaktlar"
+      }
+    ],
+    "contactsTitle": "Kontaktlar",
+    "city": "Toshkent",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "toTop": "Yuqoriga"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Bunday sahifa mavjud emas.",
+    "home": "Bosh sahifaga"
+  },
+  "common": {
+    "home": "Bosh sahifa"
+  },
+  "company": {
+    "meta": {
+      "title": "Biz haqimizda",
+      "description": "Innovialabs — IT-ishlab chiqish studiyasi: saytlar, mobil ilovalar, CRM, integratsiyalar va jarayonlarni AI bilan avtomatlashtirish — g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha."
+    },
+    "title": "Biz haqimizda",
+    "lead": "Innovialabs — IT-ishlab chiqish studiyasi. Biznesning har qanday vazifasini olamiz: saytlar, mobil ilovalar, CRM, integratsiyalar va jarayonlarni AI bilan avtomatlashtirish — g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha.",
+    "sloganLabel": "Shior",
+    "logoTitle": "Logotip va uning g‘oyasi",
+    "logoParts": [
+      {
+        "symbol": ">",
+        "title": "Buyruq «>»",
+        "text": "Yo‘l, via: signal oldinga boradi, vazifa bajarila boshlaydi."
+      },
+      {
+        "symbol": "_",
+        "title": "Kursor «_»",
+        "text": "Laboratoriya: kod yoziladigan va tajribalar o‘tkaziladigan satr."
+      },
+      {
+        "symbol": "✦",
+        "title": "Yulduz",
+        "text": "Innovatsiya: koddan paydo bo‘ladigan natija."
+      },
+      {
+        "symbol": "▢",
+        "title": "Terminal oynasi",
+        "text": "Ishlab chiqish muhiti, hamma narsa sodir bo‘ladigan ramka."
       }
     ]
   },
   "contacts": {
     "meta": {
       "title": "Kontaktlar",
-      "description": "Osmi jamoasi bilan bog‘laning — vazifangiz, muddat va hamkorlik formatini muhokama qilamiz."
+      "description": "Innovialabs bilan bog‘laning: ariza qoldiring, Telegram yoki pochta orqali yozing. Ish kuni davomida javob beramiz, konsultatsiya bepul."
     },
-    "hero": {
-      "badge": "Kontaktlar",
-      "title": "Keling, loyihangizni muhokama qilamiz",
-      "subtitle": "So‘rov qoldiring yoki to‘g‘ridan-to‘g‘ri yozing — ish kuni davomida javob beramiz."
-    },
-    "channelsTitle": "Aloqa kanallari",
-    "channels": [
-      { "type": "email", "label": "Email", "value": "hello@osmi.example.com", "href": "mailto:hello@osmi.example.com" },
-      { "type": "phone", "label": "Telefon", "value": "+998 (00) 000-00-00", "href": "tel:+998000000000" },
-      { "type": "telegram", "label": "Telegram", "value": "@osmi", "href": "https://t.me/" }
-    ],
-    "officeTitle": "Ofis",
-    "office": "Toshkent sh., Namuna ko‘chasi, 1 (zaglushka manzil)",
-    "hoursTitle": "Ish vaqti",
-    "hours": "Du–Ju, 09:00–18:00"
+    "title": "Kontaktlar",
+    "emailLabel": "Pochta",
+    "telegramLabel": "Telegram",
+    "phoneLabel": "Telefon",
+    "cityLabel": "Shahar",
+    "city": "Toshkent, O‘zbekiston"
   }
 }

@@ -2,7 +2,9 @@
 
 import * as React from "react";
 import Lenis from "lenis";
+import { usePathname } from "next/navigation";
 import { gsap, ScrollTrigger, prefersReducedMotion } from "@/lib/gsap";
+import { getLenis, setLenis } from "@/lib/lenis";
 
 /**
  * Global smooth scroll (Lenis) driven by GSAP's ticker and wired into
@@ -10,6 +12,16 @@ import { gsap, ScrollTrigger, prefersReducedMotion } from "@/lib/gsap";
  * Disabled entirely under prefers-reduced-motion.
  */
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
+  // New page → start at the top (Lenis keeps its own scroll position) and
+  // re-measure scroll-triggered animations. Hash links scroll themselves.
+  React.useEffect(() => {
+    if (!window.location.hash) getLenis()?.scrollTo(0, { immediate: true, force: true });
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => cancelAnimationFrame(id);
+  }, [pathname]);
+
   React.useEffect(() => {
     if (prefersReducedMotion()) return;
 
@@ -20,6 +32,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       touchMultiplier: 1.5,
     });
 
+    setLenis(lenis);
     lenis.on("scroll", ScrollTrigger.update);
 
     const raf = (time: number) => lenis.raf(time * 1000);
@@ -39,7 +52,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       const target = document.querySelector(hash);
       if (!target) return;
       e.preventDefault();
-      lenis.scrollTo(target as HTMLElement, { offset: -90 });
+      lenis.scrollTo(target as HTMLElement, { offset: -110 });
     };
     document.addEventListener("click", onClick);
 
@@ -51,6 +64,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       document.removeEventListener("click", onClick);
       window.removeEventListener("load", refresh);
       gsap.ticker.remove(raf);
+      setLenis(null);
       lenis.destroy();
     };
   }, []);

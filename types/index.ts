@@ -6,24 +6,20 @@ import type ruDict from "@/lib/i18n/dictionaries/ru.json";
  */
 export type Dictionary = typeof ruDict;
 
-/** Convenience aliases for the per-section slices passed to components. */
 export type NavDict = Dictionary["nav"];
 export type HeroDict = Dictionary["hero"];
 export type TrustDict = Dictionary["trust"];
-export type ExpertiseDict = Dictionary["expertise"];
-export type PlatformDict = Dictionary["platform"];
-export type ResultsDict = Dictionary["results"];
-export type ProcessDict = Dictionary["process"];
-export type SocialDict = Dictionary["social"];
-export type FaqDict = Dictionary["faq"];
-export type CtaDict = Dictionary["cta"];
-export type FooterDict = Dictionary["footer"];
-
-export type CommonDict = Dictionary["common"];
-export type CtaBandDict = Dictionary["ctaBand"];
-export type CompanyDict = Dictionary["company"];
 export type ServicesDict = Dictionary["services"];
 export type ServiceItem = ServicesDict["items"][number];
+export type AiDict = Dictionary["ai"];
+export type TelegramDict = Dictionary["telegram"];
+export type WhyDict = Dictionary["why"];
+export type ProcessDict = Dictionary["process"];
 export type CasesDict = Dictionary["cases"];
 export type CaseItem = CasesDict["items"][number];
-export type ContactsDict = Dictionary["contacts"];
+export type StackDict = Dictionary["stack"];
+export type FormatsDict = Dictionary["formats"];
+export type FaqDict = Dictionary["faq"];
+export type ContactDict = Dictionary["contact"];
+export type ContactFormDict = Dictionary["contactForm"];
+export type FooterDict = Dictionary["footer"];
