@@ -3,17 +3,30 @@
     "title": "Innovialabs — sayt, ilova, Telegram-bot ishlab chiqish va AI-avtomatlashtirish",
     "titleTemplate": "%s — Innovialabs",
     "description": "IT-ishlab chiqish studiyasi. Saytlar, mobil ilovalar, CRM, Telegram-botlar va Mini Apps yaratamiz, jarayonlarni sun’iy intellekt yordamida avtomatlashtiramiz. G‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha. Bepul konsultatsiya.",
-    "ogTitle": "Where ideas become products. — Innovialabs",
+    "ogTitle": "Bu yerda g‘oyalar mahsulotga aylanadi. — Innovialabs",
     "keywords": [
       "sayt ishlab chiqish",
       "mobil ilova ishlab chiqish",
       "Telegram-bot ishlab chiqish",
       "Telegram Mini Apps",
       "AI-avtomatlashtirish",
+      "biznesga sun’iy intellekt joriy qilish",
       "CRM ishlab chiqish",
+      "ERP ishlab chiqish",
+      "API integratsiyalar",
+      "UI/UX dizayn",
+      "DevOps",
+      "SEO xizmatlari",
+      "MVP ishlab chiqish",
+      "IT-autsorsing",
+      "sayt buyurtma qilish",
+      "ilova buyurtma qilish",
       "IT-studiya Toshkent",
+      "dasturiy ta’minot ishlab chiqish O‘zbekiston",
+      "veb-studiya",
       "Innovialabs"
-    ]
+    ],
+    "slogan": "Bu yerda g‘oyalar mahsulotga aylanadi."
   },
   "nav": {
     "links": [
@@ -22,20 +35,16 @@
         "label": "Xizmatlar"
       },
       {
-        "href": "/services/ai",
-        "label": "AI-avtomatlashtirish"
-      },
-      {
-        "href": "/services/telegram",
-        "label": "Telegram"
-      },
-      {
         "href": "/company",
         "label": "Qanday ishlaymiz"
       },
       {
         "href": "/cases",
         "label": "Keyslar"
+      },
+      {
+        "href": "/blog",
+        "label": "Blog"
       },
       {
         "href": "/contacts",
@@ -50,8 +59,8 @@
     "language": "Til"
   },
   "hero": {
-    "titleTop": "Where ideas",
-    "titleBottom": "become products.",
+    "titleTop": "Bu yerda g‘oyalar",
+    "titleBottom": "mahsulotga aylanadi.",
     "lead": "Saytlar, mobil ilovalar, Telegram-botlar va CRM ishlab chiqamiz, jarayonlarni sun’iy intellekt yordamida avtomatlashtiramiz. Loyihani to‘liq o‘z zimmamizga olamiz: g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha.",
     "primary": "Loyihani muhokama qilish",
     "secondary": "Xizmatlarni ko‘rish",
@@ -94,6 +103,41 @@
           "Hisob-fakturalar, shartnomalar, yuk xatlarini tanib olish",
           "ChatGPT, Claude va boshqa modellarni tizimlaringizga ulash",
           "Qo‘ng‘iroqlar uchun ovozli AI-agentlar"
+        ],
+        "steps": [
+          {
+            "title": "Jarayonlar tahlili",
+            "text": "Jamoa takroriy ishlarga qayerda soatlab vaqt sarflashini ko‘rib, birinchi navbatda nimani avtomatlashtirishni tanlaymiz."
+          },
+          {
+            "title": "AI ulaymiz",
+            "text": "Vazifaga mos modelni tanlaymiz va unga faqat kerakli ma’lumotlarga kirish huquqini beramiz."
+          },
+          {
+            "title": "Ishga joriy qilamiz",
+            "text": "CRM, Telegram, pochta va jadvallar bilan bog‘laymiz — natija darhol kerakli joyga tushadi."
+          },
+          {
+            "title": "Qarorni inson qiladi",
+            "text": "Xato qimmatga tushadigan joyda yakuniy so‘z xodimda qoladi. Javoblar sifatini kuzatib boramiz."
+          }
+        ],
+        "scene": [
+          "Mijoz savoli",
+          "Hisob-faktura",
+          "Ariza",
+          "Qo‘ng‘iroq",
+          "AI",
+          "Mijozga javob",
+          "CRMga yozuv",
+          "Telegramda hisobot",
+          "Inson tekshiruvi"
+        ],
+        "get": [
+          "Jarayoningizga mos AI-assistent yoki avtomatlashtirish",
+          "CRM, Telegram va jadvallaringizga ulash",
+          "Jamoa uchun yo‘riqnoma",
+          "Real suhbatlar asosida takomillashtirish"
         ]
       },
       {
@@ -105,6 +149,34 @@
           "Telegram Mini Apps: Telegram ichida do‘kon, katalog, shaxsiy kabinet",
           "To‘g‘ridan-to‘g‘ri Telegramda to‘lov: Payme, Click, Telegram Stars",
           "Ommaviy xabarnomalar, voronkalar, CRM bilan integratsiya"
+        ],
+        "steps": [
+          {
+            "title": "Ssenariy",
+            "text": "Mijoz botda nima qilishini o‘ylab chiqamiz: buyurtma, yozilish, to‘lov yoki yordam."
+          },
+          {
+            "title": "Bot va Mini App",
+            "text": "Bot va kerak bo‘lsa Mini App yaratamiz: Telegram ichida katalog, savat va shaxsiy kabinet."
+          },
+          {
+            "title": "To‘lov",
+            "text": "Payme, Click yoki Telegram Stars ulaymiz — mijoz messenjerdan chiqmasdan to‘laydi."
+          },
+          {
+            "title": "CRM bilan bog‘lash",
+            "text": "Buyurtma va arizalar darhol CRMga tushadi, xabarnomalar esa mijozlarni qaytaradi."
+          }
+        ],
+        "scene": [
+          "To‘landi",
+          "CRMda yangi buyurtma"
+        ],
+        "get": [
+          "Katalogingiz bilan bot yoki Mini App",
+          "Payme, Click yoki Telegram Stars orqali to‘lov",
+          "CRMda ariza va buyurtmalar",
+          "Xabarnomalar va avtovoronkalar"
         ]
       },
       {
@@ -115,6 +187,29 @@
           "Lendinglar va korporativ saytlar",
           "Onlayn to‘lovli internet-do‘konlar",
           "Shaxsiy kabinetlar, portallar, SaaS"
+        ],
+        "steps": [
+          {
+            "title": "Tuzilma",
+            "text": "Tashrif buyuruvchi nima qilishi kerakligini aniqlab, sahifa va bloklarni joylashtiramiz."
+          },
+          {
+            "title": "Dizayn",
+            "text": "Telefon va kompyuter uchun dizayn chizamiz. Saytni ishlab chiqishdan oldin ko‘rasiz."
+          },
+          {
+            "title": "Ishlab chiqish",
+            "text": "Tez sahifalar yasaymiz, to‘lov, katalog yoki shaxsiy kabinetni ulaymiz."
+          },
+          {
+            "title": "Ishga tushirish",
+            "text": "Domen, analitika va SEOni sozlaymiz — sayt reklamaga tayyor bo‘ladi."
+          }
+        ],
+        "scene": [
+          "sizning-saytingiz.uz",
+          "Ariza qoldirish",
+          "Onlayn"
         ]
       },
       {
@@ -125,6 +220,32 @@
           "Native va krossplatforma ilovalar",
           "Dizayn, ishlab chiqish, backend",
           "App Store va Google Play do‘konlariga joylash"
+        ],
+        "steps": [
+          {
+            "title": "Ssenariylar",
+            "text": "Foydalanuvchining asosiy harakatlari va platformalarni aniqlaymiz: iOS, Android yoki ikkalasi."
+          },
+          {
+            "title": "Dizayn",
+            "text": "Har bir platforma qoidalari bo‘yicha ekranlar chizamiz va bosiladigan prototip yig‘amiz."
+          },
+          {
+            "title": "Ilova va bekend",
+            "text": "Ilova va server qismini yozamiz: akkauntlar, ma’lumotlar, push-bildirishnomalar."
+          },
+          {
+            "title": "Nashr qilish",
+            "text": "Tekshiruvdan o‘tib, ilovani App Store va Google Playga joylaymiz."
+          }
+        ],
+        "scene": [
+          "Bosh sahifa",
+          "Katalog",
+          "Profil",
+          "API",
+          "App Store",
+          "Google Play"
         ]
       },
       {
@@ -135,6 +256,33 @@
           "Jarayonlaringizga moslashtirilgan CRM",
           "Ombor va moliyaviy hisob",
           "1C, AmoCRM, Bitrix24 bilan integratsiya"
+        ],
+        "steps": [
+          {
+            "title": "Jarayonlar",
+            "text": "Mijoz, bitim yoki tovar arizadan to‘lovgacha qanday harakatlanishini tasvirlaymiz."
+          },
+          {
+            "title": "Prototip",
+            "text": "Xodimlarga qulay bo‘lishi uchun CRM ekranlarini ishlab chiqishdan oldin ko‘rsatamiz."
+          },
+          {
+            "title": "Ishlab chiqish va integratsiyalar",
+            "text": "Tizimni yig‘amiz, ma’lumotlarni ko‘chiramiz, 1C, AmoCRM yoki Bitrix24 ni ulaymiz."
+          },
+          {
+            "title": "O‘qitish",
+            "text": "Ishga tushiramiz, jamoani o‘qitamiz va o‘sishingizga qarab tizimni takomillashtiramiz."
+          }
+        ],
+        "scene": [
+          "Yangi",
+          "Jarayonda",
+          "Bitim",
+          "Saytdan ariza",
+          "Qo‘ng‘iroq",
+          "Telegram",
+          "Takroriy buyurtma"
         ]
       },
       {
@@ -145,6 +293,33 @@
           "Sayt, CRM, ombor va buxgalteriyani bog‘lash",
           "To‘lov tizimlari, banklar, IP-telefoniya",
           "Maxsus API ishlab chiqish"
+        ],
+        "steps": [
+          {
+            "title": "Tizimlar xaritasi",
+            "text": "Qaysi servislaringiz borligini va ma’lumotlar qayerda qo‘lda ko‘chirilishini aniqlaymiz."
+          },
+          {
+            "title": "Almashinuv sxemasi",
+            "text": "Qaysi ma’lumot qayerga va qachon uzatilishini, nosozlikda nima qilishni belgilaymiz."
+          },
+          {
+            "title": "Ulash",
+            "text": "Sayt, CRM, ombor, buxgalteriya, to‘lov tizimlari va telefoniyani bog‘laymiz."
+          },
+          {
+            "title": "Nazorat",
+            "text": "Xatolar yo‘qolmasligi uchun almashinuv jurnali va bildirishnomalarni sozlaymiz."
+          }
+        ],
+        "scene": [
+          "Sayt",
+          "CRM",
+          "Ombor",
+          "1C",
+          "Bank",
+          "Telefoniya",
+          "API"
         ]
       },
       {
@@ -155,6 +330,30 @@
           "Sayt va ilovalar dizayni",
           "Interaktiv prototiplar",
           "Logotip, firma uslubi, brendbuk"
+        ],
+        "steps": [
+          {
+            "title": "Tadqiqot",
+            "text": "Mahsulot, auditoriya va raqobatchilarni o‘rganamiz."
+          },
+          {
+            "title": "Prototip",
+            "text": "Bosiladigan prototip yig‘amiz va mantiqni vizualdan oldin tekshiramiz."
+          },
+          {
+            "title": "Interfeys",
+            "text": "Interfeys va ekranlarning barcha holatlarini chizamiz."
+          },
+          {
+            "title": "Brend",
+            "text": "Hammasi yagona ko‘rinishi uchun logotip, firma uslubi va brendbuk."
+          }
+        ],
+        "scene": [
+          "Auditoriya",
+          "Raqobatchilar",
+          "Vazifalar",
+          "Tugma"
         ]
       },
       {
@@ -165,6 +364,38 @@
           "Serverlar va bulutni sozlash",
           "Zaxira nusxalar va ma’lumotlarni himoyalash",
           "24/7 monitoring"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "Loyiha hozir qayerda va qanday ishlayotganini ko‘rib, zaif joylarni topamiz."
+          },
+          {
+            "title": "Infratuzilma",
+            "text": "Serverlar yoki bulutni va yangilanishlarni avtomatik chiqarishni sozlaymiz."
+          },
+          {
+            "title": "Zaxira nusxalar",
+            "text": "Zaxira nusxalar va ma’lumotlar himoyasini sozlab, tiklashni tekshiramiz."
+          },
+          {
+            "title": "Monitoring",
+            "text": "24/7 kuzatamiz va mijozlar sezmasdan oldin signal olamiz."
+          }
+        ],
+        "scene": [
+          "Yig‘ish",
+          "Testlar",
+          "Chiqarish",
+          "Zaxira nusxa",
+          "Hammasi ishlayapti",
+          "Telegramga signal"
+        ],
+        "get": [
+          "Sozlangan server yoki bulut",
+          "Yangilanishlarni avtomatik chiqarish",
+          "Jadval bo‘yicha zaxira nusxalar",
+          "Monitoring va ogohlantirishlar"
         ]
       },
       {
@@ -175,6 +406,33 @@
           "SEO-optimallashtirish",
           "Google va Meta reklamasini sozlash",
           "Reklamadan sotuvgacha uzluksiz analitika"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "Sayt, raqobatchilar va mijozlaringiz nimani qidirayotganini tekshiramiz."
+          },
+          {
+            "title": "SEO",
+            "text": "Sayt qidiruvda ko‘tarilishi uchun texnik xatolar, tuzilma va matnlarni tuzatamiz."
+          },
+          {
+            "title": "Reklama",
+            "text": "Google va Meta reklamasini sotib olishga tayyorlarga sozlaymiz."
+          },
+          {
+            "title": "Analitika",
+            "text": "Uchdan-uchga analitikani ulaymiz: qaysi kanal ariza olib kelishi ko‘rinadi."
+          }
+        ],
+        "scene": [
+          "xizmatingiz toshkent",
+          "Sizning saytingiz",
+          "Raqobatchi",
+          "Reklama",
+          "Ko‘rishlar",
+          "Bosishlar",
+          "Arizalar"
         ]
       },
       {
@@ -185,6 +443,36 @@
           "Texnik yordam va xatolarni tuzatish",
           "O‘sishingiz bilan birga yangi funksiyalar",
           "Mavjud sayt va ilovalar auditi"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "Agar mahsulotni boshqalar qilgan bo‘lsa — kodni o‘rganib, muammolarni topamiz."
+          },
+          {
+            "title": "Tuzatishlar",
+            "text": "Xatolarni ustuvorlik bo‘yicha tuzatamiz va nima qilinganini aytamiz."
+          },
+          {
+            "title": "Rivojlantirish",
+            "text": "Biznes o‘sishiga qarab yangi funksiyalar qo‘shamiz."
+          },
+          {
+            "title": "Muntazam",
+            "text": "Kutubxonalarni yangilaymiz va hammasi barqaror ishlashini kuzatamiz."
+          }
+        ],
+        "scene": [
+          "Ishga tushirish",
+          "Xato tuzatildi",
+          "Yangi funksiya",
+          "Yangilanish"
+        ],
+        "get": [
+          "Xatolarni ustuvorlik bo‘yicha tuzatish",
+          "Reja bo‘yicha yangi funksiyalar",
+          "Muntazam yangilanishlar",
+          "Bajarilgan ishlar hisoboti"
         ]
       },
       {
@@ -195,12 +483,47 @@
           "G‘oyani baholash va texnik topshiriq",
           "MVP ishga tushirish",
           "Loyihangiz uchun ajratilgan jamoa"
+        ],
+        "steps": [
+          {
+            "title": "G‘oya",
+            "text": "G‘oya, auditoriya va mahsulot qanday daromad keltirishini tahlil qilamiz."
+          },
+          {
+            "title": "Texnik topshiriq",
+            "text": "Funksiyalar, muddat va narxni tushunarli tilda yozamiz."
+          },
+          {
+            "title": "MVP",
+            "text": "Faqat asosiy funksiyalar bilan birinchi versiyani ishga tushiramiz."
+          },
+          {
+            "title": "O‘sish",
+            "text": "Talabni tekshirib, mahsulotni o‘z yoki ajratilgan jamoa bilan rivojlantiramiz."
+          }
+        ],
+        "scene": [
+          "G‘oya",
+          "TT",
+          "MVP",
+          "O‘sish"
+        ],
+        "get": [
+          "G‘oya va xatarlarni baholash",
+          "Muddat va narx ko‘rsatilgan texnik topshiriq",
+          "Ishlaydigan MVP",
+          "Mahsulotni rivojlantirish rejasi"
         ]
       }
     ],
     "more": "Batafsil",
     "otherTitle": "Boshqa xizmatlar",
-    "includesTitle": "Nima qilamiz"
+    "includesTitle": "Nima qilamiz",
+    "howTitle": "Buni qanday qilamiz",
+    "getTitle": "Nimaga ega bo‘lasiz",
+    "casesTitle": "Allaqachon qilganlarimiz",
+    "allTitle": "Barcha xizmatlar",
+    "indexTitle": "Vazifani tanlang"
   },
   "ai": {
     "title": "Jamoangiz haftasiga necha soatni rutinaga sarflaydi?",
@@ -328,7 +651,7 @@
   "cases": {
     "meta": {
       "title": "Keyslar",
-      "description": "Innovialabs loyihalari: LoadMe yuk tashish ilovasi, Yo'ldosh yo‘lakay safarlar servisi, NUMA Family ekotizimi, NUMA Nutrition, NUMA Kids va Nabaviy Tabobat."
+      "description": "Innovialabs loyihalari: LoadMe, Yo'ldosh, NUMA Family, NUMA Nutrition, NUMA Kids, Nabaviy Tabobat, Med Service Centre, Leader Audit, Global School va InCRM admin-paneli."
     },
     "title": "Ishlayotgan loyihalar",
     "cta": "Menga ham shunday kerak",
@@ -345,8 +668,7 @@
       "openSite": "Saytni ochish",
       "allCases": "Barcha keyslar",
       "nextCase": "Keyingi keys",
-      "desktop": "Desktop",
-      "mobile": "Mobil"
+      "inside": "Ichida nima bor"
     },
     "items": [
       {
@@ -402,6 +724,118 @@
           {
             "value": "2",
             "label": "til: o‘zbek va rus"
+          }
+        ]
+      },
+      {
+        "slug": "incrm",
+        "name": "InCRM",
+        "client": "InCRM",
+        "industry": "Sayt va ilovani boshqarish",
+        "platforms": "Veb-panel",
+        "tagline": "Kompaniya sayti va ilovasi uchun admin-panel",
+        "task": "Jamoaga sayt va ilovani o‘zgartirish, arizalar va analitikani dasturchisiz kuzatish uchun yagona joy berish.",
+        "did": "Tayyor bloklardan sahifa konstruktori, sahifalar daraxti, uch tilga tarjimalar, nashrdan oldin tekshiruv, push-xabarnomalar va analitika dashbordiga ega admin-panel.",
+        "features": [
+          "Tayyor bloklardan sahifa konstruktori",
+          "Muharrir dizaynni buzishga yo‘l qo‘ymaydi: faqat berilgan variantlar",
+          "Rus, o‘zbek va ingliz tillarida kontent",
+          "Qoralama, tekshiruv, jadval bo‘yicha nashr",
+          "Dashbord: tashrif buyuruvchilar, arizalar, ilova, ijtimoiy tarmoqlar",
+          "Push-xabarnomalar, rollar va o‘zgarishlar jurnali"
+        ],
+        "facts": [
+          {
+            "value": "9",
+            "label": "konstruktordagi blok turi"
+          },
+          {
+            "value": "3",
+            "label": "kontent tili"
+          }
+        ]
+      },
+      {
+        "slug": "medsc",
+        "name": "Med Service Centre",
+        "client": "Med Service Centre",
+        "industry": "Tibbiy uskunalar",
+        "platforms": "Veb",
+        "tagline": "Klinikalar uchun tibbiy uskunalar katalogi",
+        "task": "Klinikalarga kompaniyaning barcha uskunalari va servisini ko‘rsatish — kerakli model qidiruvda ham, saytda ham topilsin.",
+        "did": "Katalog-sayt: uskunalar kategoriyalari va bo‘limlari, ishlab chiqaruvchilar va modellar sahifalari, montaj, o‘qitish va servis xizmatlari, ROI hisob-kitobi va konsultatsiyaga ariza.",
+        "features": [
+          "14 kategoriya: operatsiya blokidan telemeditsinagacha",
+          "Ishlab chiqaruvchilar sahifalari va model kartochkalari",
+          "Klinika uchun ROI hisob-kitobi",
+          "Xizmatlar: yetkazib berish, o‘rnatish, o‘qitish, servis",
+          "Kategoriyalarning SEO-tavsiflari va blog",
+          "Konsultatsiyaga ariza va Telegram"
+        ],
+        "facts": [
+          {
+            "value": "340+",
+            "label": "katalogdagi pozitsiya"
+          },
+          {
+            "value": "67",
+            "label": "ishlab chiqaruvchi"
+          }
+        ]
+      },
+      {
+        "slug": "leaderaudit",
+        "name": "Leader Audit",
+        "client": "LEADER AUDIT",
+        "industry": "Audit va soliq konsaltingi",
+        "platforms": "Veb",
+        "tagline": "Bilimlar bazasiga ega auditorlik kompaniyasi sayti",
+        "task": "Toshkentda audit, soliqlar va QQS qaytarish bo‘yicha so‘rovlar orqali qidiruvdan mijozlar olib kelish.",
+        "did": "Uch tilli sayt: xizmat sahifalari, qidiruv so‘rovlari uchun alohida sahifalar, mavzular bo‘yicha maqolalar bazasi, xatarlarni tezkor tahlil qilish va konsultatsiyaga ariza.",
+        "features": [
+          "Rus, o‘zbek va ingliz tillari",
+          "Xizmatlar: majburiy va tashabbusli audit, soliqlar, QQS, autsorsing",
+          "«Toshkentda» so‘rovlari uchun sahifalar",
+          "Audit, buxgalteriya va soliqlar haqida maqolalar bazasi",
+          "Saytda litsenziya va sug‘urta polisi",
+          "Xatarlarni tezkor tahlil qilish va ariza"
+        ],
+        "facts": [
+          {
+            "value": "19",
+            "label": "maqolalar bazasidagi mavzu"
+          },
+          {
+            "value": "3",
+            "label": "sayt tili"
+          }
+        ]
+      },
+      {
+        "slug": "global-school",
+        "name": "Global School",
+        "client": "Global School",
+        "industry": "Ta’lim",
+        "platforms": "Veb",
+        "tagline": "Toshkentdagi o‘quv markazi sayti",
+        "task": "Ota-onalar va o‘quvchilarga kurslar va o‘qituvchilar haqida aytib berish hamda ularni bepul sinov darsiga olib kelish.",
+        "did": "Uch tilli sayt: narxlari bilan kurslar, o‘qituvchilar, bitiruvchilar fikrlari, fanlar bo‘yicha blog va sinov darsiga yozilish.",
+        "features": [
+          "Har bir kurs uchun alohida sahifa",
+          "O‘qituvchilar va bitiruvchilar fikrlari",
+          "Fanlar va imtihonlar bo‘yicha blog",
+          "Rus, o‘zbek va ingliz tillari",
+          "Bepul sinov darsiga yozilish",
+          "Filiallar manzillari va ish vaqti"
+        ],
+        "facts": [
+          {
+            "value": "9",
+            "label": "saytdagi kurs"
+          },
+          {
+            "value": "14",
+            "label": "blogdagi mavzu"
           }
         ]
       },
@@ -565,7 +999,21 @@
           "Cloudflare"
         ]
       }
-    ]
+    ],
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Bekend",
+      "mobile": "Mobil va desktop",
+      "data": "Ma’lumotlar bazalari va navbatlar",
+      "devops": "DevOps",
+      "cloud": "Bulut",
+      "ai": "AI va avtomatlashtirish",
+      "integrations": "Integratsiyalar va to‘lovlar",
+      "cms": "CMS va e-commerce",
+      "design": "Dizayn",
+      "analytics": "Analitika va reklama",
+      "tools": "Testlar va vositalar"
+    }
   },
   "formats": {
     "title": "Qulay formatni tanlang",
@@ -727,6 +1175,10 @@
         "label": "Keyslar"
       },
       {
+        "href": "/blog",
+        "label": "Blog"
+      },
+      {
         "href": "/contacts",
         "label": "Kontaktlar"
       }
@@ -751,30 +1203,7 @@
     },
     "title": "Biz haqimizda",
     "lead": "Innovialabs — IT-ishlab chiqish studiyasi. Biznesning har qanday vazifasini olamiz: saytlar, mobil ilovalar, CRM, integratsiyalar va jarayonlarni AI bilan avtomatlashtirish — g‘oyadan ishga tushirish va qo‘llab-quvvatlashgacha.",
-    "sloganLabel": "Shior",
-    "logoTitle": "Logotip va uning g‘oyasi",
-    "logoParts": [
-      {
-        "symbol": ">",
-        "title": "Buyruq «>»",
-        "text": "Yo‘l, via: signal oldinga boradi, vazifa bajarila boshlaydi."
-      },
-      {
-        "symbol": "_",
-        "title": "Kursor «_»",
-        "text": "Laboratoriya: kod yoziladigan va tajribalar o‘tkaziladigan satr."
-      },
-      {
-        "symbol": "✦",
-        "title": "Yulduz",
-        "text": "Innovatsiya: koddan paydo bo‘ladigan natija."
-      },
-      {
-        "symbol": "▢",
-        "title": "Terminal oynasi",
-        "text": "Ishlab chiqish muhiti, hamma narsa sodir bo‘ladigan ramka."
-      }
-    ]
+    "sloganLabel": "Shior"
   },
   "contacts": {
     "meta": {
@@ -787,5 +1216,257 @@
     "phoneLabel": "Telefon",
     "cityLabel": "Shahar",
     "city": "Toshkent, O‘zbekiston"
+  },
+  "brief": {
+    "meta": {
+      "title": "Loyihani muhokama qilish",
+      "description": "Vazifangiz haqida uch qadamda aytib bering: nima qilish kerak, loyiha haqida bir-ikki so‘z va siz bilan qanday bog‘lanish mumkin. Ish kuni davomida javob beramiz, konsultatsiya bepul."
+    },
+    "step": "Qadam",
+    "next": "Keyingisi",
+    "back": "Orqaga",
+    "skip": "O‘tkazib yuborish",
+    "summary": "Sizning brifingiz",
+    "home": "Bosh sahifaga",
+    "cases": "Keyslarni ko‘rish",
+    "or": "Yoki darhol bizga yozing"
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "Sizga qanday murojaat qilaylik?",
+        "hint": "Ismingiz va kamida bitta aloqa usuli — telefon yoki Telegram."
+      },
+      {
+        "title": "Nima qilish kerak?",
+        "hint": "Bir nechtasini tanlash mumkin."
+      },
+      {
+        "title": "Biznesingiz qaysi sohada?",
+        "hint": "Shunda kontekstni darhol tushunamiz va o‘xshash tajribani ko‘rsatamiz."
+      },
+      {
+        "title": "Loyiha qaysi bosqichda?",
+        "hint": "Nimadan boshlashimiz shunga bog‘liq."
+      },
+      {
+        "title": "Byudjet va muddat",
+        "hint": "Mos yechim taklif qilish uchun taxminiy oraliq. Slayderni suring yoki summani tanlang."
+      },
+      {
+        "title": "G‘oya haqida aytib bering",
+        "hint": "Mahsulot nima qilishi, kim uchun, qaysi platformalarda va qaysi namunalar sizga yoqadi. O‘tkazib yuborish mumkin."
+      }
+    ],
+    "fields": {
+      "name": "Ismingiz",
+      "namePlaceholder": "Ism",
+      "phone": "Telefon",
+      "phonePlaceholder": "+998 90 123 45 67",
+      "telegram": "Telegram",
+      "telegramPlaceholder": "@username",
+      "message": "G‘oya haqida",
+      "messagePlaceholder": "Mahsulot haqida bir-ikki gap, namunalarga havolalar"
+    },
+    "options": {
+      "industry": [
+        {
+          "value": "retail",
+          "label": "Chakana savdo va e-commerce"
+        },
+        {
+          "value": "education",
+          "label": "Ta’lim"
+        },
+        {
+          "value": "medicine",
+          "label": "Tibbiyot"
+        },
+        {
+          "value": "logistics",
+          "label": "Logistika va transport"
+        },
+        {
+          "value": "finance",
+          "label": "Moliya"
+        },
+        {
+          "value": "food",
+          "label": "HoReCa va ovqat yetkazish"
+        },
+        {
+          "value": "realty",
+          "label": "Ko‘chmas mulk va qurilish"
+        },
+        {
+          "value": "manufacturing",
+          "label": "Ishlab chiqarish"
+        },
+        {
+          "value": "services",
+          "label": "Xizmatlar"
+        },
+        {
+          "value": "startup",
+          "label": "IT va startaplar"
+        },
+        {
+          "value": "public",
+          "label": "Davlat sektori va NNT"
+        },
+        {
+          "value": "other",
+          "label": "Boshqa"
+        }
+      ],
+      "services": [
+        {
+          "value": "web",
+          "label": "Sayt"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobil ilova"
+        },
+        {
+          "value": "telegram",
+          "label": "Telegram-bot / Mini App"
+        },
+        {
+          "value": "crm",
+          "label": "CRM / ERP"
+        },
+        {
+          "value": "ai",
+          "label": "AI-avtomatlashtirish"
+        },
+        {
+          "value": "integrations",
+          "label": "Integratsiyalar"
+        },
+        {
+          "value": "design",
+          "label": "Dizayn"
+        },
+        {
+          "value": "marketing",
+          "label": "Marketing va SEO"
+        },
+        {
+          "value": "support",
+          "label": "Tayyor loyihani takomillashtirish"
+        },
+        {
+          "value": "other",
+          "label": "Boshqa"
+        }
+      ],
+      "stage": [
+        {
+          "value": "idea",
+          "label": "Faqat g‘oya"
+        },
+        {
+          "value": "spec",
+          "label": "Texnik topshiriq bor"
+        },
+        {
+          "value": "design",
+          "label": "Dizayn bor"
+        },
+        {
+          "value": "live",
+          "label": "Mahsulot ishlayapti — rivojlantirish kerak"
+        }
+      ],
+      "deadline": [
+        {
+          "value": "asap",
+          "label": "Imkon qadar tezroq"
+        },
+        {
+          "value": "1-3m",
+          "label": "1–3 oy"
+        },
+        {
+          "value": "3-6m",
+          "label": "3–6 oy"
+        },
+        {
+          "value": "flexible",
+          "label": "Muddat moslashuvchan"
+        }
+      ]
+    },
+    "multi": "Bir nechtasini tanlash mumkin",
+    "errors": {
+      "contactMissing": "Telefon yoki Telegramni kiriting",
+      "phoneInvalid": "Raqam formati: +998 90 123 45 67",
+      "telegramInvalid": "Username formati: @username",
+      "pick": "Variantni tanlang"
+    },
+    "budget": {
+      "label": "Byudjet",
+      "unknown": "Bilmayman — baholash kerak",
+      "deadline": "Ishga tushirish qachon kerak?",
+      "from": "dan"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Dasturlash, DevOps, SEO, AI, dizayn, marketing va biznes uchun IT haqida maqolalar. Qisqa va lo‘nda — o‘zbek, rus va ingliz tillarida."
+    },
+    "title": "Blog",
+    "lead": "Dasturlash, infratuzilma, SEO, AI va biznes uchun IT — qisqa va lo‘nda.",
+    "search": "Maqolalardan qidirish",
+    "searchPlaceholder": "Masalan: Docker, nginx, SEO",
+    "all": "Hammasi",
+    "categoryTitle": "Rukn",
+    "levelTitle": "Daraja",
+    "levels": {
+      "basics": "Asoslar",
+      "practice": "Amaliyot",
+      "advanced": "Chuqur"
+    },
+    "found": "Topilgan maqolalar",
+    "nothing": "Hech narsa topilmadi. Boshqa so‘rov yoki ruknni sinab ko‘ring.",
+    "reset": "Tozalash",
+    "minutes": "daq",
+    "toc": "Mundarija",
+    "summary": "Qisqacha",
+    "faq": "Ko‘p beriladigan savollar",
+    "related": "Yana o‘qing",
+    "helpTitle": "Bunda yordam beramiz",
+    "helpLead": "O‘zingiz shug‘ullanmasdan natija olishni istasangiz — biz har kuni shu bilan shug‘ullanamiz.",
+    "page": "Sahifa",
+    "prev": "Orqaga",
+    "next": "Keyingisi",
+    "articles": "ta maqola",
+    "updated": "Yangilangan",
+    "categories": {
+      "business": "Biznes uchun IT",
+      "web": "Veb-dasturlash",
+      "seo": "SEO",
+      "devops": "DevOps",
+      "ai": "AI va avtomatlashtirish",
+      "programming": "Dasturlash",
+      "mobile": "Mobil dasturlash",
+      "marketing": "Marketing va analitika",
+      "design": "Dizayn va UX",
+      "telegram": "Telegram va messenjerlar",
+      "ecommerce": "E-commerce va CRM",
+      "security": "Xavfsizlik",
+      "data": "Ma’lumotlar bazalari",
+      "cloud": "Hosting va bulut",
+      "career": "IT’da karyera",
+      "tools": "Vositalar va no-code"
+    }
+  },
+  "media": {
+    "soundOn": "Ovozni yoqish",
+    "soundOff": "Ovozni o‘chirish",
+    "video": "Innovialabs studiyasi haqida video",
+    "skip": "O‘tkazib yuborish"
   }
 }

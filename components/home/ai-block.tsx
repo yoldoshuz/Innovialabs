@@ -5,7 +5,8 @@ import Link from "next/link";
 import { animate, motion, useMotionValue, useTransform } from "motion/react";
 import { ArrowRight, Check } from "lucide-react";
 import type { AiDict } from "@/types";
-import { requestContact } from "@/lib/contact-intent";
+import type { Locale } from "@/lib/i18n/config";
+import { briefHref } from "@/lib/links";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +14,7 @@ import { Button } from "@/components/ui/button";
 const AUTOMATABLE = 0.5;
 const WEEKS_PER_MONTH = 4.33;
 
-export function AiBlock({ dict }: { dict: AiDict }) {
+export function AiBlock({ lang, dict }: { lang: Locale; dict: AiDict }) {
   return (
     <section id="ai" data-tone="dark" className="scroll-mt-24 px-2 sm:px-3">
       <div className="stage relative overflow-hidden">
@@ -58,7 +59,7 @@ export function AiBlock({ dict }: { dict: AiDict }) {
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
             <Button asChild size="xl">
-              <Link href="#contact" onClick={() => requestContact({ service: "ai" })}>
+              <Link href={briefHref(lang, "ai")}>
                 {dict.cta}
                 <ArrowRight />
               </Link>
@@ -71,7 +72,7 @@ export function AiBlock({ dict }: { dict: AiDict }) {
   );
 }
 
-function Calculator({ dict }: { dict: AiDict["calc"] }) {
+export function Calculator({ dict }: { dict: AiDict["calc"] }) {
   const [people, setPeople] = React.useState(5);
   const [hours, setHours] = React.useState(8);
   const target = Math.round(people * hours * WEEKS_PER_MONTH * AUTOMATABLE);

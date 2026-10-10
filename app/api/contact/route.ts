@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import {
   contactEnvelope,
   MIN_FILL_MS,
+  type ContactDetails,
   type ContactErrorKey,
   type ContactInput,
   type ContactResponse,
@@ -41,9 +42,36 @@ const optionLabel = (
   value?: string,
 ) => options.find((o) => o.value === value)?.label ?? "—";
 
+/** Onboarding answers as "Label: value" lines (Russian labels for the team). */
+function formatDetails(details?: ContactDetails) {
+  if (!details) return [];
+  const o = ru.onboarding.options;
+  const one = (opts: { value: string; label: string }[], v?: string) =>
+    v ? opts.find((x) => x.value === v)?.label : undefined;
+  const many = (opts: { value: string; label: string }[], vs?: string[]) =>
+    vs?.map((v) => opts.find((x) => x.value === v)?.label).filter(Boolean).join(", ") || undefined;
+  const budget =
+    details.budget === "unknown"
+      ? ru.onboarding.budget.unknown
+      : details.budget
+        ? `$${Number(details.budget.replace("+", "")).toLocaleString("ru-RU")}${details.budget.endsWith("+") ? "+" : ""}`
+        : undefined;
+  const rows: [string, string | undefined][] = [
+    ["Телефон", details.phone],
+    ["Telegram", details.telegram],
+    ["Что нужно", many(o.services, details.services)],
+    ["Сфера", one(o.industry, details.industry)],
+    ["Этап", one(o.stage, details.stage)],
+    ["Бюджет", budget],
+    ["Сроки", one(o.deadline, details.deadline)],
+  ];
+  const lines = rows.filter(([, v]) => v).map(([k, v]) => `<b>${k}:</b> ${escapeHtml(v!)}`);
+  return lines.length ? ["", ...lines] : [];
+}
+
 function formatMessage(
   data: ContactInput,
-  meta: { locale: string; page?: string },
+  meta: { locale: string; page?: string; details?: ContactDetails },
 ) {
   const contact = data.contact.trim();
   const tg = /^@?[a-zA-Z][a-zA-Z0-9_]{4,31}$/.test(contact)
@@ -60,11 +88,12 @@ function formatMessage(
   }).format(new Date());
 
   return [
-    `<b>Новая заявка с сайта</b>`,
+    `<b>${meta.details ? "Новый бриф с сайта" : "Новая заявка с сайта"}</b>`,
     ``,
     `<b>Имя:</b> ${escapeHtml(data.name)}`,
     `<b>Контакт:</b> ${contactLine}`,
     `<b>Услуга:</b> ${escapeHtml(optionLabel(ru.contactForm.serviceOptions, data.service))}`,
+    ...formatDetails(meta.details),
     ``,
     `<b>Задача:</b>`,
     data.message ? `<blockquote>${escapeHtml(data.message)}</blockquote>` : "—",
@@ -111,7 +140,7 @@ export async function POST(request: Request) {
     return json({ ok: false, error: "invalid", fields }, 422);
   }
 
-  const { website, startedAt, locale, page, ...data } = parsed.data;
+  const { website, startedAt, locale, page, details, ...data } = parsed.data;
   if (website) return json({ ok: true });
   if (Date.now() - startedAt < MIN_FILL_MS) {
     return json({ ok: false, error: "tooFast" }, 429);
@@ -133,7 +162,7 @@ export async function POST(request: Request) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         chat_id: chatId,
-        text: formatMessage(data, { locale, page }),
+        text: formatMessage(data, { locale, page, details }),
         parse_mode: "HTML",
         link_preview_options: { is_disabled: true },
       }),

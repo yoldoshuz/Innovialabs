@@ -16,10 +16,11 @@ export default async function Image({
   const dict = await getDictionary(isLocale(lang) ? lang : i18n.defaultLocale);
   const item = dict.cases.items.find((c) => c.slug === slug) ?? dict.cases.items[0];
   const meta = caseMeta[item.slug as CaseSlug];
+  const fact = item.facts[0];
   return renderOg({
-    kicker: [dict.cases.title, meta.year].filter(Boolean).join(" · "),
+    kicker: [dict.cases.title, item.industry, meta.year].filter(Boolean).join(" · "),
     title: item.name,
     subtitle: item.tagline,
-    screenshot: meta.shot,
+    stat: fact ? { value: fact.value, label: fact.label } : undefined,
   });
 }

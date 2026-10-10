@@ -20,21 +20,24 @@ import { cn } from "@/lib/utils";
 const EASE = [0.16, 1, 0.3, 1] as const;
 const SPRING = { type: "spring", stiffness: 420, damping: 30, mass: 0.9 } as const;
 
-/** Each bubble springs away/back with a tiny stagger. */
+/**
+ * Each bubble springs away/back with a tiny stagger. Only `y` moves: any
+ * opacity < 1 on an ancestor turns it into a backdrop root, and the glass
+ * would flash see-through until the fade finished.
+ */
 const bubble: Variants = {
   shown: (i: number = 0) => ({
     y: 0,
-    opacity: 1,
-    scale: 1,
     transition: { ...SPRING, delay: i * 0.035 },
   }),
   hidden: (i: number = 0) => ({
-    y: -96,
-    opacity: 0,
-    scale: 0.92,
+    y: -112,
     transition: { ...SPRING, stiffness: 320, delay: i * 0.03 },
   }),
 };
+
+/** Above this scroll offset the glass melts into the page (no fill, no shadow). */
+const TOP_ZONE = 12;
 
 /** Scroll distance in one direction before the header reacts (px). */
 const HIDE_AFTER = 28;
@@ -51,6 +54,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
   const [open, setOpen] = React.useState(false);
   const [hidden, setHidden] = React.useState(false);
   const [dark, setDark] = React.useState(false);
+  const [atTop, setAtTop] = React.useState(true);
   const [hovered, setHovered] = React.useState<string | null>(null);
   const travel = React.useRef(0);
   const { scrollY } = useScroll();
@@ -68,6 +72,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
     if (Math.sign(delta) !== Math.sign(travel.current)) travel.current = 0;
     travel.current += delta;
 
+    setAtTop(y < TOP_ZONE);
     if (y < 120) setHidden(false);
     else if (travel.current > HIDE_AFTER) setHidden(true);
     else if (travel.current < -SHOW_AFTER) setHidden(false);
@@ -76,7 +81,10 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
   });
 
   React.useEffect(() => {
-    const id = requestAnimationFrame(detectTone);
+    const id = requestAnimationFrame(() => {
+      detectTone();
+      setAtTop(window.scrollY < TOP_ZONE);
+    });
     return () => cancelAnimationFrame(id);
   }, [detectTone, pathname]);
 
@@ -120,6 +128,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
         data-header
         data-state={state}
         data-tone={tone}
+        data-top={atTop && !open ? "true" : undefined}
         className="pointer-events-none fixed inset-x-0 top-3 z-50 px-3 max-[359px]:px-2 sm:top-4 sm:px-4"
       >
         <motion.div
@@ -195,7 +204,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
             </motion.div>
             <motion.div variants={bubble} custom={3} className="pointer-events-auto">
               <Link
-                href={href("#contact")}
+                href={href("/brief")}
                 className="group/cta inline-flex h-12 items-center gap-2 whitespace-nowrap rounded-full bg-violet px-4 font-display text-[0.85rem] font-bold max-[359px]:px-3 max-[359px]:text-[0.76rem] sm:px-7 sm:text-[0.93rem] text-white shadow-[0_12px_30px_-12px_var(--color-violet)] transition-[background-color,transform] duration-300 hover:bg-deep active:scale-[0.97] sm:h-14"
               >
                 {dict.cta}
@@ -273,7 +282,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: NavDict }) {
             >
               <LocaleSwitcher current={lang} label={dict.language} tone="dark" id="locale-mobile" className="self-start" />
               <Link
-                href={href("#contact")}
+                href={href("/brief")}
                 onClick={() => setOpen(false)}
                 className="inline-flex h-16 w-full items-center justify-center gap-2 rounded-full bg-violet font-display text-lg font-bold text-white transition-colors hover:bg-deep"
               >

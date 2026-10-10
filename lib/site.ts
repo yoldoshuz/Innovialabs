@@ -1,11 +1,12 @@
 /**
  * Global site configuration. Contacts marked TODO need confirmation from the
- * team before launch — everything else is final brand data.
+ * team before launch — everything else is final brand data. The slogan is
+ * localized (`meta.slogan` in the dictionaries).
  */
 export const siteConfig = {
   name: "Innovialabs",
   legalName: "Innovialabs",
-  slogan: "Where ideas become products.",
+  alternateNames: ["Innovia Labs", "Innovia Lab", "Инновиалабс"],
   signature: "Innovation via Lab",
   // Used as metadataBase and for absolute URLs in SEO files.
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://innovialabs.uz").replace(
@@ -20,8 +21,11 @@ export const siteConfig = {
     bot: "https://t.me/innovialabs_bot",
     handle: "@innovialabs_bot",
   },
+  // Official profiles for Organization.sameAs. TODO: add Instagram/LinkedIn when live.
+  sameAs: ["https://t.me/innovialabs_bot"],
   address: {
     city: "Tashkent",
+    region: "Toshkent shahri",
     country: "UZ",
   },
   foundingYear: 2025,

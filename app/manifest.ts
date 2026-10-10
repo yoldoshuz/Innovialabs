@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} — ${siteConfig.slogan}`,
+    name: `${siteConfig.name} — Where ideas become products.`,
     short_name: siteConfig.name,
     description:
       "IT development studio: websites, mobile apps, CRM, integrations and AI automation.",

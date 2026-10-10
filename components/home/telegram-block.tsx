@@ -5,13 +5,14 @@ import Link from "next/link";
 import { AnimatePresence, motion, useInView } from "motion/react";
 import { ArrowRight, Send } from "lucide-react";
 import type { TelegramDict } from "@/types";
-import { requestContact } from "@/lib/contact-intent";
+import type { Locale } from "@/lib/i18n/config";
+import { briefHref } from "@/lib/links";
 import { GiantTitle } from "@/components/motion/giant-title";
 import { Reveal } from "@/components/motion/reveal";
 import { Prompt } from "@/components/brand/spark";
 import { Button } from "@/components/ui/button";
 
-export function TelegramBlock({ dict }: { dict: TelegramDict }) {
+export function TelegramBlock({ lang, dict }: { lang: Locale; dict: TelegramDict }) {
   return (
     <section id="telegram" className="section shell scroll-mt-24">
       <div className="grid items-center gap-12 lg:grid-cols-12">
@@ -43,7 +44,7 @@ export function TelegramBlock({ dict }: { dict: TelegramDict }) {
 
           <div className="mt-8">
             <Button asChild size="xl">
-              <Link href="#contact" onClick={() => requestContact({ service: "telegram" })}>
+              <Link href={briefHref(lang, "telegram")}>
                 {dict.cta}
                 <ArrowRight />
               </Link>

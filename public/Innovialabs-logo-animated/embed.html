@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Innovialabs — logo video embed</title>
+<style>
+  /* Пример блока на сайте. Скопируйте <video> и стили .logo-video в нужное место. */
+  body { margin: 0; background: #120B24; min-height: 100vh; display: grid; place-items: center; }
+  .logo-video {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    background: #120B24;          /* цвет фона ролика, чтобы не было вспышки до загрузки */
+    object-fit: cover;
+  }
+  @media (max-width: 700px) {    /* на телефонах — вертикальная версия */
+    .logo-video { aspect-ratio: 9 / 16; max-width: 480px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Innovialabs logo animation: autoplay без звука, один раз, без панели управления.
+     Браузер сам выберет WebM (меньше) или MP4 (Safari, iPhone). На экранах ≤700px — вертикальная версия. -->
+<video class="logo-video" autoplay muted playsinline preload="auto"
+       poster="innovialabs-logo-1920x1080-poster.jpg"
+       aria-label="Анимация логотипа Innovialabs: Where ideas become products.">
+  <source src="innovialabs-logo-1080x1920.webm" type="video/webm" media="(max-width: 700px)">
+  <source src="innovialabs-logo-1080x1920.mp4"  type="video/mp4"  media="(max-width: 700px)">
+  <source src="innovialabs-logo-1920x1080.webm" type="video/webm">
+  <source src="innovialabs-logo-1920x1080.mp4"  type="video/mp4">
+</video>
+
+<script>
+  // Пользователям с «уменьшенной анимацией» показываем финальный кадр вместо ролика.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const v = document.querySelector('.logo-video');
+    v.removeAttribute('autoplay'); v.pause();
+  }
+  // Постер под ориентацию экрана.
+  if (matchMedia('(max-width: 700px)').matches) {
+    document.querySelector('.logo-video').poster = 'innovialabs-logo-1080x1920-poster.jpg';
+  }
+</script>
+</body>
+</html>

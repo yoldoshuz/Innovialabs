@@ -9,6 +9,8 @@ import { alternates, organizationJsonLd, JsonLd } from "@/lib/seo";
 import { SmoothScroll } from "@/components/providers/smooth-scroll";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { YandexMetrika } from "@/components/analytics/yandex-metrika";
+import { Intro, introScript } from "@/components/brand/intro";
 
 // Guideline p.09: Manrope — headings, Inter — text/UI, Space Grotesk — latin
 // accents only (no Cyrillic in that face, so it never carries body copy).
@@ -100,6 +102,12 @@ export async function generateMetadata({
       google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
       yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
     },
+    appleWebApp: { title: siteConfig.name, statusBarStyle: "default" },
+    other: {
+      "geo.region": "UZ-TK",
+      "geo.placename": "Tashkent",
+      "msapplication-TileColor": "#7C3AED",
+    },
   };
 }
 
@@ -115,7 +123,17 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       suppressHydrationWarning
     >
       <body className="min-h-dvh">
-        <JsonLd data={organizationJsonLd(lang, dict.meta.description)} />
+        {/* Must run before first paint: decides whether the intro shows. */}
+        <script dangerouslySetInnerHTML={{ __html: introScript }} />
+        <Intro label={`${siteConfig.name}: ${dict.meta.slogan}`} skip={dict.media.skip} />
+        <JsonLd
+          data={organizationJsonLd({
+            lang,
+            description: dict.meta.description,
+            slogan: dict.meta.slogan,
+            services: dict.services.items.map((s) => s.title),
+          })}
+        />
         <SmoothScroll>
           <Header lang={lang} dict={dict.nav} />
           <div id="main" tabIndex={-1} className="outline-none">
@@ -123,6 +141,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           </div>
           <Footer lang={lang} dict={dict.footer} nav={dict.nav} />
         </SmoothScroll>
+        <YandexMetrika />
       </body>
     </html>
   );

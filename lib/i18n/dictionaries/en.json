@@ -10,10 +10,23 @@
       "Telegram bot development",
       "Telegram Mini Apps",
       "AI automation",
-      "CRM development",
+      "AI integration for business",
+      "custom CRM development",
+      "ERP development",
+      "API integrations",
+      "UI/UX design",
+      "DevOps services",
+      "SEO services",
+      "MVP development",
+      "IT outsourcing",
+      "software development company",
+      "web development agency",
+      "app development Uzbekistan",
       "IT studio Tashkent",
+      "offshore development Central Asia",
       "Innovialabs"
-    ]
+    ],
+    "slogan": "Where ideas become products."
   },
   "nav": {
     "links": [
@@ -22,20 +35,16 @@
         "label": "Services"
       },
       {
-        "href": "/services/ai",
-        "label": "AI automation"
-      },
-      {
-        "href": "/services/telegram",
-        "label": "Telegram"
-      },
-      {
         "href": "/company",
         "label": "How we work"
       },
       {
         "href": "/cases",
         "label": "Cases"
+      },
+      {
+        "href": "/blog",
+        "label": "Blog"
       },
       {
         "href": "/contacts",
@@ -94,6 +103,41 @@
           "Recognition of invoices, contracts and delivery notes",
           "Connecting ChatGPT, Claude and other models to your systems",
           "Voice AI agents for phone calls"
+        ],
+        "steps": [
+          {
+            "title": "Process review",
+            "text": "We look at where the team spends hours on repetitive work and choose what to automate first."
+          },
+          {
+            "title": "Connecting AI",
+            "text": "We pick a model for the task and give it access only to the data it needs."
+          },
+          {
+            "title": "Building it in",
+            "text": "We connect it to your CRM, Telegram, email and spreadsheets so results land where they're needed."
+          },
+          {
+            "title": "A person decides",
+            "text": "Where mistakes are costly, the final word stays with your staff. We keep an eye on answer quality."
+          }
+        ],
+        "scene": [
+          "Customer question",
+          "Invoice",
+          "Request",
+          "Call",
+          "AI",
+          "Reply to customer",
+          "CRM record",
+          "Report in Telegram",
+          "Human check"
+        ],
+        "get": [
+          "An AI assistant or automation for your process",
+          "Connection to your CRM, Telegram and spreadsheets",
+          "A guide for your team",
+          "Tuning based on real conversations"
         ]
       },
       {
@@ -105,6 +149,34 @@
           "Telegram Mini Apps: a store, catalog or customer account inside Telegram",
           "Payments right in Telegram: Payme, Click, Telegram Stars",
           "Broadcasts, funnels, CRM integration"
+        ],
+        "steps": [
+          {
+            "title": "Scenario",
+            "text": "We work out what customers do in the bot: order, book, pay or get support."
+          },
+          {
+            "title": "Bot and Mini App",
+            "text": "We build the bot and, if needed, a Mini App: catalog, cart and account inside Telegram."
+          },
+          {
+            "title": "Payments",
+            "text": "We connect Payme, Click or Telegram Stars so customers pay without leaving the messenger."
+          },
+          {
+            "title": "CRM link",
+            "text": "Orders and requests go straight to your CRM, and broadcasts bring customers back."
+          }
+        ],
+        "scene": [
+          "Paid",
+          "New order in CRM"
+        ],
+        "get": [
+          "A bot or Mini App with your catalog",
+          "Payments via Payme, Click or Telegram Stars",
+          "Requests and orders in your CRM",
+          "Broadcasts and automated funnels"
         ]
       },
       {
@@ -115,6 +187,29 @@
           "Landing pages and corporate websites",
           "Online stores with online payment",
           "Customer accounts, portals, SaaS"
+        ],
+        "steps": [
+          {
+            "title": "Structure",
+            "text": "We decide what a visitor should do and lay out the pages and blocks."
+          },
+          {
+            "title": "Design",
+            "text": "We design for phone and desktop. You see the site before development starts."
+          },
+          {
+            "title": "Development",
+            "text": "We build fast pages and connect payments, a catalog or a personal account."
+          },
+          {
+            "title": "Launch",
+            "text": "We set up the domain, analytics and SEO so the site is ready for ads."
+          }
+        ],
+        "scene": [
+          "your-site.com",
+          "Send a request",
+          "Online"
         ]
       },
       {
@@ -125,6 +220,32 @@
           "Native and cross-platform apps",
           "Design, development, backend",
           "Publishing to the App Store and Google Play"
+        ],
+        "steps": [
+          {
+            "title": "Scenarios",
+            "text": "We define the main user actions and the platforms: iOS, Android or both."
+          },
+          {
+            "title": "Design",
+            "text": "We design screens to each platform's guidelines and build a clickable prototype."
+          },
+          {
+            "title": "App and backend",
+            "text": "We build the app and the server side: accounts, data, push notifications."
+          },
+          {
+            "title": "Publishing",
+            "text": "We pass review and publish the app on the App Store and Google Play."
+          }
+        ],
+        "scene": [
+          "Home",
+          "Catalog",
+          "Profile",
+          "API",
+          "App Store",
+          "Google Play"
         ]
       },
       {
@@ -135,6 +256,33 @@
           "CRM built around your processes",
           "Inventory and financial accounting",
           "Integrations with 1C, AmoCRM, Bitrix24"
+        ],
+        "steps": [
+          {
+            "title": "Processes",
+            "text": "We map how a customer, deal or product moves through your business — from request to payment."
+          },
+          {
+            "title": "Prototype",
+            "text": "We show the CRM screens before development so they're convenient for your staff."
+          },
+          {
+            "title": "Build and integrations",
+            "text": "We build the system, migrate data and connect 1C, AmoCRM or Bitrix24."
+          },
+          {
+            "title": "Training",
+            "text": "We launch, train the team and improve the system as you grow."
+          }
+        ],
+        "scene": [
+          "New",
+          "In progress",
+          "Deal",
+          "Website request",
+          "Call",
+          "Telegram",
+          "Repeat order"
         ]
       },
       {
@@ -145,6 +293,33 @@
           "Connecting your website, CRM, inventory and accounting",
           "Payment systems, banks, IP telephony",
           "Custom API development"
+        ],
+        "steps": [
+          {
+            "title": "System map",
+            "text": "We find out which services you use and where data is copied by hand."
+          },
+          {
+            "title": "Exchange plan",
+            "text": "We decide what data goes where and when, and what happens on failure."
+          },
+          {
+            "title": "Connection",
+            "text": "We link your website, CRM, warehouse, accounting, payment systems and telephony."
+          },
+          {
+            "title": "Monitoring",
+            "text": "We set up an exchange log and alerts so errors don't get lost."
+          }
+        ],
+        "scene": [
+          "Website",
+          "CRM",
+          "Warehouse",
+          "1C",
+          "Bank",
+          "Telephony",
+          "API"
         ]
       },
       {
@@ -155,6 +330,30 @@
           "Website and app design",
           "Clickable prototypes",
           "Logo, brand identity, brand book"
+        ],
+        "steps": [
+          {
+            "title": "Research",
+            "text": "We get to know the product, the audience and the competitors."
+          },
+          {
+            "title": "Prototype",
+            "text": "We build a clickable prototype and test the logic before the visuals."
+          },
+          {
+            "title": "Interface",
+            "text": "We design the interface and every screen state."
+          },
+          {
+            "title": "Brand",
+            "text": "Logo, visual identity and a brand book so everything looks consistent."
+          }
+        ],
+        "scene": [
+          "Audience",
+          "Competitors",
+          "Tasks",
+          "Button"
         ]
       },
       {
@@ -165,6 +364,38 @@
           "Server and cloud setup",
           "Backups and data protection",
           "24/7 monitoring"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "We look at where and how the project runs today and find the weak spots."
+          },
+          {
+            "title": "Infrastructure",
+            "text": "We set up servers or the cloud and automatic deployment of updates."
+          },
+          {
+            "title": "Backups",
+            "text": "We set up backups and data protection and test recovery."
+          },
+          {
+            "title": "Monitoring",
+            "text": "We watch it 24/7 and get an alert before your customers notice anything."
+          }
+        ],
+        "scene": [
+          "Build",
+          "Tests",
+          "Deploy",
+          "Backup",
+          "All systems up",
+          "Alert in Telegram"
+        ],
+        "get": [
+          "A configured server or cloud",
+          "Automatic deployment of updates",
+          "Scheduled backups",
+          "Monitoring and alerts"
         ]
       },
       {
@@ -175,6 +406,33 @@
           "SEO",
           "Google and Meta ad setup",
           "End-to-end analytics"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "We check the site, the competitors and what your customers search for."
+          },
+          {
+            "title": "SEO",
+            "text": "We fix technical issues, structure and copy so the site climbs in search."
+          },
+          {
+            "title": "Ads",
+            "text": "We set up Google and Meta ads aimed at people ready to buy."
+          },
+          {
+            "title": "Analytics",
+            "text": "We connect end-to-end analytics so you see which channel brings requests."
+          }
+        ],
+        "scene": [
+          "your service tashkent",
+          "Your site",
+          "Competitor",
+          "Ad",
+          "Impressions",
+          "Clicks",
+          "Requests"
         ]
       },
       {
@@ -185,6 +443,36 @@
           "Technical support and bug fixes",
           "New features as you grow",
           "Audits of existing websites and apps"
+        ],
+        "steps": [
+          {
+            "title": "Audit",
+            "text": "If someone else built the product, we dig into the code and find the problems."
+          },
+          {
+            "title": "Fixes",
+            "text": "We fix bugs by priority and report what's done."
+          },
+          {
+            "title": "Growth",
+            "text": "We add new features as your business grows."
+          },
+          {
+            "title": "Regularly",
+            "text": "We update libraries and make sure everything runs smoothly."
+          }
+        ],
+        "scene": [
+          "Launch",
+          "Bug fixed",
+          "New feature",
+          "Update"
+        ],
+        "get": [
+          "Bug fixes by priority",
+          "New features on a plan",
+          "Regular updates",
+          "A report on work done"
         ]
       },
       {
@@ -195,12 +483,47 @@
           "Idea assessment and technical specification",
           "MVP launch",
           "A dedicated team for your project"
+        ],
+        "steps": [
+          {
+            "title": "Idea",
+            "text": "We break down the idea, the audience and how the product will make money."
+          },
+          {
+            "title": "Specification",
+            "text": "We describe features, timeline and cost in plain language."
+          },
+          {
+            "title": "MVP",
+            "text": "We launch a first version with only the core features."
+          },
+          {
+            "title": "Growth",
+            "text": "We test demand and grow the product — with your team or a dedicated one."
+          }
+        ],
+        "scene": [
+          "Idea",
+          "Spec",
+          "MVP",
+          "Growth"
+        ],
+        "get": [
+          "Assessment of the idea and risks",
+          "A specification with timeline and cost",
+          "A working MVP",
+          "A product roadmap"
         ]
       }
     ],
     "more": "Learn more",
     "otherTitle": "Other services",
-    "includesTitle": "What we do"
+    "includesTitle": "What we do",
+    "howTitle": "How we'll do it",
+    "getTitle": "What you get",
+    "casesTitle": "Already built",
+    "allTitle": "All services",
+    "indexTitle": "Pick a task"
   },
   "ai": {
     "title": "How many hours a week does your team spend on routine work?",
@@ -328,7 +651,7 @@
   "cases": {
     "meta": {
       "title": "Cases",
-      "description": "Innovialabs projects: LoadMe freight app, Yo'ldosh intercity ridesharing, the NUMA Family ecosystem, NUMA Nutrition, NUMA Kids and Nabaviy Tabobat."
+      "description": "Innovialabs projects: LoadMe, Yo'ldosh, NUMA Family, NUMA Nutrition, NUMA Kids, Nabaviy Tabobat, Med Service Centre, Leader Audit, Global School and the InCRM admin panel."
     },
     "title": "Projects that work",
     "cta": "I want the same",
@@ -345,8 +668,7 @@
       "openSite": "Open website",
       "allCases": "All cases",
       "nextCase": "Next case",
-      "desktop": "Desktop",
-      "mobile": "Mobile"
+      "inside": "What's inside"
     },
     "items": [
       {
@@ -402,6 +724,118 @@
           {
             "value": "2",
             "label": "languages: Uzbek and Russian"
+          }
+        ]
+      },
+      {
+        "slug": "incrm",
+        "name": "InCRM",
+        "client": "InCRM",
+        "industry": "Website and app management",
+        "platforms": "Web panel",
+        "tagline": "Admin panel for a company's website and app",
+        "task": "Give the team one place to change the website and app and track requests and analytics without a developer.",
+        "did": "An admin panel with a page builder made of ready blocks, a page tree, translations into three languages, review before publishing, push campaigns and an analytics dashboard.",
+        "features": [
+          "Page builder with ready-made blocks",
+          "The editor can't break the design: only preset variants",
+          "Content in Russian, Uzbek and English",
+          "Draft, review, scheduled publishing",
+          "Dashboard: visitors, requests, app, social media",
+          "Push campaigns, roles and a change log"
+        ],
+        "facts": [
+          {
+            "value": "9",
+            "label": "block types in the builder"
+          },
+          {
+            "value": "3",
+            "label": "content languages"
+          }
+        ]
+      },
+      {
+        "slug": "medsc",
+        "name": "Med Service Centre",
+        "client": "Med Service Centre",
+        "industry": "Medical equipment",
+        "platforms": "Web",
+        "tagline": "Medical equipment catalog for clinics",
+        "task": "Show clinics the company's full range of equipment and services so the right model can be found both in search and on the site.",
+        "did": "A catalog site: equipment categories and subcategories, manufacturer and model pages, installation, training and service offerings, an ROI calculator and a consultation request.",
+        "features": [
+          "14 categories: from operating rooms to telemedicine",
+          "Manufacturer pages and model cards",
+          "ROI calculator for clinics",
+          "Services: supply, installation, training, maintenance",
+          "SEO category descriptions and a blog",
+          "Consultation request and Telegram"
+        ],
+        "facts": [
+          {
+            "value": "340+",
+            "label": "items in the catalog"
+          },
+          {
+            "value": "67",
+            "label": "manufacturers"
+          }
+        ]
+      },
+      {
+        "slug": "leaderaudit",
+        "name": "Leader Audit",
+        "client": "LEADER AUDIT",
+        "industry": "Audit and tax consulting",
+        "platforms": "Web",
+        "tagline": "Audit firm website with a knowledge base",
+        "task": "Bring in clients from search for audit, tax and VAT refund queries in Tashkent.",
+        "did": "A three-language site: service pages, dedicated pages for search queries, a topic-based article library, an express risk check and a consultation request.",
+        "features": [
+          "Russian, Uzbek and English",
+          "Services: statutory and voluntary audit, taxes, VAT, outsourcing",
+          "Landing pages for “in Tashkent” queries",
+          "Article library on audit, accounting and taxes",
+          "License and insurance policy on the site",
+          "Express risk check and request form"
+        ],
+        "facts": [
+          {
+            "value": "19",
+            "label": "topics in the article library"
+          },
+          {
+            "value": "3",
+            "label": "site languages"
+          }
+        ]
+      },
+      {
+        "slug": "global-school",
+        "name": "Global School",
+        "client": "Global School",
+        "industry": "Education",
+        "platforms": "Web",
+        "tagline": "Website for a learning center in Tashkent",
+        "task": "Tell parents and students about the courses and teachers and bring them to a free trial lesson.",
+        "did": "A three-language site: courses with prices, teachers, graduate reviews, a subject blog and sign-up for a trial lesson.",
+        "features": [
+          "A separate page for every course",
+          "Teachers and graduate reviews",
+          "Blog on subjects and exams",
+          "Russian, Uzbek and English",
+          "Sign-up for a free trial lesson",
+          "Branch addresses and opening hours"
+        ],
+        "facts": [
+          {
+            "value": "9",
+            "label": "courses on the site"
+          },
+          {
+            "value": "14",
+            "label": "blog topics"
           }
         ]
       },
@@ -565,7 +999,21 @@
           "Cloudflare"
         ]
       }
-    ]
+    ],
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile & desktop",
+      "data": "Databases & queues",
+      "devops": "DevOps",
+      "cloud": "Cloud",
+      "ai": "AI & automation",
+      "integrations": "Integrations & payments",
+      "cms": "CMS & e-commerce",
+      "design": "Design",
+      "analytics": "Analytics & ads",
+      "tools": "Testing & tools"
+    }
   },
   "formats": {
     "title": "Choose the format that suits you",
@@ -727,6 +1175,10 @@
         "label": "Cases"
       },
       {
+        "href": "/blog",
+        "label": "Blog"
+      },
+      {
         "href": "/contacts",
         "label": "Contacts"
       }
@@ -751,30 +1203,7 @@
     },
     "title": "About us",
     "lead": "Innovialabs is an IT development studio. We take on any business task: websites, mobile apps, CRM, integrations and AI process automation — from idea to launch and support.",
-    "sloganLabel": "Slogan",
-    "logoTitle": "The logo and its idea",
-    "logoParts": [
-      {
-        "symbol": ">",
-        "title": "Prompt «>»",
-        "text": "The path, via: the signal moves on and the task starts running."
-      },
-      {
-        "symbol": "_",
-        "title": "Cursor «_»",
-        "text": "The lab: the line where code is written and experiments are run."
-      },
-      {
-        "symbol": "✦",
-        "title": "Star",
-        "text": "Innovation: the result that emerges from code."
-      },
-      {
-        "symbol": "▢",
-        "title": "Terminal window",
-        "text": "The development environment, the frame where everything happens."
-      }
-    ]
+    "sloganLabel": "Slogan"
   },
   "contacts": {
     "meta": {
@@ -787,5 +1216,257 @@
     "phoneLabel": "Phone",
     "cityLabel": "City",
     "city": "Tashkent, Uzbekistan"
+  },
+  "brief": {
+    "meta": {
+      "title": "Discuss a project",
+      "description": "Tell us about your task in three steps: what needs to be done, a few words about the project and how to reach you. We'll reply within one business day; the consultation is free."
+    },
+    "step": "Step",
+    "next": "Next",
+    "back": "Back",
+    "skip": "Skip",
+    "summary": "Your brief",
+    "home": "Back to home",
+    "cases": "See our cases",
+    "or": "Or message us right away"
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "How should we address you?",
+        "hint": "Your name and at least one way to reach you — phone or Telegram."
+      },
+      {
+        "title": "What needs to be done?",
+        "hint": "Pick as many as you like."
+      },
+      {
+        "title": "What industry is your business in?",
+        "hint": "It gives us context right away, and we can show similar work."
+      },
+      {
+        "title": "What stage is the project at?",
+        "hint": "This decides where we start."
+      },
+      {
+        "title": "Budget and timeline",
+        "hint": "A rough range helps us propose the right solution. Move the slider or pick an amount."
+      },
+      {
+        "title": "Tell us about the idea",
+        "hint": "What the product should do, who it's for, which platforms and examples you like. You can skip this."
+      }
+    ],
+    "fields": {
+      "name": "Your name",
+      "namePlaceholder": "Name",
+      "phone": "Phone",
+      "phonePlaceholder": "+998 90 123 45 67",
+      "telegram": "Telegram",
+      "telegramPlaceholder": "@username",
+      "message": "About the idea",
+      "messagePlaceholder": "A couple of sentences about the product, links to examples"
+    },
+    "options": {
+      "industry": [
+        {
+          "value": "retail",
+          "label": "Retail and e-commerce"
+        },
+        {
+          "value": "education",
+          "label": "Education"
+        },
+        {
+          "value": "medicine",
+          "label": "Healthcare"
+        },
+        {
+          "value": "logistics",
+          "label": "Logistics and transport"
+        },
+        {
+          "value": "finance",
+          "label": "Finance"
+        },
+        {
+          "value": "food",
+          "label": "Hospitality and food delivery"
+        },
+        {
+          "value": "realty",
+          "label": "Real estate and construction"
+        },
+        {
+          "value": "manufacturing",
+          "label": "Manufacturing"
+        },
+        {
+          "value": "services",
+          "label": "Services"
+        },
+        {
+          "value": "startup",
+          "label": "IT and startups"
+        },
+        {
+          "value": "public",
+          "label": "Public sector and NGOs"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "services": [
+        {
+          "value": "web",
+          "label": "Website"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobile app"
+        },
+        {
+          "value": "telegram",
+          "label": "Telegram bot / Mini App"
+        },
+        {
+          "value": "crm",
+          "label": "CRM / ERP"
+        },
+        {
+          "value": "ai",
+          "label": "AI automation"
+        },
+        {
+          "value": "integrations",
+          "label": "Integrations"
+        },
+        {
+          "value": "design",
+          "label": "Design"
+        },
+        {
+          "value": "marketing",
+          "label": "Marketing and SEO"
+        },
+        {
+          "value": "support",
+          "label": "Improve an existing product"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "stage": [
+        {
+          "value": "idea",
+          "label": "Just an idea"
+        },
+        {
+          "value": "spec",
+          "label": "There's a specification"
+        },
+        {
+          "value": "design",
+          "label": "There's a design"
+        },
+        {
+          "value": "live",
+          "label": "It's live — needs to grow"
+        }
+      ],
+      "deadline": [
+        {
+          "value": "asap",
+          "label": "As soon as possible"
+        },
+        {
+          "value": "1-3m",
+          "label": "1–3 months"
+        },
+        {
+          "value": "3-6m",
+          "label": "3–6 months"
+        },
+        {
+          "value": "flexible",
+          "label": "Flexible"
+        }
+      ]
+    },
+    "multi": "Multiple choice",
+    "errors": {
+      "contactMissing": "Add a phone number or Telegram",
+      "phoneInvalid": "Number like +998 90 123 45 67",
+      "telegramInvalid": "Username like @username",
+      "pick": "Choose an option"
+    },
+    "budget": {
+      "label": "Budget",
+      "unknown": "Not sure — need an estimate",
+      "deadline": "When do you need to launch?",
+      "from": "from"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Articles on development, DevOps, SEO, AI, design, marketing and IT for business. Short and to the point, in English, Russian and Uzbek."
+    },
+    "title": "Blog",
+    "lead": "Development, infrastructure, SEO, AI and IT for business — short and to the point.",
+    "search": "Search articles",
+    "searchPlaceholder": "For example: Docker, nginx, SEO",
+    "all": "All",
+    "categoryTitle": "Topic",
+    "levelTitle": "Level",
+    "levels": {
+      "basics": "Basics",
+      "practice": "Practice",
+      "advanced": "Advanced"
+    },
+    "found": "Articles found",
+    "nothing": "Nothing found. Try another query or topic.",
+    "reset": "Reset",
+    "minutes": "min",
+    "toc": "Contents",
+    "summary": "In short",
+    "faq": "FAQ",
+    "related": "Read next",
+    "helpTitle": "We can help with this",
+    "helpLead": "If you'd rather get the result than figure it all out yourself — this is what we do every day.",
+    "page": "Page",
+    "prev": "Back",
+    "next": "Next",
+    "articles": "articles",
+    "updated": "Updated",
+    "categories": {
+      "business": "IT for business",
+      "web": "Web development",
+      "seo": "SEO",
+      "devops": "DevOps",
+      "ai": "AI & automation",
+      "programming": "Programming",
+      "mobile": "Mobile development",
+      "marketing": "Marketing & analytics",
+      "design": "Design & UX",
+      "telegram": "Telegram & messengers",
+      "ecommerce": "E-commerce & CRM",
+      "security": "Security",
+      "data": "Databases & data",
+      "cloud": "Hosting & cloud",
+      "career": "IT careers",
+      "tools": "Tools & no-code"
+    }
+  },
+  "media": {
+    "soundOn": "Turn sound on",
+    "soundOff": "Turn sound off",
+    "video": "Innovialabs studio video",
+    "skip": "Skip"
   }
 }

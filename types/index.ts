@@ -23,3 +23,6 @@ export type FaqDict = Dictionary["faq"];
 export type ContactDict = Dictionary["contact"];
 export type ContactFormDict = Dictionary["contactForm"];
 export type FooterDict = Dictionary["footer"];
+export type BriefDict = Dictionary["brief"];
+export type BlogDict = Dictionary["blog"];
+export type OnboardingDict = Dictionary["onboarding"];

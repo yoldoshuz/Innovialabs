@@ -88,6 +88,26 @@ export const contactSchema = z.object({
 
 export type ContactInput = z.infer<typeof contactSchema>;
 
+/**
+ * Extended brief from the /contacts onboarding. Values are option ids from
+ * `onboarding.options`; the API maps them to labels and drops unknown ones.
+ */
+const choice = z.string().trim().max(30);
+export const contactDetails = z
+  .object({
+    phone: z.string().trim().max(40).optional(),
+    telegram: z.string().trim().max(40).optional(),
+    industry: choice.optional(),
+    services: z.array(choice).max(12).optional(),
+    stage: choice.optional(),
+    /** USD amount from the slider ("50000+" for the top stop) or "unknown". */
+    budget: z.string().regex(/^(\d{1,7}\+?|unknown)$/).optional(),
+    deadline: choice.optional(),
+  })
+  .strict();
+
+export type ContactDetails = z.infer<typeof contactDetails>;
+
 /** Extra anti-spam fields sent alongside the payload. */
 export const contactEnvelope = contactSchema.extend({
   /** Honeypot — real users never see or fill it. */
@@ -96,6 +116,7 @@ export const contactEnvelope = contactSchema.extend({
   startedAt: z.number().int().positive(),
   locale: z.enum(["ru", "en", "uz"]),
   page: z.string().max(200).optional(),
+  details: contactDetails.optional(),
 });
 
 export type ContactResponse =

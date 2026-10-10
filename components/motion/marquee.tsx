@@ -19,11 +19,12 @@ export function Marquee({
   duration?: `${number}s`;
 }) {
   return (
-    <div
-      className={cn("group flex overflow-hidden", className)}
-      style={{ ["--marquee-duration" as string]: duration }}
-    >
+    <div className={cn("group flex overflow-hidden", className)}>
+      {/* Duration goes straight on the track: the theme's --animate-marquee
+          resolves its var() at :root, so a custom property set here would
+          never reach it. */}
       <div
+        style={{ animationDuration: duration }}
         className={cn(
           "flex w-max shrink-0 animate-marquee items-center",
           reverse && "[animation-direction:reverse]",

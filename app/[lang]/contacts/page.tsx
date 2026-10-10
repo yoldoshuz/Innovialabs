@@ -3,11 +3,10 @@ import { notFound } from "next/navigation";
 import { ArrowUpRight, Mail, MapPin, Phone, Send } from "lucide-react";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { pageMetadata } from "@/lib/seo";
+import { JsonLd, pageMetadata, webPageJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import { PageHeader } from "@/components/layout/page-header";
-import { Reveal } from "@/components/motion/reveal";
-import { ContactForm } from "@/components/contact/contact-form";
+import { ContactOnboarding } from "@/components/contact/contact-onboarding";
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -47,6 +46,9 @@ export default async function ContactsPage({ params }: Props) {
 
   return (
     <main>
+      <JsonLd
+        data={webPageJsonLd({ lang, path: "/contacts", type: "ContactPage", name: contacts.meta.title, description: contacts.meta.description })}
+      />
       <PageHeader
         title={contacts.title}
         lead={contact.lead}
@@ -56,44 +58,45 @@ export default async function ContactsPage({ params }: Props) {
         ]}
       />
 
-      <section
-        id="contact"
-        className="shell grid scroll-mt-24 grid-cols-1 gap-3 pb-20 lg:grid-cols-12 [&>*]:min-w-0"
-      >
-        <div className="flex flex-col gap-3 lg:col-span-4">
-          {channels.map(({ icon: IconCmp, label, value, href, external }, i) => (
-            <Reveal key={label} delay={i * 0.06}>
-              <a
-                href={href}
-                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group flex items-center gap-4 rounded-3xl bg-paper p-5 transition-colors duration-300 hover:bg-mist"
-              >
-                <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-white text-violet">
-                  <IconCmp className="size-5" />
+      <section id="contact" className="shell scroll-mt-24 pb-20">
+        <ContactOnboarding
+          lang={lang}
+          dict={dict.onboarding}
+          form={dict.contactForm}
+          brief={dict.brief}
+          terminal={dict.hero.terminal}
+          aside={
+            <ul className="mt-6 flex flex-col gap-2">
+              {channels.map(({ icon: IconCmp, label, value, href, external }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="group flex items-center gap-4 rounded-3xl bg-paper p-4 transition-colors duration-300 hover:bg-mist"
+                  >
+                    <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-white text-violet transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-12">
+                      <IconCmp className="size-5" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-sm text-muted">{label}</span>
+                      <span className="block truncate font-display font-extrabold">{value}</span>
+                    </span>
+                    <ArrowUpRight className="size-5 shrink-0 text-violet transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </a>
+                </li>
+              ))}
+              <li className="flex items-center gap-4 rounded-3xl bg-paper p-4">
+                <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-white text-violet">
+                  <MapPin className="size-5" />
                 </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm text-muted">{label}</span>
-                  <span className="block truncate font-display text-lg font-extrabold">{value}</span>
+                <span>
+                  <span className="block text-sm text-muted">{contacts.cityLabel}</span>
+                  <span className="block font-display font-extrabold">{contacts.city}</span>
                 </span>
-                <ArrowUpRight className="size-5 shrink-0 text-violet transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </a>
-            </Reveal>
-          ))}
-          <Reveal delay={0.18} className="flex items-center gap-4 rounded-3xl bg-paper p-5">
-            <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-white text-violet">
-              <MapPin className="size-5" />
-            </span>
-            <span>
-              <span className="block text-sm text-muted">{contacts.cityLabel}</span>
-              <span className="block font-display text-lg font-extrabold">{contacts.city}</span>
-            </span>
-          </Reveal>
-        </div>
-
-        <Reveal delay={0.1} className="lg:col-span-8">
-          <h2 className="type-subtitle mb-5">{contact.title}</h2>
-          <ContactForm lang={lang} dict={dict.contactForm} telegramLabel={contact.telegram} />
-        </Reveal>
+              </li>
+            </ul>
+          }
+        />
       </section>
     </main>
   );

@@ -40,17 +40,16 @@ export async function renderOg({
   title,
   subtitle,
   kicker,
-  screenshot,
+  stat,
 }: {
   title: string;
   subtitle?: string;
   kicker?: string;
-  /** Public path of a 1440×900 screenshot to show on the right. */
-  screenshot?: string;
+  /** Headline number shown big on the right (cases). */
+  stat?: { value: string; label: string };
 }) {
-  const [logo, shot, fontList] = await Promise.all([
+  const [logo, fontList] = await Promise.all([
     dataUri("/Innovialabs-logo/svg/innovialabs-logo-horizontal-white.svg", "image/svg+xml"),
-    screenshot ? dataUri(screenshot, "image/png") : Promise.resolve(null),
     fonts(),
   ]);
 
@@ -78,7 +77,7 @@ export async function renderOg({
             flexDirection: "column",
             justifyContent: "space-between",
             padding: "64px 72px",
-            width: shot ? 640 : "100%",
+            width: stat ? 760 : "100%",
           }}
         >
           <div style={{ display: "flex" }}>
@@ -121,29 +120,26 @@ export async function renderOg({
           </div>
         </div>
 
-        {shot ? (
+        {stat ? (
           <div
             style={{
               position: "absolute",
-              right: -40,
-              top: 96,
-              width: 600,
-              height: 438,
+              right: 64,
+              top: 150,
+              width: 360,
+              height: 330,
               display: "flex",
               flexDirection: "column",
-              borderRadius: 24,
-              overflow: "hidden",
-              backgroundColor: "#1A1033",
-              border: "2px solid #2c2057",
+              justifyContent: "flex-end",
+              padding: 36,
+              borderRadius: 40,
+              backgroundColor: "#7C3AED",
             }}
           >
-            <div style={{ display: "flex", gap: 8, padding: "12px 16px" }}>
-              <div style={{ width: 12, height: 12, borderRadius: 12, backgroundColor: "#ff5f57" }} />
-              <div style={{ width: 12, height: 12, borderRadius: 12, backgroundColor: "#febc2e" }} />
-              <div style={{ width: 12, height: 12, borderRadius: 12, backgroundColor: "#28c840" }} />
+            <div style={{ fontFamily: "Manrope", fontSize: 120, lineHeight: 0.9, letterSpacing: "-0.05em" }}>
+              {stat.value}
             </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={shot} width={600} height={375} alt="" style={{ objectFit: "cover", objectPosition: "top" }} />
+            <div style={{ marginTop: 16, fontSize: 28, lineHeight: 1.25, color: "#EDE9FE" }}>{stat.label}</div>
           </div>
         ) : null}
       </div>

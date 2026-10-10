@@ -55,7 +55,7 @@ export function Hero({
           <motion.div className="mt-9 flex flex-wrap items-center gap-3" {...rise(0.5)}>
             <Magnetic strength={0.25}>
               <Button asChild size="xl">
-                <Link href={`/${lang}#contact`}>
+                <Link href={`/${lang}/brief`}>
                   {dict.primary}
                   <ArrowRight className="transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Link>

@@ -8,7 +8,8 @@ import type { Locale } from "@/lib/i18n/config";
 import type { CasesDict } from "@/types";
 import { caseMeta, type CaseSlug } from "@/lib/content";
 import { GiantTitle } from "@/components/motion/giant-title";
-import { BrowserShot, PhoneShot } from "@/components/cases/shots";
+import { tones } from "@/lib/tone";
+import { CaseMotif } from "@/components/cases/motif";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -21,9 +22,9 @@ const row = {
 };
 
 /**
- * Cases stage (YoungCon "broadcast" layout): giant title, big tabs, product
- * preview on the left and the case card (task · what we did · numbers) on
- * the right.
+ * Cases stage (YoungCon "broadcast" layout): giant title, big tabs, the
+ * case cover (tone + animated motif, no screenshots) on the left and the
+ * case card (task · what we did · numbers) on the right.
  */
 export function CasesShowcase({ lang, dict }: { lang: Locale; dict: CasesDict }) {
   const [index, setIndex] = React.useState(0);
@@ -132,18 +133,21 @@ export function CasesShowcase({ lang, dict }: { lang: Locale; dict: CasesDict })
                 <Link
                   href={`/${lang}/cases/${item.slug}`}
                   aria-label={`${l.openCase}: ${item.name}`}
-                  className="group relative block h-full overflow-hidden rounded-[2rem] bg-violet p-4 sm:p-8"
+                  className={cn(
+                    "group relative flex h-full min-h-[22rem] flex-col justify-between overflow-hidden rounded-[2rem] p-6 sm:min-h-[28rem] sm:p-10",
+                    tones[meta.tone].bg,
+                  )}
                 >
-                  <p className="relative max-w-lg font-display text-xl font-extrabold leading-tight tracking-[-0.02em] text-white sm:text-2xl">
-                    {item.tagline}
-                  </p>
-                  <div className="relative mt-6 sm:mt-8 sm:pr-20">
-                    <div className="transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:-translate-y-1 group-hover:scale-[1.01]">
-                      <BrowserShot src={meta.shot} host={meta.host} alt={item.name} />
-                    </div>
-                    <div className="absolute -bottom-4 right-0 hidden w-[24%] max-w-36 transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:-translate-y-4 group-hover:rotate-[-3deg] sm:block">
-                      <PhoneShot src={meta.shotMobile} alt={item.name} />
-                    </div>
+                  <p className={cn("relative z-10 max-w-[60%] font-medium", tones[meta.tone].muted)}>{item.industry}</p>
+                  <CaseMotif
+                    slug={item.slug as CaseSlug}
+                    className="pointer-events-none absolute right-[4%] top-1/2 size-[min(52%,20rem)] -translate-y-1/2 transition-transform duration-1000 ease-[var(--ease-spring)] group-hover:-rotate-6 group-hover:scale-110"
+                  />
+                  <div className="relative z-10">
+                    <p className="slant font-display text-[clamp(2.5rem,5.4vw,5rem)] font-extrabold uppercase leading-[0.88] tracking-[-0.045em]">
+                      {item.name}
+                    </p>
+                    <p className="mt-3 max-w-sm text-lg font-medium leading-snug">{item.tagline}</p>
                   </div>
                 </Link>
               </motion.div>
@@ -181,12 +185,14 @@ export function CasesShowcase({ lang, dict }: { lang: Locale; dict: CasesDict })
                       <ArrowRight />
                     </Link>
                   </Button>
-                  <Button asChild variant="ghost-dark" size="lg">
-                    <a href={meta.url} target="_blank" rel="noopener noreferrer">
-                      {l.openSite}
-                      <ArrowUpRight />
-                    </a>
-                  </Button>
+                  {meta.url ? (
+                    <Button asChild variant="ghost-dark" size="lg">
+                      <a href={meta.url} target="_blank" rel="noopener noreferrer">
+                        {l.openSite}
+                        <ArrowUpRight />
+                      </a>
+                    </Button>
+                  ) : null}
                 </motion.li>
               </motion.ul>
             </AnimatePresence>
@@ -197,7 +203,7 @@ export function CasesShowcase({ lang, dict }: { lang: Locale; dict: CasesDict })
               {l.allCases} →
             </Link>
             <Button asChild size="xl">
-              <Link href={`/${lang}#contact`}>
+              <Link href={`/${lang}/brief`}>
                 {dict.cta}
                 <ArrowRight />
               </Link>

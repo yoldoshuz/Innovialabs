@@ -2,10 +2,9 @@ import { Marquee } from "@/components/motion/marquee";
 import { Prompt } from "@/components/brand/spark";
 import { siteConfig } from "@/lib/site";
 
-const ITEMS = [siteConfig.slogan, siteConfig.signature, siteConfig.slogan, siteConfig.signature];
-
 /** Giant slanted ticker with the brand lines. Decorative → hidden from AT. */
-export function MarqueeBand() {
+export function MarqueeBand({ slogan }: { slogan: string }) {
+  const ITEMS = [slogan, siteConfig.signature, slogan, siteConfig.signature];
   return (
     <div aria-hidden className="overflow-hidden py-6 sm:py-10">
       <div className="-rotate-2 bg-violet py-4 text-white sm:py-6">

@@ -55,7 +55,8 @@ export function GiantTitle({
       const wrapper = el.querySelector<HTMLElement>(".slant");
       wrapper?.classList.remove("slant");
       const split = SplitText.create(el, {
-        type: "lines,chars",
+        // Words keep chars together: lines may only break between words.
+        type: "lines,words,chars",
         linesClass: cn("overflow-hidden pb-[0.06em] -mb-[0.06em] pr-[0.12em]", slant && "slant-line"),
         charsClass: "inline-block will-change-transform",
       });

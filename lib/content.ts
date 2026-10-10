@@ -22,12 +22,19 @@ export type ServiceSlug = (typeof serviceSlugs)[number];
 export const caseSlugs = [
   "loadme",
   "yoldosh",
+  "incrm",
+  "medsc",
+  "leaderaudit",
+  "global-school",
   "numa-family",
   "numa-nutrition",
   "numa-kids",
   "nabaviy-tabobat",
 ] as const;
 export type CaseSlug = (typeof caseSlugs)[number];
+
+/** Brand fills used for big colored blocks (covers, stages). */
+export type Tone = "violet" | "night" | "mist" | "lilac" | "deep";
 
 export type IconName =
   | "code"
@@ -49,84 +56,85 @@ export type IconName =
 export type FormService = "web" | "mobile" | "telegram" | "ai" | "crm" | "other";
 
 /**
- * Per-service icon and which form option a card preselects. Services with
- * no own option preselect "other" and prefill the message with their title.
+ * Per-service icon, block tone, which form option its CTA preselects, and
+ * related cases (shown instead of the "what you get" block).
  */
 export const serviceMeta: Record<
   ServiceSlug,
-  { icon: IconName; form: FormService; cases?: CaseSlug[] }
+  { icon: IconName; form: FormService; tone: Tone; cases?: CaseSlug[] }
 > = {
-  ai: { icon: "chip", form: "ai" },
-  telegram: { icon: "send", form: "telegram" },
-  web: { icon: "code", form: "web", cases: ["numa-family", "numa-nutrition", "numa-kids", "nabaviy-tabobat"] },
-  mobile: { icon: "mobile", form: "mobile", cases: ["loadme", "yoldosh"] },
-  crm: { icon: "chart", form: "crm" },
-  integrations: { icon: "cloud", form: "other" },
-  design: { icon: "pen", form: "other", cases: ["numa-kids", "numa-family"] },
-  devops: { icon: "shield", form: "other" },
-  marketing: { icon: "search", form: "other" },
-  support: { icon: "settings", form: "other" },
-  consulting: { icon: "rocket", form: "other" },
+  ai: { icon: "chip", form: "ai", tone: "night" },
+  telegram: { icon: "send", form: "telegram", tone: "violet" },
+  web: {
+    icon: "code",
+    form: "web",
+    tone: "mist",
+    cases: ["medsc", "leaderaudit", "global-school", "numa-family", "numa-kids", "nabaviy-tabobat"],
+  },
+  mobile: { icon: "mobile", form: "mobile", tone: "night", cases: ["loadme", "yoldosh"] },
+  crm: { icon: "chart", form: "crm", tone: "lilac", cases: ["incrm"] },
+  integrations: { icon: "cloud", form: "other", tone: "deep", cases: ["incrm"] },
+  design: { icon: "pen", form: "other", tone: "mist", cases: ["numa-kids", "incrm", "numa-family"] },
+  devops: { icon: "shield", form: "other", tone: "night" },
+  marketing: { icon: "search", form: "other", tone: "violet", cases: ["leaderaudit", "medsc", "global-school"] },
+  support: { icon: "settings", form: "other", tone: "lilac" },
+  consulting: { icon: "rocket", form: "other", tone: "deep" },
 };
 
+/**
+ * Cases share one template; what makes each one recognizable is its tone
+ * and its motif (a small animated schematic of the product, see
+ * components/cases/motif.tsx). No screenshots.
+ */
 export type CaseMeta = {
-  url: string;
-  host: string;
+  /** Public URL; omitted for closed products. */
+  url?: string;
+  host?: string;
   /** Launch year; omitted when unknown. */
   year?: number;
-  /** 1440×900 desktop first screen. */
-  shot: string;
-  /** 390×844 mobile first screen. */
-  shotMobile: string;
+  tone: Tone;
   stack: string[];
 };
 
 export const caseMeta: Record<CaseSlug, CaseMeta> = {
-  loadme: {
-    url: "https://www.loadme.uz/yuklar",
-    host: "loadme.uz",
-    shot: "/cases/loadme.png",
-    shotMobile: "/cases/loadme-m.png",
-    stack: ["iOS", "Android", "Web", "Vercel"],
-  },
+  loadme: { url: "https://www.loadme.uz/yuklar", host: "loadme.uz", tone: "violet", stack: ["iOS", "Android", "Web", "Vercel"] },
   yoldosh: {
     url: "https://yoldosh.uz/ru",
     host: "yoldosh.uz",
     year: 2025,
-    shot: "/cases/yoldosh.png",
-    shotMobile: "/cases/yoldosh-m.png",
+    tone: "night",
     stack: ["Next.js", "React", "iOS", "Android", "Vercel"],
   },
+  incrm: { tone: "lilac", stack: [] },
+  medsc: { url: "https://medsc.uz", host: "medsc.uz", tone: "mist", stack: ["Next.js", "React"] },
+  leaderaudit: { url: "https://leaderaudit.uz", host: "leaderaudit.uz", tone: "deep", stack: ["Next.js", "React"] },
+  "global-school": { url: "https://global-school.uz", host: "global-school.uz", tone: "violet", stack: ["Next.js", "React"] },
   "numa-family": {
     url: "https://numa-family.vercel.app/ru",
     host: "numa-family.vercel.app",
     year: 2026,
-    shot: "/cases/numa-family.png",
-    shotMobile: "/cases/numa-family-m.png",
+    tone: "night",
     stack: ["Next.js", "React", "Vercel"],
   },
   "numa-nutrition": {
     url: "https://numa-nutritition.vercel.app/",
     host: "numa-nutritition.vercel.app",
     year: 2026,
-    shot: "/cases/numa-nutrition.png",
-    shotMobile: "/cases/numa-nutrition-m.png",
+    tone: "mist",
     stack: ["Next.js", "React", "Vercel"],
   },
   "numa-kids": {
     url: "https://numa-kids-olive.vercel.app/ru",
     host: "numa-kids-olive.vercel.app",
     year: 2026,
-    shot: "/cases/numa-kids.png",
-    shotMobile: "/cases/numa-kids-m.png",
+    tone: "lilac",
     stack: ["Next.js", "React", "Vercel"],
   },
   "nabaviy-tabobat": {
     url: "https://nabaviy-tabobat.vercel.app/ru",
     host: "nabaviy-tabobat.vercel.app",
     year: 2026,
-    shot: "/cases/nabaviy-tabobat.png",
-    shotMobile: "/cases/nabaviy-tabobat-m.png",
+    tone: "deep",
     stack: ["Next.js", "React", "Vercel"],
   },
 };
